@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5</title>
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="css/custom/global_custom.css" />
+</head>
+<body style="width:1080px; height: 1928px;">
+  <header class="site-header w-100 interactive-mode">
+      <div class="top-panel">
+          <h3>หาสินค้าไม่เจอ...ให้น้อง XP ช่วยได้นะคะ</h3>
+      </div>
+   
+  </header>
+  <main class="main-content w-100 interactive-mode">
+    <div class="quote-section">
+        <p><em>“</em>
+            <span>สัมผัสหน้าจอ </span>เพื่อดู <br/>
+          รายการสินค้าได้เลยคะ<em>“</em>
+          </p>
+          <figure>
+              <img src="images/girl-big.png" class="img-fluid" alt="girl with tab"/>
+          </figure>
+    </div>
+    <div class="content-panel position-relative bg-white shadow" style="height:950px;">
+      <!-- start content -->
+      <div id="product-list-nav" class="">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <!-- <li class="" role="presentation">
+            <button class="nav-link  p-5" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="" aria-controls="pills-home" aria-selected="true"> <h3>Back</h3></button>
+          </li> -->
+          <div class="bg-dark text-light nav-back-button d-flex justify-content-center align-items-center"> <img src="./images/product_list/back.png" class="" style="width:28px; height:28px" alt=""> </div>
+          
+            <li class="nav-item" role="presentation">
+              <button class="nav-link h-100 active" id="pills-facade-tab" data-bs-toggle="pill" data-bs-target="#pills-facade" type="button" role="tab" aria-controls="pills-facade" aria-selected="false"> <h3>โซลูชั่นฟาซาด </h3> </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link h-100" id="pills-outdoor-tab" data-bs-toggle="pill" data-bs-target="#pills-outdoor" type="button" role="tab" aria-controls="pills-outddor" aria-selected="false"> <h3>ตกแต่งภูมิทัศนภายนอก</h3></button>
+            </li>
+          
+        </ul>
+        
+        <div class="tab-content h-100 bg-white" id="pills-tabContent">
+          <!-- tab 1 -->
+          <div class="tab-pane fade show active" id="pills-facade" role="tabpanel" aria-labelledby="pills-facade-tab">
+            <div class="text-end p-5">  <h3 style="font-weight: 400;"> 4 รายการ </h3></div>
+            <button id="vr-facade" type="button" class="btn btn-secondary button-vr-productlist text-black p-3 d-flex align-items-center justify-content-center position-absolute"> <img src="./images/product_list/360.png" class="px-2" alt="">  <h3 class="p-3">สัมผัส VR Experience</h3></button>
+            <div class="container h-100 ">
+              <div class="row row-cols-1 row-cols-md-4 g-5">
+                <div class="col">
+                  <div class="card h-100 product-card-custom shadow">
+                    <img src="./images/product_list/p-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text product-card-text-custom">ผนังตกแต่ง - เคมิว (KMEW)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 product-card-custom shadow">
+                    <img src="./images/product_list/p-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text product-card-text-custom">เอสซีจี วูด-ดี <br> (SCG WOOD-D)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 product-card-custom shadow">
+                    <img src="./images/product_list/p-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    
+                      <p class="card-text product-card-text-custom">เอสซีจี โมดิน่า <br> (SCG MODEENA)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 product-card-custom shadow">
+                    <img src="./images/product_list/p-4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    
+                      <p class="card-text product-card-text-custom">เอสซีจี เฟรทเวิร์ค <br> (SCG FRETWORK) </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+          <!-- tab 2 -->
+          <div class="tab-pane bg-white fade" id="pills-outdoor" role="tabpanel" aria-labelledby="pills-outdoor-tab">
+            <div class="text-end p-5 ">  <h3 style="font-weight: 400;"> 4 รายการ </h3></div>
+            <button id="vr-outside" type="button" class="btn btn-secondary button-vr-productlist text-black p-3 d-flex align-items-center justify-content-center position-absolute"> <img src="./images/product_list/360.png" class="px-2" alt="">  <h3 class="p-3">สัมผัส VR Experience</h3></button>
+            <div class="container h-100 ">
+              <div class="row row-cols-1 row-cols-md-4 g-5">
+                <div class="col">
+                  <div class="card h-100 product-card-custom shadow">
+                    <img src="./images/product_list/p-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text product-card-text-custom">ผนังตกแต่ง - เคมิว (KMEW)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 product-card-custom shadow">
+                    <img src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text product-card-text-custom">เอสซีจี วูด-ดี <br> (SCG WOOD-D)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 product-card-custom shadow">
+                    <img src="./images/product_list/p-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    
+                      <p class="card-text product-card-text-custom">เอสซีจี โมดิน่า <br> (SCG MODEENA)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 product-card-custom shadow">
+                    <img src="./images/product_list/p-4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    
+                      <p class="card-text product-card-text-custom">เอสซีจี เฟรทเวิร์ค <br> (SCG FRETWORK) </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+
+        <!-- end content -->
+    </div> 
+    <!-- end navtab -->
+
+    <div class="interactive-footer-panel">
+       <div class="btn-container ">
+           <button class="btn-red">
+            แตะเพื่อ <i class="icon-hand-click"></i> ดูรายการสินค้า
+            </button>
+        </div>
+       <div class="data-scg-homeexp">
+         <h2>
+          <span>ครบทุกโซลูชัน</span>   </br>   
+          <b>เรื่องบ้าน ที่เดียวจบ...</b> </br>   
+          ที่ SCG HOME Experience 
+      
+         </h2>
+       </div>
+       <div class="logo-container">
+         <a href="#">
+           <img src="images/logo-scg-experience.svg" alt="logo of scg home experience" />
+         </a>
+
+       </div>
+    </div>
+  
+  </main>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
