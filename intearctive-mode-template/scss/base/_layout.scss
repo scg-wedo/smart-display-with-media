@@ -1,0 +1,95 @@
+
+.main-content{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    @include border-radius(.6rem);
+    background: $white;
+    margin-top: -8px;
+    .bx-product{
+        padding: 16px;
+        border-bottom:  1px solid rgba(0, 0, 0, 0.1);
+        h3{
+            @include txt-header-form();
+            margin-bottom: 4px;
+        }
+        .info-product{
+            figure{
+                border: 1px solid rgba(197, 197, 197, 0.5);
+                @include border-radius(.6rem);
+               padding: 10px;
+               margin-right: 16px;
+            }
+            .info-product-data{
+                p{
+                    font-size: 12px;
+                }
+                h4{
+                    font-size: 16px;
+                    color:$primary;
+                    line-height: 28px;
+                    span{
+                        font-size: 10px;
+                        color: $black;
+                        display: flex;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .form-section{
+        padding: 16px;
+        .row{
+            margin-bottom: 16px;
+            label{
+                @include txt-header-form();
+              
+            }
+        }
+        .caption{
+            font-size: 12px;
+            line-height: 18px;
+            color: $dark-grey;
+           & + .btn{
+               margin-top: 2.2rem;
+           }
+            a{
+                color: #0d6efd;
+            }
+        }
+    }
+    &.submit-screen{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        div{
+            justify-content: center;
+            display: flex;
+            flex-flow: column;
+            max-width: 75%;
+            align-items: center;
+            h2{
+                margin-top: 1.6rem;
+                span{
+                    display: block;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    color: $light-grey;
+                    margin-top: .4em;
+                }
+                + .btn{
+                    margin-top: 2.4rem;
+                    min-width: 12.8rem;
+                }
+
+            }
+            i{
+                font-size: 6.6rem;
+            }
+        }
+    }
+ 
+}
+

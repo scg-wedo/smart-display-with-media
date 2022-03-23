@@ -1,0 +1,28 @@
+
+*,
+*::after,
+*::before {}
+
+html {
+  font-size: 62.5%;
+  /* 0.625 x 16 = 10 Root */
+
+  overflow-x: hidden;
+}
+
+a {
+  color: $theme-primary;
+  &:link {
+    color: $theme-primary;
+  }
+
+  &:hover {
+    color: darken($theme-primary, 10%);
+  }
+}
+body{
+  font-family: 'Prompt', sans-serif;
+}
+.star{
+  color: $primary;
+}

@@ -1,0 +1,24 @@
+
+.site-header{
+    position: relative;
+    display: flex;
+    height: 191px;
+    @include border-radius(.6rem .6rem 0 0);
+    background: url(/images/bg-header.png) no-repeat  $primary  ;
+    background-blend-mode:soft-light;
+    padding: 10px;
+    h1{
+        @include txt-header-white();
+        margin: 2.2rem 0rem 0rem 2.2rem;
+    }
+    p{
+        @include txt-header-description();
+        max-width: 60%;
+        margin: .4rem 0rem 0rem 2.2rem;
+    }
+    .right-pnl{
+        position: absolute;
+        right: 23px;
+        bottom: 7px;
+    }
+}
