@@ -36,7 +36,6 @@
 }
 
 
-
 .nav-pills li.nav-item:nth-child(2) .nav-link {
     background-image: url('/intearctive-mode-template/images/product_list/home-red.png');
 
@@ -47,6 +46,17 @@
 
 }
 
+.nav-pills li.nav-item:nth-child(2) .nav-link#pills-service-house-tab{
+    background-image: url('/intearctive-mode-template/images/product_list/house-paper-red.png');
+
+}
+
+.nav-pills li.nav-item:nth-child(3) .nav-link#pills-recommend-tab {
+    background-image: url('/intearctive-mode-template/images/product_list/star-red.png');
+
+}
+/* pills-service-house-tab */
+/* pills-recommend-tab */
   
 .nav-pills .nav-item .nav-link.active {
     background-color: red;
@@ -63,6 +73,16 @@
 
 }
 
+.nav-pills li.nav-item:nth-child(2) .nav-link.active#pills-service-house-tab {
+    background-image: url('/intearctive-mode-template/images/product_list/house-paper-white.png');
+
+}
+
+.nav-pills li.nav-item:nth-child(3) .nav-link.active#pills-recommend-tab {
+    background-image: url('/intearctive-mode-template/images/product_list/star-white.png');
+
+}
+
 #product-list-nav h3{
     text-align: left;    
     margin: 0;
@@ -76,6 +96,10 @@
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05), 0px 5px 15px rgba(0, 0, 0, 0.25);
     bottom: 2%;
     right:4%;
+}
+
+.content-panel{
+    min-height: 950px;
 }
 
 /* .tab-content {

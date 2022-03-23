@@ -25,7 +25,7 @@
               <img src="images/girl-big.png" class="img-fluid" alt="girl with tab"/>
           </figure>
     </div>
-    <div class="content-panel position-relative bg-white shadow" style="height:950px;">
+    <div class="content-panel position-relative bg-white shadow" style="min-height:950px;">
       <!-- start content -->
       <div id="product-list-nav" class="">
         <ul class="nav nav-pills" id="pills-tab" role="tablist">
@@ -35,65 +35,84 @@
           <div class="bg-dark text-light nav-back-button d-flex justify-content-center align-items-center"> <img src="./images/product_list/back.png" class="" style="width:28px; height:28px" alt=""> </div>
           
             <li class="nav-item" role="presentation">
-              <button class="nav-link h-100 active" id="pills-facade-tab" data-bs-toggle="pill" data-bs-target="#pills-facade" type="button" role="tab" aria-controls="pills-facade" aria-selected="false"> <h3>โซลูชั่นฟาซาด </h3> </button>
+              <button class="nav-link h-100 active" id="pills-service-house-tab" data-bs-toggle="pill" data-bs-target="#pills-service-house" type="button" role="tab" aria-controls="pills-service-house" aria-selected="false"> <h3>บริการเรื่องบ้าน </h3> </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link h-100" id="pills-outdoor-tab" data-bs-toggle="pill" data-bs-target="#pills-outdoor" type="button" role="tab" aria-controls="pills-outddor" aria-selected="false"> <h3>ตกแต่งภูมิทัศนภายนอก</h3></button>
+              <button class="nav-link h-100" id="pills-recommend-tab" data-bs-toggle="pill" data-bs-target="#pills-recommend" type="button" role="tab" aria-controls="pills-recommend" aria-selected="false"> <h3>สินค้าแนะนำ</h3></button>
             </li>
           
         </ul>
         
         <div class="tab-content h-100 bg-white" id="pills-tabContent">
           <!-- tab 1 -->
-          <div class="tab-pane fade show active" id="pills-facade" role="tabpanel" aria-labelledby="pills-facade-tab">
-            <div class="text-end p-5">  <h3 style="font-weight: 400;"> 4 รายการ </h3></div>
-            <button id="vr-facade" type="button" class="btn btn-secondary button-vr-productlist text-black p-3 d-flex align-items-center justify-content-center position-absolute"> <img src="./images/product_list/360.png" class="px-2" alt="">  <h3 class="p-3">สัมผัส VR Experience</h3></button>
+          <div class="tab-pane fade show active" id="pills-service-house" role="tabpanel" aria-labelledby="pills-service-house-tab">
+            <div class="text-end p-5">  <h3 style="font-weight: 400; text-align: right;"> 6 รายการ </h3></div>
+            <!-- <button id="vr-facade" type="button" class="btn btn-secondary button-vr-productlist text-black p-3 d-flex align-items-center justify-content-center position-absolute"> <img src="./images/product_list/360.png" class="px-2" alt="">  <h3 class="p-3">สัมผัส VR Experience</h3></button> -->
             <div class="container h-100 ">
               <div class="row row-cols-1 row-cols-md-4 g-5">
                 <div class="col">
                   <div class="card h-100 product-card-custom shadow">
-                    <img src="./images/product_list/p-1.png" class="card-img-top" alt="...">
+                    <img src="./images/product_list/solar-roof.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p class="card-text product-card-text-custom">ผนังตกแต่ง - เคมิว (KMEW)</p>
+                      <p class="card-text product-card-text-custom">Solar Roof <br> ระบบหลังคาโซลาร์ </p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card h-100 product-card-custom shadow">
-                    <img src="./images/product_list/p-2.png" class="card-img-top" alt="...">
+                    <img src="./images/product_list/air-quality.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       
-                      <p class="card-text product-card-text-custom">เอสซีจี วูด-ดี <br> (SCG WOOD-D)</p>
+                      <p class="card-text product-card-text-custom">SCG Active Air Qualiy <br> ระบบจัดการคุณภาพและอากาศภายในบ้าน</p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card h-100 product-card-custom shadow">
-                    <img src="./images/product_list/p-3.png" class="card-img-top" alt="...">
+                    <img src="./images/product_list/airflow.png" class="card-img-top" alt="...">
                     <div class="card-body">
                     
-                      <p class="card-text product-card-text-custom">เอสซีจี โมดิน่า <br> (SCG MODEENA)</p>
+                      <p class="card-text product-card-text-custom">SCG Active Air Flow <br> แก้บ้านร้อนครบวงจรทั้งระบบ</p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card h-100 product-card-custom shadow">
-                    <img src="./images/product_list/p-4.png" class="card-img-top" alt="...">
+                    <img src="./images/product_list/top-hat.png" class="card-img-top" alt="...">
                     <div class="card-body">
                     
-                      <p class="card-text product-card-text-custom">เอสซีจี เฟรทเวิร์ค <br> (SCG FRETWORK) </p>
+                      <p class="card-text product-card-text-custom">SCG Active Air Flow <br> แก้บ้านร้อนครบวงจรทั้งระบบ </p>
                     </div>
                   </div>
                 </div>
+                <div class="col">
+                  <div class="card h-100 product-card-custom shadow">
+                    <img src="./images/product_list/roof-re.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      
+                      <p class="card-text product-card-text-custom">Roof Renovation <br> บริการรื้อ-เปลี่ยนหลังคาเก่าทั้งผืน</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 product-card-custom shadow">
+                    <img src="./images/product_list/roof-repaint.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    
+                      <p class="card-text product-card-text-custom">Roof Repaint <br> บริการทาสีหลังคาเก่า</p>
+                    </div>
+                  </div>
+                </div>
+                
               </div>
             </div>
             
             
           </div>
           <!-- tab 2 -->
-          <div class="tab-pane bg-white fade" id="pills-outdoor" role="tabpanel" aria-labelledby="pills-outdoor-tab">
-            <div class="text-end p-5 ">  <h3 style="font-weight: 400;"> 4 รายการ </h3></div>
-            <button id="vr-outside" type="button" class="btn btn-secondary button-vr-productlist text-black p-3 d-flex align-items-center justify-content-center position-absolute"> <img src="./images/product_list/360.png" class="px-2" alt="">  <h3 class="p-3">สัมผัส VR Experience</h3></button>
+          <div class="tab-pane bg-white fade" id="pills-recommend" role="tabpanel" aria-labelledby="pills-recommend-tab">
+            <div class="text-end p-5 ">  <h3 style="font-weight: 400; text-align: right;"> 4 รายการ </h3></div>
+            <!-- <button id="vr-outside" type="button" class="btn btn-secondary button-vr-productlist text-black p-3 d-flex align-items-center justify-content-center position-absolute"> <img src="./images/product_list/360.png" class="px-2" alt="">  <h3 class="p-3">สัมผัส VR Experience</h3></button> -->
             <div class="container h-100 ">
               <div class="row row-cols-1 row-cols-md-4 g-5">
                 <div class="col">
