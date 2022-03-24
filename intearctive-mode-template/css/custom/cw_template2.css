@@ -4,12 +4,10 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: #FFFFFF;
-    background-image: url(/intearctive-mode-template/images/bg-header.png);
     background-size: cover;
 }
 
-.content-sectiion-temp-2 .fist-content{
+.content-sectiion-temp-2 .fist-content {
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -21,7 +19,13 @@
     margin-bottom: 15px;
 }
 
-.content-sectiion-temp-2 .fist-content h3{
+.content-sectiion-temp-2 .fist-content video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-sectiion-temp-2 .fist-content h3 {
     letter-spacing: 0.1em;
     font-weight: 400;
     font-size: 55px;
@@ -29,13 +33,13 @@
     padding-bottom: 20px;
 }
 
-.content-sectiion-temp-2 .fist-content h4{
+.content-sectiion-temp-2 .fist-content h4 {
     padding-top: 80px;
     font-weight: 700;
     font-size: 40px;
 }
 
-.content-sectiion-temp-2 .second-content{
+.content-sectiion-temp-2 .second-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,10 +51,11 @@
     margin: 0 auto;
 }
 
-.content-sectiion-temp-2 .second-content h3{
+.content-sectiion-temp-2 .second-content h3 {
     color: #FFFFFF;
     font-weight: 400;
     font-size: 40px;
 }
+
 
 /* END OF CW_TEMPLATE2 */
