@@ -138,9 +138,11 @@
         p{
             font-style: normal;
             font-weight: 700;
+           
             font-size: 40px;
             line-height: 60px;
             color:$dark-grey6;
+            @include scgregular();
         }
         figure{
             max-width: 261px;
@@ -153,7 +155,7 @@
         @include border-radius(.6rem);
         padding-bottom: 5rem;
         .inner-content{
-            padding: 0 13.1rem;
+            padding: 0rem 5rem 0rem 13.1rem;
         }
        
     }

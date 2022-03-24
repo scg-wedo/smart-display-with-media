@@ -21,8 +21,8 @@ a {
   }
 }
 body{
-  font-family: 'Prompt', sans-serif;
-}
+  @include scgregular();
+  }
 .star{
   color: $primary;
 }

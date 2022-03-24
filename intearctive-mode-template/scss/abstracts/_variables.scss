@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap');
 @import url(/css/iconmoon.css);
+@import url(/css/scg-font.css);
 $white:#ffffff;
 $off-white:#FEFEFE;
 $black:#000000;
@@ -94,10 +95,17 @@ $lite-grey:#666666;
     }
 }
 
-@mixin font-source-sans($size: false, $colour: false, $weight: false,  $lh: false) {
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-    @if $size { font-size: $size; }
-    @if $colour { color: $colour; }
-    @if $weight { font-weight: $weight; }
-    @if $lh { line-height: $lh; }
+
+@mixin scglight() {
+  font-family: 'scglight';
+  
 }
+@mixin scgregular() {
+    font-family: 'scgregular';
+    
+  }
+
+  @mixin scgbold() {
+    font-family: 'scgbold';
+   
+  }
