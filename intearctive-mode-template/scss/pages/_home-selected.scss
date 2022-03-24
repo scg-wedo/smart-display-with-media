@@ -30,6 +30,7 @@
     }
 }
 .video-gallery{
+    margin-top: -40px;
     .wrapper{
         display: flex;
         flex-flow: row;
@@ -38,6 +39,10 @@
             margin-right: 1.5rem;
             margin-bottom: 1.5rem;
             display: flex;
+            max-width: 16rem;
+            img{
+                width: 100%;
+            }
         }
     }
 }

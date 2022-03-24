@@ -149,6 +149,8 @@
     }
     .content-panel{
         background: $off-white;
+        @include box-shadow(0px, 4px, 40px,rgba(0, 0, 0, 0.12) );
+        @include border-radius(.6rem);
         padding-bottom: 5rem;
         .inner-content{
             padding: 0 13.1rem;

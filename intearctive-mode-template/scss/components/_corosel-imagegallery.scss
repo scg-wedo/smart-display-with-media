@@ -1,0 +1,30 @@
+.product-image-corosel{
+    max-width: 33.7rem;
+    margin-right: 4rem;
+    .carousel-inner{
+        width: 33.7rem;
+        height: 33.7rem;
+        background: $white;
+        @include box-shadow(0px, 4px, 40px,rgba(0, 0, 0, 0.12) );
+        @include border-radius(.6rem);
+    }
+    .carousel-indicators{
+       
+        margin: 0px auto -110px;
+        div{
+            padding: 0;
+            width: 7.7rem;
+            height: 7.7rem;
+            background: transparent !important;
+            @include xycenter();
+            @include border-radius(.4rem);
+        }
+        .active{
+            border: .1rem solid $red-new !important; 
+        }
+        [data-bs-target]{
+            border:.1rem solid $off-white;
+            
+        }
+    }
+}
