@@ -1,26 +1,26 @@
-.product-card-custom {
+.product-card-custom{
     border-radius: 6px;
 }
 
-.product-card-text-custom {
+.product-card-text-custom{
     min-height: 100px;
 }
 
-.text-light {
+.text-light{
     font-weight: bold;
 }
 
-#product-list-nav {
+#product-list-nav{
     background-color: #DADADA;
     height: 80px;
 }
 
-.nav-back-button {
+.nav-back-button{
     /* background-image: url('/intearctive-mode-template/images/product_list/back.png'); */
     /* background-repeat: no-repeat; */
     /* background-size: ; */
     height: 80px;
-    width: 80px;
+    width:80px;
 
     /* background-color: ; */
 }
@@ -29,7 +29,7 @@
     background-color: #EAEAEA;
     color: black;
     width: 220px;
-    padding-left: 70px;
+    padding-left:70px;
     background-repeat: no-repeat;
     /* backgr */
     background-position: 18px 20px;
@@ -46,7 +46,7 @@
 
 }
 
-.nav-pills li.nav-item:nth-child(2) .nav-link#pills-service-house-tab {
+.nav-pills li.nav-item:nth-child(2) .nav-link#pills-service-house-tab{
     background-image: url('/intearctive-mode-template/images/product_list/house-paper-red.png');
 
 }
@@ -55,10 +55,9 @@
     background-image: url('/intearctive-mode-template/images/product_list/star-red.png');
 
 }
-
 /* pills-service-house-tab */
 /* pills-recommend-tab */
-
+  
 .nav-pills .nav-item .nav-link.active {
     background-color: red;
     color: white;
@@ -84,27 +83,27 @@
 
 }
 
-#product-list-nav h3 {
-    text-align: left;
+#product-list-nav h3{
+    text-align: left;    
     margin: 0;
     /* margin-left: 20px; */
 }
 
 
-.button-vr-productlist {
+.button-vr-productlist{
     background: linear-gradient(139.29deg, #BBBBBB -78.43%, #FFFFFF -78.4%, #E1E1E1 59.85%);
     border: none;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05), 0px 5px 15px rgba(0, 0, 0, 0.25);
     bottom: 2%;
-    right: 4%;
+    right:4%;
 }
 
-.content-panel {
+.content-panel{
     min-height: 950px;
 }
 
 
-header.interactive-mode .top-panel-custom h3 {
+header.interactive-mode .top-panel-custom h3{
     color: white;
     font-weight: 700;
     font-size: 55px;
@@ -113,14 +112,14 @@ header.interactive-mode .top-panel-custom h3 {
 }
 
 
-header.interactive-mode .top-panel-custom h4 {
+header.interactive-mode .top-panel-custom h4{
     color: white;
     font-weight: lighter;
     font-size: 55px;
     line-height: 70px;
 }
 
-.top-panel-custom {
+.top-panel-custom{
     width: 100%;
     display: flex;
     flex-flow: column;
@@ -128,7 +127,7 @@ header.interactive-mode .top-panel-custom h4 {
     justify-content: center;
     padding: 5%;
     text-align: left;
-    color: white;
+    color:white;
 }
 
 .top-panel-custom2{
@@ -140,7 +139,7 @@ header.interactive-mode .top-panel-custom h4 {
 
 .top-panel-custom2 h3{
     color: white;
-    font-weight: 700, bold;
+    font-weight: bold;
     font-size: 65px;
     line-height: 70px;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
@@ -160,7 +159,7 @@ header.interactive-mode .top-panel-custom h4 {
 
 .top-panel-custom2 p{
     color: white;
-    font-weight: 700, bold;
+    font-weight: bold;
     font-size: 40px;
     line-height: 32px;
     display: inline-block;
@@ -178,6 +177,3 @@ min-height: 200px;
 height: auto;
 } */
 
-.btn-gray{
-    
-}
