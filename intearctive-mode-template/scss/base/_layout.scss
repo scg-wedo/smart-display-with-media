@@ -137,12 +137,11 @@
         }
         p{
             font-style: normal;
-            font-weight: 700;
-           
+            font-weight: 700;           
             font-size: 40px;
             line-height: 60px;
             color:$dark-grey6;
-            @include scgregular();
+            font-family: 'Prompt', sans-serif;
         }
         figure{
             max-width: 261px;
