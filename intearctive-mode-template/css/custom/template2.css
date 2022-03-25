@@ -1,36 +1,17 @@
 /* #EC1C24 */
 
-.template1-content-panel {
-    background-color: #EC1C24;
-    height: 1700px;
+.template2-group-content-panel {
+    background: transparent;
+    height: 1480px;
 }
 
-.template1-body-custom {
-    /* background-color: #EC1C24; */
-
-}
-
-.template1-content-background {
-    /* background-image: url(/intearctive-mode-template/images/bg-header-red.jpg); */
-    /* background-image: url(/intearctive-mode-template/images/bg-header.png); */
-    opacity: 1;
-    mix-blend-mode: darken;
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-    background-position: 0 0;
-    height: 50%;
+.template2-content-panel {
     width: 100%;
-}
-
-
-
-#video-panel {
-    width: 100%;
-    height: 1150px;
+    height: 950px;
     background-color: white;
 }
 
-.btn-template1 {
+.btn-template2 {
     width: 494px;
     height: 90px;
     font-weight: 700;
@@ -44,49 +25,11 @@
 
 }
 
-.btn-template1 h1 {
+.btn-template2 h1 {
     margin: 0;
 }
 
-
-.template1-content .balloon h3 {
-    font-weight: 700, bold;
-    font-size: 45px;
-    line-height: 60px;
-    text-align: center;
-    /* word-break: break-all; */
-}
-
-.template1-content .balloon h3 p {
-    font-weight: 700, bold;
-    font-size: 45px;
-    line-height: 60px;
-    text-align: center;
-    color: red;
-    /* /* margin-top: 24px;  */
-    /* word-break: break-all; */
-}
-
-
-.template1-content .balloon-effect {
-    bottom: -8%;
-}
-
-*/ .btn-gray {
-    border: 0;
-    border-radius: 5px;
-}
-
-.btn-gray img {
-    width: 38px;
-    height: 38px;
-
-}
-
-.template1-body-custom {}
-
-
-.template1-footer {
+.template2-footer {
     height: 348px;
     width: 100%;
     position: absolute;
