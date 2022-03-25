@@ -2,7 +2,7 @@
 
 .template1-content-panel{
     background-color: #EC1C24;
-    height: 1650px;
+    height: 1700px;
 }
 
 .template1-body-custom{
@@ -91,7 +91,7 @@
 .template1-footer{
     height: 348px;
     width: 100%;
-    position:fixed;
+    position:absolute;
     bottom: 0;
 
     /* z-index: ; */
