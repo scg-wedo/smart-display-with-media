@@ -8,7 +8,7 @@
 .template2-content-panel {
     width: 100%;
     height: 950px;
-    background-color: white;
+    background: transparent;
 }
 
 .btn-template2 {
@@ -17,9 +17,9 @@
     font-weight: 700;
     font-size: 35px;
     line-height: 62px;
-    color: black;
+    color: white;
     border: 0;
-    background: linear-gradient(50.68deg, #A0A0A0 -41.46%, #EDEDED 58.8%);
+    background: linear-gradient(335.2deg, #AC0C12 17.94%, #D5020C 72.04%);
     box-shadow: 0px 7px 24px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 
