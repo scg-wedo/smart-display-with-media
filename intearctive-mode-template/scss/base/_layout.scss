@@ -90,6 +90,77 @@
             }
         }
     }
- 
+    .quote-section{
+        position: relative;
+        height:48.2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        p{
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 70px;
+            color: $dark-grey1;
+            span{
+                font-weight: 700;
+                color:$red-new;
+            }
+        }
+        figure{
+            max-width: 330px;
+            margin: 0;
+            align-self: flex-end;
+            z-index: 1;
+        }
+        &::before{
+            content: '';
+            width: 538px;
+            height: 58px;
+            position: absolute;
+            right: 0;
+            top: 0px;
+            background: url(../images/bgheader-strip.png) no-repeat right;
+            z-index: 0;
+        }
+      
+    }  
+&.interactive-mode2{
+  
+    .strip1{
+        height: 22.1rem;
+        padding: 0px 7.5rem;
+        background: url(../images/bg-main.png);
+        justify-content: space-between;
+        &:before{
+            background: url(../images/bgheader-strip2.png) no-repeat right;
+        }
+        p{
+            font-style: normal;
+            font-weight: 700;
+           
+            font-size: 40px;
+            line-height: 60px;
+            color:$dark-grey6;
+            @include scgregular();
+        }
+        figure{
+            max-width: 261px;
+        }
+        
+    }
+    .content-panel{
+        background: $off-white;
+        @include box-shadow(0px, 4px, 40px,rgba(0, 0, 0, 0.12) );
+        @include border-radius(.6rem);
+        padding-bottom: 5rem;
+        .inner-content{
+            padding: 0rem 5rem 0rem 13.1rem;
+        }
+       
+    }
+    
+}
+
 }
 

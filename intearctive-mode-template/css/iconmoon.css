@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?8rdl8b');
-  src:  url('fonts/icomoon.eot?8rdl8b#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?8rdl8b') format('truetype'),
-    url('fonts/icomoon.woff?8rdl8b') format('woff'),
-    url('fonts/icomoon.svg?8rdl8b#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?u1l5y4');
+  src:  url('fonts/icomoon.eot?u1l5y4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?u1l5y4') format('truetype'),
+    url('fonts/icomoon.woff?u1l5y4') format('woff'),
+    url('fonts/icomoon.svg?u1l5y4#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-fb:before {
+  content: "\e903";
+  color: #ec1c24;
+}
+.icon-yt .path1:before {
+  content: "\e904";
+  color: rgb(236, 28, 36);
+}
+.icon-yt .path2:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-insta .path1:before {
+  content: "\e906";
+  color: rgb(236, 28, 36);
+}
+.icon-insta .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-insta .path3:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-insta .path4:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-back:before {
+  content: "\e902";
+  color: #fff;
+}
 .icon-hand-click:before {
   content: "\e901";
   color: #fff;
