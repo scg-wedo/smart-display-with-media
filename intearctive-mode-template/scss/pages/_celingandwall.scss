@@ -1,0 +1,45 @@
+.data-ceilingnwall{
+    padding: 0 75px;
+    .top-section{
+        padding: 4rem 0;
+        display: flex;
+        justify-content: space-between;
+        .easy-navigation{
+            button{
+                position: relative;
+                padding: .6rem;
+                width: 10.4rem;
+                height: 10.4rem;
+                background: $red-new;
+                color:$white;
+                font-size: 1.4rem;
+                font-weight: 700;
+                align-items: flex-end;
+                display: inline-flex;
+                @include border-radius(.6rem);
+                box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12);
+                margin-right: 2.4rem;
+                &.whitebg{
+                    background: $white;
+                    color: $dark-grey;
+                }
+                i{
+                    font-size: 3rem;
+                    position: absolute;
+                    top:10px;
+                    right: 10px;
+                }
+
+
+            }
+        }
+    }
+    .banner-section{
+        background: #BBBBBB;
+        @include border-radius(.6rem);
+        @include xycenter();
+        height: 15rem;
+        font-size: 4rem;
+        font-weight: 100;
+    }
+}

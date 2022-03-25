@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap');
-@import url(/css/iconmoon.css);
-@import url(/css/scg-font.css);
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;500&display=swap');
+@import url(../css/iconmoon.css);
+@import url(../css/scg-font.css);
 $white:#ffffff;
 $off-white:#FEFEFE;
 $black:#000000;
@@ -27,7 +27,9 @@ $dark-grey5:#D3D3D3;
 $dark-grey6:#2E2C2C;
 $dark-grey7:#131313;
 $dark-grey8:#323232;
+$dark-grey9:#1C1D1D;
 $lite-grey:#666666;
+
 
 @mixin headerplaingbg {
     background:linear-gradient(180deg, $red-new 0%, $red-new1 100%);   

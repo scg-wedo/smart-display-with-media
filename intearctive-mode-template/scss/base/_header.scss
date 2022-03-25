@@ -52,15 +52,15 @@ header.header-vb{
                font-size: 6rem;
                color: $white;
                font-style: normal;
-                font-weight: 400;
+                font-weight:100;
                 line-height: 105px;
                 margin: 0;
-               @include scglight();
+              
            }
            h3{
                text-transform: uppercase;
                margin: 0;
-               @include scgbold();
+               
            }
        }
     }

@@ -21,8 +21,11 @@ a {
   }
 }
 body{
-  @include scgregular();
+  font-family: 'Prompt', sans-serif;
   }
 .star{
   color: $primary;
+}
+.txt-red{
+  color: $red-new1;
 }
