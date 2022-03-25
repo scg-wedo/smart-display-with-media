@@ -1,0 +1,60 @@
+{
+    "page": {
+        "home_selected": {
+            "front": {
+                "videos": [
+                    {"url": "../video/พยายาม cover - SD 480p.mp4", "duration": 10},
+                    {"url": "link2", "duration": 10}
+                ]
+            },
+            "promotion": {
+                "videos": [
+                    {"url": "link1", "duration": 10},
+                    {"url": "link2", "duration": 10}
+                ],
+                "banner": [
+                    {"url": "img1", "duration": 5},
+                    {"url": "img2", "duration": 5}
+                ] 
+            }
+        },
+        "ceiling_and_wall": {
+            "front": {
+                "videos": [
+                    {"url": "../video/พยายาม cover - SD 480p.mp4", "duration": 10},
+                    {"url": "link2", "duration": 10}
+                ]
+            },
+            "promotion": {
+                "videos": [
+                    {"url": "link1", "duration": 10},
+                    {"url": "link2", "duration": 10}
+                ],
+                "banner": [
+                    {"url": "img1", "duration": 5},
+                    {"url": "img2", "duration": 5}
+                ] 
+            }
+        },
+        "roof": {
+            "front": {
+                "videos": [
+                    {"url": "../video/พยายาม cover - SD 480p.mp4", "duration": 10},
+                    {"url": "link2", "duration": 10}
+                ]
+            },
+            "promotion": {
+                "videos": [
+                    {"url": "link1", "duration": 10},
+                    {"url": "link2", "duration": 10}
+                ],
+                "banner": [
+                    {"url": "img1", "duration": 5},
+                    {"url": "img2", "duration": 5}
+                ] 
+            }
+        }
+    },
+    "category_product": {
+    }
+}
