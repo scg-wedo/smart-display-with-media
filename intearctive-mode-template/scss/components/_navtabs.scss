@@ -1,0 +1,40 @@
+.tab-smartdisplay{
+    background: linear-gradient(195.17deg, #A6A6A6 2.43%, #E1E1E1 89.2%);
+   
+    @include xycenter();
+    a{
+     
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        color: $dark-grey;
+        border-radius: 0 !important;
+        &.active{
+            background: linear-gradient(180deg, #EC1C24 0%, #D0121A 100%);;
+        }
+    }
+    .nav-tabs{
+        display: flex;
+        flex-flow: row;
+        height: auto;
+        border:none;
+        flex: 100%;
+        button{
+            border: none;
+            width: 100%;
+            font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        color: $dark-grey;
+        &.nav-link{
+            height: 7rem;
+            &.active{
+                background: $red-new;
+                color: $white;
+
+            }
+        }
+        }
+
+    }
+}

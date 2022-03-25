@@ -106,6 +106,10 @@
                 font-weight: 700;
                 color:$red-new;
             }
+            em{
+                @include scgbold();
+                font-style: normal;
+            }
         }
         figure{
             max-width: 330px;
