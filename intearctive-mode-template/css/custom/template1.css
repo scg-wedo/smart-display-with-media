@@ -30,6 +30,13 @@
     background-color: white;
 }
 
+.template1-video-panel{
+    width: 100%;
+    height: 1150px;
+    background-color: white;
+}
+
+
 .btn-template1 {
     width: 494px;
     height: 90px;
@@ -83,7 +90,9 @@
 
 }
 
-.template1-body-custom {}
+.template1-body-custom {
+    
+}
 
 
 .template1-footer {
