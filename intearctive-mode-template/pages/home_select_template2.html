@@ -98,29 +98,26 @@
     $(document).ready(function () {
         $.getJSON('../configs.json', function (jd) {
 
-            var videos = jd.page.home_selected.front.videos;
+            const play = (video_url, vid_duration) =>
+                new Promise(resolve =>
+                setTimeout(() => resolve(video_url), vid_duration*1000)
+            );
+                
+            const playAllVideo = async () => {
+                for (var i=0; i<jd.page.home_selected.front.videos.length; i++) {
+                $('#video-banner source').attr('src', jd.page.home_selected.front.videos[i].url)
+                $("#video-banner")[0].load();
+                $("#video-banner")[0].play();
+                console.log('play video')
+                const video_url = await play(jd.page.home_selected.front.videos[i].url, jd.page.home_selected.front.videos[i].duration);
+                console.log(`video  ${video_url} were played`);
 
-            $('#video-banner source').attr('src', videos[0].url)
-            $("#video-banner")[0].load();
-
-            var i = 1;
-            function myLoop() {
-                setTimeout(function () {
-                    $('#video-banner source').attr('src', videos[i].url)
-                    $("#video-banner")[0].load();
-                    i++;
-                    if (i < videos.length) {
-                        myLoop();
-                    }
-                    else {
-                        // IF Fisnish video array loop
-                        i = 0;
-                        myLoop();
-                        // window.location.href = "home_select_template1.html";
-                    }
-                }, videos[i].duration * 1000)
-            }
-            myLoop();
+                }
+                console.log('All videos were played');
+                $("#video-banner")[0].pause();
+                window.location.href = 'home_select_template1.html'
+            };
+            playAllVideo()
 
         }).fail(function () {
             console.log('fail')
