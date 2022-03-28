@@ -1,9 +1,9 @@
 .puchase-options{
     div{
-        border: 2px solid $light-grey-4;
+        border: 2px solid $gold;
         background: $white;
-        width: 16rem;
-        height: 19rem;
+        width: 13rem;
+        height: 15.5rem;
         @include border-radius(.6rem);
         box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12);
         margin-right: 1.6rem;
@@ -44,6 +44,22 @@
                 width: 100%;
             }
         }
+    }
+}
+.map-section{
+    @include xycenter();
+    @include border-radius(.6rem);
+    justify-content: space-between;
+    border: .2rem solid $light-grey-4;
+    max-width: 44.2rem;
+    padding: .5rem 3rem;
+    margin-top: 12rem;
+
+    p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $dark-grey;
     }
 }
 .product-details{
@@ -100,7 +116,7 @@
         margin: 4.4rem 0;
         li{
             font-style: normal;
-            font-weight: 400;
+            font-weight: 100;
             font-size: 15px;
             line-height: 25px;
             color: $dark-grey;
