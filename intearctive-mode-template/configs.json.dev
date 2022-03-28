@@ -56,5 +56,26 @@
         }
     },
     "category_product": {
+    },
+    "pdp":{
+    "sku": "8857126925012",
+    "brand": "Bewell",
+    "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+    "price": 1490,
+    "sale-price": 1490,
+    "description": [
+        "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
+        "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
+        "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
+    ],
+    "images-videos": [
+        "link-to-video",
+        "link-to-image"
+    ],
+    "qr-images": [
+        "link-to-quotation",
+        "link-to-consult",
+        "link-to-buy-online"
+    ]
     }
 }

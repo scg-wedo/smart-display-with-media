@@ -47,31 +47,26 @@
 
                 </div>
                 <div class="carousel-inner">
-                
                   <div class="carousel-item active" data-bs-interval="10000">
                     <img src="../images/productimg.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                    
                     </div>
                   </div>
                   <div class="carousel-item " data-bs-interval="5000">
                     <div class="embed-responsive embed-responsive-16by9">
                       <iframe width="337" height="337" src="https://www.youtube.com/embed/tgbNymZ7vqY?start=16&amp;autoplay=1&mute=1">
                       </iframe>                                    </div>
-                    <div class="carousel-caption d-none d-md-block">
-                    
+                    <div class="carousel-caption d-none d-md-block">                    
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
                     <img src="../images/productimg.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      
+                    <div class="carousel-caption d-none d-md-block">                     
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="../images/productimg.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                    
+                    <div class="carousel-caption d-none d-md-block">                   
                     </div>
                   </div>
                 </div>
@@ -85,11 +80,10 @@
               "/></figure></div>
             </div>
             <div class="col-6 product-details">
-              <h6>รหัสสินค้า 8857126925012</h6>
-              <h2>Bewell เบาะรองหลัง Ergo-Cushion
-                Serie Back EC-01 (Cooling Cotton)</h2>
-                <label>Bewel</label>
-                <p><span>ราคา</span>1,490 บาท <a href="#">สินค้าจัดส่งที่บ้าน</a></p>
+              <h6 id="skuid"></h6>
+              <h2 id="productname"></h2>
+                <label id="brandid"></label>
+                <p><span>ราคา</span><strong id="price"> </strong> <a href="#">สินค้าจัดส่งที่บ้าน</a></p>
                 <ul><li>สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้า</li>
                 <li>กับสรีระของแผ่นหลังเรา ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%</li>
                 <li>ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น</li></ul>
@@ -147,5 +141,45 @@
   </footer>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
+<script>
+ $(document).ready(function(){
+  $.getJSON('../configs.json', function (jd) {
+  
+    console.log(jd);
+  }).fail(function( jqxhr, textStatus, error ) {
+    var jd={
+      "pdp":{
+    "sku": "8857126925012",
+    "brand": "Bewell",
+    "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+    "price": 1490,
+    "sale-price": 1490,
+    "description": [
+        "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
+        "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
+        "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
+    ],
+    "images-videos": [
+        "link-to-video",
+        "link-to-image"
+    ],
+    "qr-images": [
+        "link-to-quotation",
+        "link-to-consult",
+        "link-to-buy-online"
+    ]
+    }}
+    console.log(jd);
+    $("#skuid").text("รหัสสินค้า " + jd.pdp.sku);
+    $("#brandid").text(jd.pdp.brand);
+    $("#productname").text(jd.pdp.name);
+    $("#price").text(jd.pdp.price + " บาท");
+    $("#sale-price").text(jd.pdp.saleprice);
+    $("#desc").text(jd.pdp.description);
+});
+
+
+  });
+</script>
 
 </html>
