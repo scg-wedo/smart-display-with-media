@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title>
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../css/custom/global_custom.css" />
+    <link rel="stylesheet" href="../css/custom/template2.css" />
+    <link rel="stylesheet" href="../css/custom/content_template2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body style="width: 1080px; height: 1920px;">
+    <!-- Header -->
+    <header class="site-header w-100 header-vb plain">
+        <div class="top-panel">
+            <h4>คุณอยู่ที่</h4>
+            <h3>Ceiling & wall</h3>
+        </div>
+
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content w-100 mt-0 interactive-mode2"
+        style="background: url(/intearctive-mode-template/images/bg-main.png)">
+        <!-- Quote -->
+        <div class="quote-section  strip1" style="background: transparent;">
+            <p><em>“</em>
+                <span>สัมผัสหน้าจอ</span> เพื่อเลือก <br>
+                ดูสินค้าที่สนใจได้เลยค่ะ
+                <em>”</em>
+            </p>
+            <figure>
+                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" />
+            </figure>
+        </div>
+
+        <!-- Content -->
+        <div class="template2-group-content-panel position-relative ">
+            <nav class="tab-smartdisplay">
+                <div class="nav nav-tabs" id="main-nav-tab" role="tablist">
+                    <!-- <button class="nav-link " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false">Home Selected<br>สินค้าตกแต่งบ้าน</button>
+                  <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="true">Ceiling and Wall<br>พนังและกำแพง</button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Roof<br>กลุ่มสินค้าและบริการหลังคา</button> -->
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <!-- <div class="tab-pane fade " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">1</div>
+                <div class="tab-pane fade show active" id="nav-profile" role="tabpanel"
+                    aria-labelledby="nav-profile-tab">
+                    <div class="data-ceilingnwall">
+                        <div class="top-section">
+                            <nav class="easy-navigation" id="sub-nav-tab">
+                            </nav>
+                            <figure>
+                                <img src="../images/dummy-rm.jpg" />
+                            </figure>
+                        </div>
+                        <div class="banner-section">
+                            Banner By categories #1
+                        </div>
+                        <div class="productlist-wrapper" style="height:690px" id="productlist-wrapper">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">3</div> -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="template2-footer">
+            <div class="footer-right">
+                <div class="footer-right-content d-flex flex-column">
+                    <div class="group-qr-code-footer">
+                        <div class="qr-box-footer shadow">
+                            <p> <img src="../images/fb-logo.png" alt=""> Facebook </p> <img src="../images/qrcode.png"
+                                alt="">
+                        </div>
+                        <div class="qr-box-footer shadow">
+                            <p> <img src="../images/ig-logo.png" alt=""> Instragram </p> <img src="../images/qrcode.png"
+                                alt="">
+                        </div>
+                        <div class="qr-box-footer shadow">
+                            <p> <img src="../images/yt-logo.png" alt=""> Youtube </p> <img src="../images/qrcode.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="footer-text-right mt-5">
+                        <h1> รับข่าวสารและโปรโมชั่นก่อนใคร </h1>
+                        <h1>ผ่านช่องทาง Social Media <h1 class="text-footer-highlight"> SCGHOMEExperience </h1>
+                            <!-- </> -->
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-left"> <img class="logo-scg-exp" src="../images/logo-scgexperience.png" alt=""> </div>
+        </div>
+    </main>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $.getJSON('../configs.json', function (jd) {
+            let count = 0;
+            for (const [main_menu, main_menu_obj] of Object.entries(jd.category_product)) {
+
+                console.log("main_menu => ", main_menu)
+                let main_nav_id = `${main_menu}-nav`
+                let main_menu_content = `${main_menu}-content`
+                let productlist_wrapper = `productlist-wrapper-${main_menu}`
+                $('#main-nav-tab').append(`<button class="nav-link" id="${main_nav_id}" data-bs-toggle="tab" data-bs-target="#${main_menu}-content" type="button" role="tab" aria-controls="${main_menu}-content" aria-selected="false">${main_menu_obj.name_en}<br>${main_menu_obj.name_th}</button>`)
+                $('#nav-tabContent').append(
+                    `
+                    <div class="tab-pane fade show" id="${main_menu_content}" role="tabpanel"
+                        aria-labelledby="${main_menu_content}">
+                        <div class="data-ceilingnwall">
+                            <div class="top-section">
+                                <nav class="easy-navigation" id="sub-nav-tab">
+                                    <button class="btn btn-square whitebg"> <i class=""></i>Test<br>Test</button>
+                                </nav>
+                                <figure>
+                                    <img src="../images/dummy-rm.jpg" />
+                                </figure>
+                            </div>
+                            <div class="banner-section">
+                                Banner By categories #1
+                            </div>
+                            <div class="productlist-wrapper" style="height:690px" id="productlist-wrapper-${main_menu}">
+                            </div>
+                        </div>
+                    </div>
+                `
+                )
+
+                if (count == 0) {
+                    $(`#${main_nav_id}`).addClass('active');
+                    $(`#${main_nav_id}`).attr('aria-selected', true)
+                    $(`#${main_menu_content}`).addClass('active');
+                }
+
+                for (const [sub_category, sub_category_obj] of Object.entries(main_menu_obj.sub_category_product)) {
+
+                    // $(this).find('#sub-nav-tab').append(`<button class="btn btn-square whitebg"> <i class="${sub_category_obj.icon}"></i>${sub_category_obj.name_en}<br>${sub_category_obj.name_th}</button>`)
+                    console.log(sub_category)
+                    console.log(sub_category_obj)
+
+
+                    for (var i = 0; i < sub_category_obj.products.length; i++) {
+                        console.log(sub_category_obj.products[i])
+                        console.log(sub_category_obj.products[i].image_product)
+                        const card = `
+                            <div class="items">
+                                <div class="product-card">
+                                    <figure>
+                                        <img src="../images/${sub_category_obj.products[i].image_product}" alt="productimage" class="img-fluid"/>
+                                    </figure>
+                                    <label>
+                                        เอสซีจี ซี-ชาแนล <br> (SCG C-CHANNEL)
+                                    </label>
+                                </div>
+                            </div>
+                            `
+                            $(`#${productlist_wrapper}`).append(card)
+                    }
+
+                }
+                count++;
+            }
+
+        }).fail(function () {
+            console.log('fail')
+        });
+    });
+</script>
+
+</html>
