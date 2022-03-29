@@ -3,79 +3,235 @@
         "home_selected": {
             "front": {
                 "videos": [
-                    {"url": "../video/พยายาม cover - SD 480p.mp4", "duration": 10},
-                    {"url": "link2", "duration": 10}
+                    {"url": "../videos/rap_god.mp4", "duration": 5},
+                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10}
                 ]
             },
             "promotion": {
                 "videos": [
-                    {"url": "link1", "duration": 10},
-                    {"url": "link2", "duration": 10}
+                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10},
+                    {"url": "../videos/rap_god.mp4", "duration": 5}
                 ],
                 "banner": [
-                    {"url": "img1", "duration": 5},
-                    {"url": "img2", "duration": 5}
+                    {"url": "../images/bg-header-red.jpg", "duration": 5},
+                    {"url": "../images/bg-header-red.png", "duration": 5}
                 ] 
             }
         },
         "ceiling_and_wall": {
             "front": {
                 "videos": [
-                    {"url": "../video/พยายาม cover - SD 480p.mp4", "duration": 10},
-                    {"url": "link2", "duration": 10}
+                    {"url": "../videos/rap_god.mp4", "duration": 5},
+                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10}
                 ]
             },
             "promotion": {
                 "videos": [
-                    {"url": "link1", "duration": 10},
-                    {"url": "link2", "duration": 10}
+                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10},
+                    {"url": "../videos/rap_god.mp4", "duration": 10}
                 ],
                 "banner": [
-                    {"url": "img1", "duration": 5},
-                    {"url": "img2", "duration": 5}
+                    {"url": "../images/bg-header-red.jpg", "duration": 5},
+                    {"url": "../images/bg_menuview.png", "duration": 5}
                 ] 
             }
         },
         "roof": {
             "front": {
                 "videos": [
-                    {"url": "../video/พยายาม cover - SD 480p.mp4", "duration": 10},
-                    {"url": "link2", "duration": 10}
+                    {"url": "../videos/rap_god.mp4", "duration": 5},
+                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10}
                 ]
             },
             "promotion": {
                 "videos": [
-                    {"url": "link1", "duration": 10},
-                    {"url": "link2", "duration": 10}
+                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10},
+                    {"url": "../videos/rap_god.mp4", "duration": 10}
                 ],
                 "banner": [
-                    {"url": "img1", "duration": 5},
-                    {"url": "img2", "duration": 5}
+                    {"url": "../images/bg-header-red.png", "duration": 5},
+                    {"url": "../images/bg_menuview.png", "duration": 5}
                 ] 
             }
         }
     },
+
+
     "category_product": {
-    },
-    "pdp":{
-    "sku": "8857126925012",
-    "brand": "Bewell",
-    "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
-    "price": 1490,
-    "sale-price": 1490,
-    "description": [
-        "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
-        "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
-        "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
-    ],
-    "images-videos": [
-        "link-to-video",
-        "link-to-image"
-    ],
-    "qr-images": [
-        "link-to-quotation",
-        "link-to-consult",
-        "link-to-buy-online"
-    ]
+        "home_selected": {
+            "name_en": "Home Selected",
+            "name_th": "สินค้าตกแต่งบ้าน",
+            "icon": "",
+            "map_location": "",
+            "products": [
+                {
+                    "sku": "8857126925012",
+                    "brand": "Bewell",
+                    "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+                    "price": 120,
+                    "sale_price": 120,
+                    "description": [
+                        "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
+                        "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
+                        "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
+                    ],
+                    "image_product": "../images/productcard1.png",
+                    "images_videos": [
+                        "link-to-video",
+                        "link-to-image"
+                    ]
+                },
+                {
+                    "sku": "8857126925012",
+                    "brand": "Bewell",
+                    "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+                    "price": 120,
+                    "sale_price": 120,
+                    "description": [
+                        "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
+                        "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
+                        "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
+                    ],
+                    "image_product": "../images/productcard2.png",
+                    "images_videos": [
+                        "link-to-video",
+                        "link-to-image"
+                    ]
+                }
+            ],
+            "sub_category_product": {
+                "smart_gadget": {
+                    "name_en": "Smart Gadget",
+                    "name_th": "สินค้าตกแต่งบ้าน",
+                    "icon": "icon-tree",
+                    "products": [
+                    ]
+                },
+                "health_product": {
+                    "name_en": "",
+                    "name_th": "สินค้าเพื่อสุขภาพ",
+                    "icon": "hand-with-heart.png",
+                    "products": []
+                }
+            }
+        },
+        "ceiling_and_wall": {
+            "name_en": "Ceiling And Wall",
+            "name_th": "โซลูชั่นการตกแต่งภายนอก",
+            "icon": "",
+            "map_location": "",
+            "products": [],
+            "sub_category_product": {
+                "smart_gadget": {
+                    "name_en": "Smart Gadget",
+                    "name_th": "สินค้าตกแต่งบ้าน",
+                    "icon": "table-with-monitor.png",
+                    "products": [
+                        {
+                            "sku": "8857126925012",
+                            "brand": "Bewell",
+                            "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+                            "price": 1490,
+                            "sale_price": 1490,
+                            "description": [
+                                "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
+                                "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
+                                "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
+                            ],
+                            "image_product": "../images/productcard1.png",
+                            "images_videos": [
+                                "link-to-video",
+                                "link-to-image"
+                            ]
+                        }
+                        
+              
+                    ]
+                },
+                "health_product": {
+                    "name_en": "",
+                    "name_th": "สินค้าเพื่อสุขภาพ2",
+                    "icon": "hand-with-heart.png",
+                    "products": [
+                        {
+                            "sku": "8857126925012",
+                            "brand": "Bewell",
+                            "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+                            "price": 1490,
+                            "sale_price": 1490,
+                            "description": [
+                                "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
+                                "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
+                                "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
+                            ],
+                            "image_product": "../images/productcard2.png",
+                            "images_videos": [
+                                "link-to-video",
+                                "link-to-image"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "roof": {
+            "name_en": "ROOF",
+            "name_th": "รูฟ",
+            "icon": "",
+            "map_location": "",
+            "products": [],
+            "sub_category_product": {
+                "smart_gadget": {
+                    "name_en": "Smart Gadget",
+                    "name_th": "สินค้าตกแต่งบ้าน",
+                    "icon": "table-with-monitor.png",
+                    "products": [
+                        {
+                            "sku": "8857126925012",
+                            "brand": "Bewell",
+                            "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+                            "price": 1490,
+                            "sale_price": 1490,
+                            "description": [
+                                "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
+                                "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
+                                "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
+                            ],
+                            "image_product": "../images/productcard1.png",
+                            "images_videos": [
+                                "link-to-video",
+                                "link-to-image"
+                            ]
+                        }
+                        
+              
+                    ]
+                },
+                "health_product": {
+                    "name_en": "",
+                    "name_th": "สินค้าเพื่อสุขภาพ2",
+                    "icon": "hand-with-heart.png",
+                    "products": [
+                        {
+                            "sku": "8857126925012",
+                            "brand": "Bewell",
+                            "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+                            "price": 1490,
+                            "sale_price": 1490,
+                            "description": [
+                                "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
+                                "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
+                                "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
+                            ],
+                            "image_product": "../images/productcard2.png",
+                            "images_videos": [
+                                "link-to-video",
+                                "link-to-image"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
     }
 }
