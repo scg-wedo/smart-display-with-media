@@ -153,6 +153,10 @@
 
 }
 
+.qr-box-footer img:nth-child(2){
+    width: 86px;
+    height: 78px;
+}
 .qr-box-footer p {
     padding-top: 10px;
     font-weight: 700;

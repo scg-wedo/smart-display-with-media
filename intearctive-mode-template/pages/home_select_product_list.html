@@ -18,7 +18,7 @@
     <header class="site-header w-100 header-vb plain">
         <div class="top-panel">
             <h4>คุณอยู่ที่</h4>
-            <h3>Ceiling & wall</h3>
+            <h3>Home Selected</h3>
         </div>
 
     </header>
@@ -41,30 +41,10 @@
         <!-- Content -->
         <div class="template2-group-content-panel position-relative ">
 
-            <div class="data-ceilingnwall" style="height:950px; background: #F3F3F3; box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12); border-radius: 6px;">
-                <div class="top-section">
-                    <!-- <nav class="easy-navigation"> -->
-
-                        <ul class="nav nav-pills mb-3 " id="nav-tabs" role="tablist">
-                            <!-- ใส่ button nav จ่าก js/jquery -->
-                            <!-- <button class="nav-link active" id="nav-test1" data-bs-toggle="tab" data-bs-target="#test1"
-                                type="button" role="tab" aria-controls="test1"
-                                aria-selected="true">test1<br>พนังและกำแพง</button>
-                            <button class="nav-link" id="nav-test2" data-bs-toggle="tab" data-bs-target="#test2"
-                                type="button" role="tab" aria-controls="test2"
-                                aria-selected="false">test2<br>กลุ่มสินค้าและบริการหลังคา</button> -->
-                        </ul>
-                    <!-- </nav> -->
-                    <figure>
-                        <img src="../images/dummy-rm.jpg" />
-                    </figure>
-                </div>
-
-                <div class="banner-section">
-                    Banner By categories #1
-                </div>
-
+            <div class="data-ceilingnwall" style="height:950px; background: #F3F3F3; box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12); border-radius: 6px; over-flowy:scroll; over-flowx:hidden;">
                 <div class="tab-content" style="height:690px;" id="productlist-container">
+                    <div class="productlist-wrapper" id="products-content" >
+                    </div>
                     <!--  ใส่ content จาก js/jquery -->
                     <!-- <div id="test1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-test1">
                         <div class="productlist-wrapper" >
@@ -153,63 +133,24 @@
     $(document).ready(function () {
         $.getJSON('../configs.json', function (jd) {
             let count = 0;
-            for (const [main_menu, main_menu_obj] of Object.entries(jd.category_product.ceiling_and_wall.sub_category_product)) {
-
-                console.log(`รอบที่ ${count} ${main_menu}`)
-                
-                let nav_id = `nav_${main_menu}`  // ex. nav_smart_gadget
-                let content_id = main_menu
-
-                // สร้าง nav tabs
-                $('#nav-tabs').append(`
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link  btn-nav-custom" id="${nav_id}" data-bs-toggle="tab" data-bs-target="#${content_id}"
-                                type="button" role="tab" aria-controls="${content_id}"
-                                aria-selected="false">${main_menu_obj.name_th} <img src="../images/house-logo.png"/> </button>
-                    </li>
-                `)
-
-                $(`#${nav_id}`).click(function(){
-                    $(`#${nav_id} img`).attr('src', '')
-                })
-
-                // สร้างโครงสำหรับใส่ content แต่ละ id                
-                // let content_id = `content_${main_menu}`
-                $('#productlist-container').append(`
-                    <div id="${content_id}" class="tab-pane fade show" role="tabpanel" aria-labelledby="${nav_id}">
-                        <div class="productlist-wrapper">
+            jd.category_product.home_selected.products.forEach(product => {
+                $(`#products-content`).append(`
+                    <div class="items" id ='${product.sku}'>
+                        <div class="product-card">
+                            <figure>
+                                <img src="${product.image_product}" alt="productimage" class="img-fluid" />
+                            </figure>
+                            <label>
+                                ไลท์วูด<br> (Litewood by Fameline)
+                            </label>
                         </div>
-                    </div>   
+                    </div>
+
                 `)
+            
+            })
 
-                if (count==0){
-                    console.log('add active class')
-                  $(`#${nav_id}`).addClass('active')  
-                  $(`#${content_id}`).addClass('active')  
-                  $(`#${nav_id}`).attr('aria-selected', true)  
-                }
-
-                
-
-                main_menu_obj.products.forEach(product => {
-                    $(`#${content_id} div.productlist-wrapper`).append(`
-                        <div class="items">
-                            <div class="product-card">
-                                <figure>
-                                    <img src="${product.image_product}" alt="productimage" class="img-fluid" />
-                                </figure>
-                                <label>
-                                    ไลท์วูด<br> (Litewood by Fameline)
-                                </label>
-                            </div>
-                        </div>
-
-                    `)
-                }); 
-                    
-                count++;
-            }
-
+   
         }).fail(function () {
             console.log('fail')
         });

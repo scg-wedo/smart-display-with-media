@@ -76,6 +76,11 @@
     margin-left: auto;
 }
 
+.qr-box-footer img:nth-child(2){
+    width: 86px;
+    height: 78px;
+}
+
 .qr-box-footer {
     background-color: white;
     width: 100px;
@@ -84,7 +89,6 @@
     text-align: center;
     display: inline-block;
     border-radius: 6px;
-
 }
 
 .qr-box-footer p {
