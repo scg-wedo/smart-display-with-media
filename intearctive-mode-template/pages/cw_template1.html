@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,66 +11,85 @@
   <link rel="stylesheet" href="../css/custom/template1.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
 <body style="width: 1080px; height: 1920px;">
   <main class="main-content w-100 interactive-mode template1-body-custom main-sizing">
     <div class="top-panel-custom2 d-flex justify-content-center align-items-center">
       <div class="position-absolute">
-        <div class = 'd-flex justify-content-center'><h4>กลุ่มสินค้า</h4> <h3>CEILING & WALL</h3></div>
-        <div class = 'd-flex justify-content-center pt-4'> <p>ดูแลครบ จบทุกการออกแบบบ้านและอาคาร </p></div>\
+        <div class='d-flex justify-content-center'>
+          <h4>กลุ่มสินค้า</h4>
+          <h3>CEILING & WALL</h3>
+        </div>
+        <div class='d-flex justify-content-center pt-4'>
+          <p>ดูแลครบ จบทุกการออกแบบบ้านและอาคาร </p>
+        </div>\
       </div>
 
     </div>
     <div class="template1-content-panel position-relative ">
-            <div id="home-select-video-panel" class="template1-video-panel">
-              <video width="100%" height="100%" autoplay>
-                <source src="" type="video/mp4">
-                <!-- <source src="movie.ogg" type="video/ogg"> -->
-              Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="d-flex align-items-center justify-content-center pt-5"> 
-                <button type="button" class="btn btn-secondary btn-template1 d-flex align-items-center justify-content-center">
-                    <h1> แตะเพื่อ <img src="../images/touch_app.png" alt=""> ดูรายการสินค้า </h1>
-                </button>  
-            </div>
-            
+      <div id="home-select-video-panel" class="template1-video-panel">
+        <video width="100%" height="100%" autoplay muted>
+          <source src="" type="video/mp4">
+          <!-- <source src="movie.ogg" type="video/ogg"> -->
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="d-flex align-items-center justify-content-center pt-5">
+        <button type="button" class="btn btn-secondary btn-template1 d-flex align-items-center justify-content-center"
+          id="btn-product-list">
+          <h1> แตะเพื่อ <img src="../images/touch_app.png" alt=""> ดูรายการสินค้า </h1>
+        </button>
+      </div>
+
     </div>
 
     <div class="template1-footer">
-        <div class="footer-right"> 
-            <div class="footer-right-content d-flex flex-column">
-                <div class="group-qr-code-footer">
-                    <div class="qr-box-footer shadow"> <p> <img src="../images/fb-logo.png" alt=""> Facebook </p> <img src="../images/qrcode.png" alt=""> </div>
-                    <div class="qr-box-footer shadow"> <p> <img src="../images/ig-logo.png" alt=""> Instragram </p> <img src="../images/qrcode.png" alt=""> </div>
-                    <div class="qr-box-footer shadow"> <p> <img src="../images/yt-logo.png" alt=""> Youtube </p> <img src="../images/qrcode.png" alt=""> </div>
-                </div>
-                <div class="footer-text-right mt-5">
-                    <h1> รับข่าวสารและโปรโมชั่นก่อนใคร </h1>
-                    <h1>ผ่านช่องทาง Social Media <h1 class="text-footer-highlight"> SCGHOMEExperience </h1> </>
-                    
-                </div>
-
+      <div class="footer-right">
+        <div class="footer-right-content d-flex flex-column">
+          <div class="group-qr-code-footer">
+            <div class="qr-box-footer shadow">
+              <p> <img src="../images/fb-logo.png" alt=""> Facebook </p> <img src="../images/qrcode.png" alt="">
             </div>
-        </div>
+            <div class="qr-box-footer shadow">
+              <p> <img src="../images/ig-logo.png" alt=""> Instragram </p> <img src="../images/qrcode.png" alt="">
+            </div>
+            <div class="qr-box-footer shadow">
+              <p> <img src="../images/yt-logo.png" alt=""> Youtube </p> <img src="../images/qrcode.png" alt="">
+            </div>
+          </div>
+          <div class="footer-text-right mt-5">
+            <h1> รับข่าวสารและโปรโมชั่นก่อนใคร </h1>
+            <h1>ผ่านช่องทาง Social Media <h1 class="text-footer-highlight"> SCGHOMEExperience </h1>
+              </>
 
-        <div class="footer-left"> <img class="logo-scg-exp" src="../images/logo-scgexperience.png" alt=""> </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-left"> <img class="logo-scg-exp" src="../images/logo-scgexperience.png" alt=""> </div>
     </div>
-  
-    
+
+
   </main>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 <script>
-  $(document).ready(function(){
-    $.getJSON('../configs.json', function(jd) {
-      
+  $(document).ready(function () {
+
+    $(`#btn-product-list`).click(() => {
+      window.location.href = 'cw_product_list.html'
+    })
+
+    $.getJSON('../configs.json', function (jd) {
+
       const play = (video_url, vid_duration) =>
         new Promise(resolve =>
-          setTimeout(() => resolve(video_url), vid_duration*1000)
-      );
-        
+          setTimeout(() => resolve(video_url), vid_duration * 1000)
+        );
+
       const playAllVideo = async () => {
-        for (var i=0; i<jd.page.ceiling_and_wall.front.videos.length; i++) {
+        for (var i = 0; i < jd.page.ceiling_and_wall.front.videos.length; i++) {
           $('#home-select-video-panel source').attr('src', jd.page.ceiling_and_wall.front.videos[i].url)
           $("#home-select-video-panel video")[0].load();
           $("#home-select-video-panel video")[0].play();
@@ -84,10 +104,11 @@
       };
       playAllVideo()
 
-    }).fail(function(){
+    }).fail(function () {
       console.log('fail')
     });
-  // alert('hi')
-});
+    // alert('hi')
+  });
 </script>
+
 </html>

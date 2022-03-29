@@ -48,13 +48,14 @@
                         </video>
                     </div>
                     <div class="second-content">
-                        <h3>Promotion</h3>
+                        <img src="" id="promotion-banner" style="width: 100%; height: 100%;">
                     </div>
                 </div>
             </div>
             <div class="d-flex align-items-center justify-content-center pt-5">
                 <button type="button"
-                    class="btn btn-secondary btn-template2 d-flex align-items-center justify-content-center">
+                    class="btn btn-secondary btn-template2 d-flex align-items-center justify-content-center"
+                    id="btn-product-list">
                     <h1> แตะเพื่อ <img src="../images/cursor-point-icon-white.png" alt=""> ดูรายการสินค้า </h1>
                 </button>
             </div>
@@ -96,28 +97,48 @@
 
 <script>
     $(document).ready(function () {
+
+        $(`#btn-product-list`).click(() => {
+            window.location.href = 'cw_product_list.html'
+        })
+
         $.getJSON('../configs.json', function (jd) {
 
             const play = (video_url, vid_duration) =>
                 new Promise(resolve =>
-                setTimeout(() => resolve(video_url), vid_duration*1000)
-            );
-                
+                    setTimeout(() => resolve(video_url), vid_duration * 1000)
+                );
+
             const playAllVideo = async () => {
-                for (var i=0; i<jd.page.roof.front.videos.length; i++) {
-                $('#video-banner source').attr('src', jd.page.roof.front.videos[i].url)
-                $("#video-banner")[0].load();
-                $("#video-banner")[0].play();
-                console.log('play video')
-                const video_url = await play(jd.page.roof.front.videos[i].url, jd.page.roof.front.videos[i].duration);
-                console.log(`video  ${video_url} were played`);
+                for (var i = 0; i < jd.page.roof.front.videos.length; i++) {
+                    $('#video-banner source').attr('src', jd.page.roof.front.videos[i].url)
+                    $("#video-banner")[0].load();
+                    $("#video-banner")[0].play();
+                    console.log('play video')
+                    const video_url = await play(jd.page.roof.front.videos[i].url, jd.page.roof.front.videos[i].duration);
+                    console.log(`video  ${video_url} were played`);
 
                 }
                 console.log('All videos were played');
                 $("#video-banner")[0].pause();
                 window.location.href = 'roof_template1.html'
             };
+
+            const playAllBanner = async () => {
+                for (var i = 0; i < jd.page.roof.promotion.banner.length; i++) {
+                    console.log("test =>", jd.page.roof.promotion.banner[i].url)
+                    $('#promotion-banner').attr('src', jd.page.roof.promotion.banner[i].url)
+                    console.log('play banner')
+                    const banner_url = await play(jd.page.roof.promotion.banner[i].url, jd.page.roof.promotion.banner[i].duration);
+                    console.log(`banner  ${banner_url} was played`);
+
+                }
+                playAllBanner()
+                console.log('All banner were played');
+            };
+
             playAllVideo()
+            playAllBanner()
 
         }).fail(function () {
             console.log('fail')

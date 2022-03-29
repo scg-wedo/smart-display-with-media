@@ -40,21 +40,19 @@
 
         <!-- Content -->
         <div class="template2-group-content-panel position-relative ">
-            <div id="video-panel" class="template2-content-panel">
-                <div class="content-sectiion-temp-2">
-                    <div class="fist-content">
+            <div id="video-panel" class="template2-content-panel" style="height: 600px;">
+                <div class="content-sectiion-temp-2" style="height: 100%;">
+                    <div class="fist-content" style="height: 100%;">
                         <video autoplay muted loop playsinline preload="metadata" id="video-banner">
                             <source src="" type="video/mp4">
                         </video>
-                    </div>
-                    <div class="second-content">
-                        <h3>Promotion</h3>
                     </div>
                 </div>
             </div>
             <div class="d-flex align-items-center justify-content-center pt-5">
                 <button type="button"
-                    class="btn btn-secondary btn-template2 d-flex align-items-center justify-content-center">
+                    class="btn btn-secondary btn-template2 d-flex align-items-center justify-content-center"
+                    id="btn-product-list">
                     <h1> แตะเพื่อ <img src="../images/cursor-point-icon-white.png" alt=""> ดูรายการสินค้า </h1>
                 </button>
             </div>
@@ -96,21 +94,26 @@
 
 <script>
     $(document).ready(function () {
+
+        $(`#btn-product-list`).click(() => {
+            window.location.href = 'cw_product_list.html'
+        })
+
         $.getJSON('../configs.json', function (jd) {
 
             const play = (video_url, vid_duration) =>
                 new Promise(resolve =>
-                setTimeout(() => resolve(video_url), vid_duration*1000)
-            );
-                
+                    setTimeout(() => resolve(video_url), vid_duration * 1000)
+                );
+
             const playAllVideo = async () => {
-                for (var i=0; i<jd.page.home_selected.front.videos.length; i++) {
-                $('#video-banner source').attr('src', jd.page.home_selected.front.videos[i].url)
-                $("#video-banner")[0].load();
-                $("#video-banner")[0].play();
-                console.log('play video')
-                const video_url = await play(jd.page.home_selected.front.videos[i].url, jd.page.home_selected.front.videos[i].duration);
-                console.log(`video  ${video_url} were played`);
+                for (var i = 0; i < jd.page.home_selected.front.videos.length; i++) {
+                    $('#video-banner source').attr('src', jd.page.home_selected.front.videos[i].url)
+                    $("#video-banner")[0].load();
+                    $("#video-banner")[0].play();
+                    console.log('play video')
+                    const video_url = await play(jd.page.home_selected.front.videos[i].url, jd.page.home_selected.front.videos[i].duration);
+                    console.log(`video  ${video_url} were played`);
 
                 }
                 console.log('All videos were played');
