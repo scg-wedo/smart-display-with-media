@@ -9,12 +9,12 @@
             },
             "promotion": {
                 "videos": [
-                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10},
-                    {"url": "../videos/rap_god.mp4", "duration": 5}
+                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10, "pagelinked": "vr.html"},
+                    {"url": "../videos/rap_god.mp4", "duration": 5, "pagelinked": "home_select_product_list.html"}
                 ],
                 "banner": [
-                    {"url": "../images/bg-header-red.jpg", "duration": 5},
-                    {"url": "../images/bg-header-red.png", "duration": 5}
+                    {"url": "../images/bg-header-red.jpg", "duration": 5, "topic": "เตรียมพบกับ Flash Sale 13:00 - 15:00", "zone": "ชั้น 1 โซน Care Living Solution", "content": "สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว แก้ได้ด้วยการเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home Onlineยกสินค้าพร้อม"},
+                    {"url": "../images/bg-header-red.png", "duration": 5, "topic": "เตรียมพบกับ Flash Sale 13:00 - 15:00", "zone": "ชั้น 1 โซน Care Living Solution", "content": "สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว แก้ได้ด้วยการเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home Onlineยกสินค้าพร้อม"}
                 ] 
             }
         },
@@ -27,12 +27,12 @@
             },
             "promotion": {
                 "videos": [
-                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10},
-                    {"url": "../videos/rap_god.mp4", "duration": 10}
+                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10, "pagelinked": "vr.html"},
+                    {"url": "../videos/rap_god.mp4", "duration": 10, "pagelinked": "cw_product_list.html"}
                 ],
                 "banner": [
-                    {"url": "../images/bg-header-red.jpg", "duration": 5},
-                    {"url": "../images/bg_menuview.png", "duration": 5}
+                    {"url": "../images/bg-header-red.jpg", "duration": 5, "topic": "เตรียมพบกับ Flash Sale 13:00 - 15:00", "zone": "ชั้น 1 โซน Care Living Solution", "content": "สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว แก้ได้ด้วยการเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home Onlineยกสินค้าพร้อม"},
+                    {"url": "../images/bg_menuview.png", "duration": 5, "topic": "เตรียมพบกับ Flash Sale 13:00 - 15:00", "zone": "ชั้น 1 โซน Care Living Solution", "content": "สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว แก้ได้ด้วยการเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home Onlineยกสินค้าพร้อม"}
                 ] 
             }
         },
@@ -45,12 +45,12 @@
             },
             "promotion": {
                 "videos": [
-                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10},
-                    {"url": "../videos/rap_god.mp4", "duration": 10}
+                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10, "pagelinked": "vr.html"},
+                    {"url": "../videos/rap_god.mp4", "duration": 10, "pagelinked": "cw_product_list.html"}
                 ],
                 "banner": [
-                    {"url": "../images/bg-header-red.png", "duration": 5},
-                    {"url": "../images/bg_menuview.png", "duration": 5}
+                    {"url": "../images/bg-header-red.jpg", "duration": 5, "topic": "เตรียมพบกับ Flash Sale 13:00 - 15:00", "zone": "ชั้น 1 โซน Care Living Solution", "content": "สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว แก้ได้ด้วยการเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home Onlineยกสินค้าพร้อม"},
+                    {"url": "../images/bg_menuview.png", "duration": 5, "topic": "เตรียมพบกับ Flash Sale 13:00 - 15:00", "zone": "ชั้น 1 โซน Care Living Solution", "content": "สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว แก้ได้ด้วยการเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home Onlineยกสินค้าพร้อม"}
                 ] 
             }
         }
