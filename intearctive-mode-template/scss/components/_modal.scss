@@ -1,0 +1,43 @@
+.promotion-banner{
+    .modal-dialog{
+        max-width: 900px;
+        .modal-body{
+            padding: 0;
+            background: $off-white1;
+            .top-banner{
+                height: 26.2rem;
+                background: $lite-grey1;
+                @include xycenter();
+                color: $white;
+                font-size: 4.2rem;
+                font-weight: 100;
+            }
+            .data{
+                padding:2.4rem 4.2rem;
+                height: 32rem;
+                p{
+                    margin-top: 2.4rem;
+                    font-size: 15px;
+                    font-weight: 100;
+                }
+                h2{
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+                h6{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 17px;
+                    line-height: 20px;
+                    margin-top: 1.6rem;
+                }
+                .data-right{
+                    @include xycenter();
+                    justify-content: space-between;
+                    flex-flow: column;
+                }
+            }
+        }
+    }
+}
