@@ -22,6 +22,10 @@ a {
 }
 body{
   font-family: 'Prompt', sans-serif;
+  &.width-control{
+    width: 1080px;
+    height: 1920px;
+  }
   }
 .star{
   color: $primary;

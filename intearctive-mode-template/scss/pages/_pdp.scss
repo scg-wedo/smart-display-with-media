@@ -1,6 +1,6 @@
 .puchase-options{
-    div{
-        border: 2px solid $gold;
+    div.options{
+        border: 2px solid $light-grey-4;
         background: $white;
         width: 13rem;
         height: 15.5rem;
@@ -26,6 +26,60 @@
             line-height: 18px;
             text-align: center;
             color: $dark-grey;
+        }
+        i{
+            &.icon-bag{
+                font-size: 4.7rem;
+                margin-top: 1.5rem;
+            }
+        }
+        img{
+            max-width: 9rem;
+        }
+        &:hover{
+            border-color: $gold;
+        }     
+    }
+    .separator{
+        margin: 0rem 2.8rem 0rem 1.2rem;
+        @include xycenter();
+        position: relative;
+        overflow: hidden;
+        span{
+            font-weight: 100;
+            font-size: 15px;
+            line-height: 18px;
+            color: $dark-grey;
+            width: 4.2rem;
+            text-align: center;
+            background: $off-white;
+            z-index: 1;
+            padding: 2rem 0;
+
+        }
+        &::after{
+            content: " ";
+            display: block;
+            width: .1rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            height: 100%;
+        }
+    }
+    &.two{
+        max-width: 332px;
+        display: flex;
+        flex-wrap: wrap;
+        .options{
+            margin-bottom: 3.3rem;
+            margin-right: 3.2rem;
+            justify-content: space-evenly;
+            h6{
+                font-weight: 100;
+                &.bold{
+                    font-weight: bold;
+                }
+            }
         }
     }
 }
