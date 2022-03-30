@@ -50,9 +50,7 @@
                                 <div class="carousel-indicators">
                                     <div type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
                                         class="active" aria-current="true" aria-label="Slide 1"><img
-                                            src="../images/image 19.png" class="d-block img-fluid" alt="...">
-
-                                    </div>
+                                            src="../images/image 19.png" class="d-block img-fluid" alt="..."> </div>
                                     <div type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
                                         aria-label="Slide 2"> <img src="../images/thumb-video.png"
                                             class="d-block img-fluid" alt="..."></div>
@@ -98,17 +96,18 @@
 
                         </div>
                         <div class="col-6 product-details">
-                            <h6>รหัสสินค้า 8857126925012</h6>
-                            <h2>Bewell เบาะรองหลัง Ergo-Cushion
+                            <h6 id="skuid">รหัสสินค้า 8857126925012</h6>
+                            <h2 id="productname">Bewell เบาะรองหลัง Ergo-Cushion
                                 Serie Back EC-01 (Cooling Cotton)</h2>
-                            <label>Bewel</label>
-                            <p><span>ราคา</span>1,490 บาท <a href="#">สินค้าจัดส่งที่บ้าน</a></p>
-                            <ul>
-                                <li>สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้า</li>
-                                <li>กับสรีระของแผ่นหลังเรา ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%
+                            <label id="tagline">Bewel</label>
+                            <p id="price"><span>ราคา</span>1,490 บาท <a href="#" id="delivery_tag">สินค้าจัดส่งที่บ้าน</a></p>
+                            <ul style="list-style:none; margin-left:0px; padding-left: 0px;">
+                                
+                                <li id="desc">สายรัดกับเก้าอี้ให้ปรับระดับได้ <br>เพื่อปรับให้เข้า</li>
+                                <!-- <li>กับสรีระของแผ่นหลังเรา ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%
                                 </li>
                                 <li>ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย
-                                    พร้อมระบายอากาศได้ดียิ่งขึ้น</li>
+                                    พร้อมระบายอากาศได้ดียิ่งขึ้น</li> -->
                             </ul>
                             <div class="d-flex puchase-options">
                                 <div class="  puchase-option2 options buycashier" type="button">
@@ -124,7 +123,7 @@
                                     <h6>สแกน QR<br>
                                         ซื้อออนไลน์
                                     </h6>
-                                    <img src="../images/qrcode.png" alt="ซื้อออนไลน์ผ่าน
+                                    <img id="qrcode" src="../images/qrcode.png" alt="ซื้อออนไลน์ผ่าน
                         www.scghome.com" class="img-fluid" />
                                 </div>
 
@@ -188,39 +187,67 @@
 <script>
     $(document).ready(function () {
         $.getJSON('../configs.json', function (jd) {
-
-            console.log(jd);
-        }).fail(function (jqxhr, textStatus, error) {
-            var jd = {
-                "pdp": {
-                    "sku": "8857126925012",
-                    "brand": "Bewell",
-                    "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
-                    "price": 1490,
-                    "sale-price": 1490,
-                    "description": [
-                        "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
-                        "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
-                        "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
-                    ],
-                    "images-videos": [
-                        "link-to-video",
-                        "link-to-image"
-                    ],
-                    "qr-images": [
-                        "link-to-quotation",
-                        "link-to-consult",
-                        "link-to-buy-online"
-                    ]
+            var product_id = localStorage.getItem('id')
+            console.log(product_id)
+            if ( !(product_id == null || product_id=='') ){
+                
+                console.log('in conditions')
+                // for (const [main_menu, main_menu_obj] of Object.entries(jd.category_product.home_select.products)) {
+                //     console.log()
+                // }
+                var selected_product = jd.category_product.home_selected.products.filter(function (el) {
+                        return el.id==product_id
+                });
+                console.log(selected_product[0])
+                
+                selected_product[0].sku ? $("#skuid").text("รหัสสินค้า " + selected_product[0].sku || "") : $("#skuid").remove();
+                selected_product[0].tagline ? $("#tagline").text(selected_product[0].tagline || "") : $("#tagline").remove();
+                selected_product[0].name ? $("#productname").text(selected_product[0].name) : $("#productname");
+             
+                if (selected_product[0].delivery_tag){
+                    selected_product[0].price ? $("#price").html("<span>ราคา</span> "+selected_product[0].price + ` บาท <a id="delivery_tag" href="#">${selected_product[0].delivery_tag}</a>`) : $("#price").remove()
+                }else{
+                    selected_product[0].price ? $("#price").html("<span>ราคา</span> "+selected_product[0].price + 'บาท') : $("#price").remove()
                 }
+                selected_product[0].description ? $("#desc").html(selected_product[0].description) :  $("#desc").remove()
+                selected_product[0].qrcode[0].ซื้อออนไลน์ ?   $("#qrcode").attr('src',  selected_product[0].qrcode[0].ซื้อออนไลน์) : $("#qrcode").remove()
+
             }
-            console.log(jd);
-            $("#skuid").text("รหัสสินค้า " + jd.pdp.sku);
-            $("#brandid").text(jd.pdp.brand);
-            $("#productname").text(jd.pdp.name);
-            $("#price").text(jd.pdp.price + " บาท");
-            $("#sale-price").text(jd.pdp.saleprice);
-            $("#desc").text(jd.pdp.description);
+            
+
+            // console.log(jd);
+        }).fail(function (jqxhr, textStatus, error) {
+            // var jd = {
+            //     "pdp": {
+            //         "sku": "8857126925012",
+            //         "brand": "Bewell",
+            //         "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+            //         "price": 1490,
+            //         "sale-price": 1490,
+            //         "description": [
+            //             "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
+            //             "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
+            //             "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
+            //         ],
+            //         "images-videos": [
+            //             "link-to-video",
+            //             "link-to-image"
+            //         ],
+            //         "qr-images": [
+            //             "link-to-quotation",
+            //             "link-to-consult",
+            //             "link-to-buy-online"
+            //         ]
+            //     }
+            // }
+
+            // console.log(jd);
+            // $("#skuid").text("รหัสสินค้า " + jd.pdp.sku);
+            // $("#brandid").text(jd.pdp.brand);
+            // $("#productname").text(jd.pdp.name);
+            // $("#price").text(jd.pdp.price + " บาท");
+            // $("#sale-price").text(jd.pdp.saleprice);
+            // $("#desc").text(jd.pdp.description);
         });
 
 

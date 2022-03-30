@@ -3,54 +3,55 @@
         "home_selected": {
             "front": {
                 "videos": [
-                    {"url": "../videos/rap_god.mp4", "duration": 5},
-                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10}
+                    {"url": "../videos/พยายาม cover - SD 480p.mp4", "duration": 5},
+                    {"url": "../videos/เลือกได้ไหม cover.mp4", "duration": 15},
+                    {"url": "../videos/พยายาม cover - SD 480p.mp4", "duration": 2}
                 ]
             },
             "promotion": {
                 "videos": [
-                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10, "pagelinked": "vr.html"},
-                    {"url": "../videos/rap_god.mp4", "duration": 5, "pagelinked": "home_select_product_list.html"}
+                    {"url": "link1", "duration": 10},
+                    {"url": "link2", "duration": 10}
                 ],
                 "banner": [
-                    {"url": "../images/bg-header-red.jpg", "duration": 5, "topic": "เตรียมพบกับ Flash Sale 13:00 - 15:00", "zone": "ชั้น 1 โซน Care Living Solution", "content": "สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว แก้ได้ด้วยการเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home Onlineยกสินค้าพร้อม"},
-                    {"url": "../images/bg-header-red.png", "duration": 5, "topic": "เตรียมพบกับ Flash Sale 13:00 - 15:00", "zone": "ชั้น 1 โซน Care Living Solution", "content": "สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว แก้ได้ด้วยการเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home Onlineยกสินค้าพร้อม"}
+                    {"url": "img1", "duration": 5},
+                    {"url": "img2", "duration": 5}
                 ] 
             }
         },
         "ceiling_and_wall": {
             "front": {
                 "videos": [
-                    {"url": "../videos/rap_god.mp4", "duration": 5},
-                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10}
+                    {"url": "../videos/screen_test.mp4", "duration": 10}
+                    
                 ]
             },
             "promotion": {
                 "videos": [
-                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10, "pagelinked": "vr.html"},
-                    {"url": "../videos/rap_god.mp4", "duration": 10, "pagelinked": "cw_product_list.html"}
+                    {"url": "link1", "duration": 10},
+                    {"url": "link2", "duration": 10}
                 ],
                 "banner": [
-                    {"url": "../images/bg-header-red.jpg", "duration": 5, "topic": "เตรียมพบกับ Flash Sale 13:00 - 15:00", "zone": "ชั้น 1 โซน Care Living Solution", "content": "สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว แก้ได้ด้วยการเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home Onlineยกสินค้าพร้อม"},
-                    {"url": "../images/bg_menuview.png", "duration": 5, "topic": "เตรียมพบกับ Flash Sale 13:00 - 15:00", "zone": "ชั้น 1 โซน Care Living Solution", "content": "สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว แก้ได้ด้วยการเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home Onlineยกสินค้าพร้อม"}
+                    {"url": "img1", "duration": 5},
+                    {"url": "img2", "duration": 5}
                 ] 
             }
         },
         "roof": {
             "front": {
                 "videos": [
-                    {"url": "../videos/rap_god.mp4", "duration": 5},
-                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10}
+                    {"url": "../videos/พยายาม cover - SD 480p.mp4", "duration": 10},
+                    {"url": "link2", "duration": 10}
                 ]
             },
             "promotion": {
                 "videos": [
-                    {"url": "http://www.adrianparr.com/download/keyboard-video.mp4", "duration": 10, "pagelinked": "vr.html"},
-                    {"url": "../videos/rap_god.mp4", "duration": 10, "pagelinked": "cw_product_list.html"}
+                    {"url": "../videos/พยายาม cover - SD 480p.mp4", "duration": 10},
+                    {"url": "../videos/เลือกได้ไหม cover.mp4", "duration": 5}
                 ],
                 "banner": [
-                    {"url": "../images/bg-header-red.jpg", "duration": 5, "topic": "เตรียมพบกับ Flash Sale 13:00 - 15:00", "zone": "ชั้น 1 โซน Care Living Solution", "content": "สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว แก้ได้ด้วยการเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home Onlineยกสินค้าพร้อม"},
-                    {"url": "../images/bg_menuview.png", "duration": 5, "topic": "เตรียมพบกับ Flash Sale 13:00 - 15:00", "zone": "ชั้น 1 โซน Care Living Solution", "content": "สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว แก้ได้ด้วยการเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home Onlineยกสินค้าพร้อม"}
+                    {"url": "img1", "duration": 5},
+                    {"url": "img2", "duration": 5}
                 ] 
             }
         }
@@ -65,114 +66,60 @@
             "map_location": "",
             "products": [
                 {
-                    "sku": "8857126925012",
+                    "id": "8857126925015",
+                    "sku": "8857126925015",
                     "brand": "Bewell",
                     "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
-                    "price": 120,
-                    "sale_price": 120,
-                    "description": [
-                        "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
-                        "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
-                        "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
-                    ],
+                    "price": 140,
+                    "sale_price": 140,
+                    "tagline": "",
+                    "description": "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา <br> ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100% <br> ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น",                            
                     "image_product": "../images/productcard1.png",
-                    "images_videos": [
-                        "link-to-video",
-                        "link-to-image"
-                    ]
+                    "images_videos": [                                
+                        "../videos/rap_god.mp4",
+                        "../images/productcard1.png", 
+                        "../images/productcard2.png", 
+                        "../images/productcard3.png"
+                    ],
+                    "qrcode":[
+                        {
+                            "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                            "ซื้อออนไลน์": "../images/qrcode.png",
+                            "ขอใบเสนอราคา": "",
+                            "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                        }
+                    ],
+                    "delivery_tag": "สินค้าจัดส่งที่บ้าน",
+                    "bestseller_tag": "สินค้าขายดี"
                 },
                 {
-                    "sku": "8857126925012",
+                    "id": "8857126925016",
+                    "sku": "8857126925016",
                     "brand": "Bewell",
-                    "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
-                    "price": 120,
-                    "sale_price": 120,
-                    "description": [
-                        "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
-                        "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
-                        "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
+                    "name": "Bewell  เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+                    "price": 190,
+                    "sale_price": 190,
+                    "tagline": "",
+                    "description": "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา <br> ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100% <br> ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น",                            
+                    "image_product": "../images/productcard1.png",
+                    "images_videos": [                                
+                        "../videos/rap_god.mp4",
+                        "../images/productcard1.png", 
+                        "../images/productcard2.png", 
+                        "../images/productcard3.png"
                     ],
-                    "image_product": "../images/productcard2.png",
-                    "images_videos": [
-                        "link-to-video",
-                        "link-to-image"
-                    ]
-                }
-            ],
-            "sub_category_product": {
-                "smart_gadget": {
-                    "name_en": "Smart Gadget",
-                    "name_th": "สินค้าตกแต่งบ้าน",
-                    "icon": "icon-tree",
-                    "products": [
-                    ]
-                },
-                "health_product": {
-                    "name_en": "",
-                    "name_th": "สินค้าเพื่อสุขภาพ",
-                    "icon": "hand-with-heart.png",
-                    "products": []
-                }
-            }
-        },
-        "ceiling_and_wall": {
-            "name_en": "Ceiling And Wall",
-            "name_th": "โซลูชั่นการตกแต่งภายนอก",
-            "icon": "",
-            "map_location": "",
-            "products": [],
-            "sub_category_product": {
-                "smart_gadget": {
-                    "name_en": "Smart Gadget",
-                    "name_th": "สินค้าตกแต่งบ้าน",
-                    "icon": "table-with-monitor.png",
-                    "products": [
+                    "qrcode":[
                         {
-                            "sku": "8857126925012",
-                            "brand": "Bewell",
-                            "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
-                            "price": 1490,
-                            "sale_price": 1490,
-                            "description": [
-                                "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
-                                "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
-                                "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
-                            ],
-                            "image_product": "../images/productcard1.png",
-                            "images_videos": [
-                                "link-to-video",
-                                "link-to-image"
-                            ]
+                            "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                            "ซื้อออนไลน์": "../images/qrcode.png",
+                            "ขอใบเสนอราคา": "",
+                            "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
                         }
-                        
-              
-                    ]
-                },
-                "health_product": {
-                    "name_en": "",
-                    "name_th": "สินค้าเพื่อสุขภาพ2",
-                    "icon": "hand-with-heart.png",
-                    "products": [
-                        {
-                            "sku": "8857126925012",
-                            "brand": "Bewell",
-                            "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
-                            "price": 1490,
-                            "sale_price": 1490,
-                            "description": [
-                                "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
-                                "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
-                                "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
-                            ],
-                            "image_product": "../images/productcard2.png",
-                            "images_videos": [
-                                "link-to-video",
-                                "link-to-image"
-                            ]
-                        }
-                    ]
+                    ],
+                    "delivery_tag": "สินค้าจัดส่งที่บ้าน",
+                    "bestseller_tag": "สินค้าขายดี"
                 }
-            }
+            ]
         },
         "roof": {
             "name_en": "ROOF",
@@ -183,51 +130,200 @@
             "sub_category_product": {
                 "smart_gadget": {
                     "name_en": "Smart Gadget",
-                    "name_th": "สินค้าตกแต่งบ้าน",
-                    "icon": "table-with-monitor.png",
+                    "name_th": "สินค้าตกแต่งบ้า",
+                    "icon": {"active": "../images/product_list/home-white.png", "unactive": "../images/product_list/home-red.png"},
                     "products": [
                         {
+                            "id": "8857126925012",
                             "sku": "8857126925012",
                             "brand": "Bewell",
                             "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
                             "price": 1490,
                             "sale_price": 1490,
-                            "description": [
-                                "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
-                                "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
-                                "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
-                            ],
+                            "tagline": "",
+                            "description": "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา <br> ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100% <br> ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น",                            
                             "image_product": "../images/productcard1.png",
-                            "images_videos": [
-                                "link-to-video",
-                                "link-to-image"
-                            ]
+                            "images_videos": [                                
+                                "../videos/rap_god.mp4",
+                                "../images/productcard1.png", 
+                                "../images/productcard2.png", 
+                                "../images/productcard3.png"
+                            ],
+                            "qrcode":[
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "สินค้าจัดส่งที่บ้าน",
+                            "bestseller_tag": "สินค้าขายดี"
+                        },
+                        {
+                            "id": "8857126925011",
+                            "sku": "8857126925011",
+                            "brand": "Bewell",
+                            "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+                            "price": 1490,
+                            "sale_price": 1490,
+                            "tagline": "",
+                            "description": "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา <br> ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100% <br> ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น",                            
+                            "image_product": "../images/productcard1.png",
+                            "images_videos": [                                
+                                "../videos/rap_god.mp4",
+                                "../images/productcard1.png", 
+                                "../images/productcard2.png", 
+                                "../images/productcard3.png"
+                            ],
+                            "qrcode":[
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "สินค้าจัดส่งที่บ้าน",
+                            "bestseller_tag": "สินค้าขายดี"
                         }
-                        
-              
                     ]
                 },
                 "health_product": {
-                    "name_en": "",
+                    "name_en": "health",
                     "name_th": "สินค้าเพื่อสุขภาพ2",
-                    "icon": "hand-with-heart.png",
+                    "icon": {"active": "../images/product_list/outside-white.png", "unactive": "../images/product_list/outside-red.png"},
                     "products": [
                         {
-                            "sku": "8857126925012",
+                            "id": "8857126925099",
+                            "sku": "8857126925099",
                             "brand": "Bewell",
                             "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
                             "price": 1490,
                             "sale_price": 1490,
-                            "description": [
-                                "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา",
-                                "ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100%",
-                                "ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น"
+                            "tagline": "",
+                            "description": "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา <br> ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100% <br> ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น",                            
+                            "image_product": "../images/productcard1.png",
+                            "images_videos": [                                
+                                "../videos/rap_god.mp4",
+                                "../images/productcard1.png", 
+                                "../images/productcard2.png", 
+                                "../images/productcard3.png"
                             ],
-                            "image_product": "../images/productcard2.png",
-                            "images_videos": [
-                                "link-to-video",
-                                "link-to-image"
-                            ]
+                            "qrcode":[
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "สินค้าจัดส่งที่บ้าน",
+                            "bestseller_tag": "สินค้าขายดี"
+                        }
+                    ]
+                }
+            }
+        },
+        "ceiling_and_wall": {
+            "name_en": "CW",
+            "name_th": "เซลลิ่งแอนด์วอล",
+            "icon": "",
+            "map_location": "",
+            "products": [],
+            "sub_category_product": {
+                "smart_gadget": {
+                    "name_en": "Smart Gadget",
+                    "name_th": "ฟาซาด<br>โซลูชัน",
+                    "icon": {"active": "../images/product_list/home-white.png", "unactive": "../images/product_list/home-red.png"},
+                    "products": [
+                        {
+                            "id": "8857126925077",
+                            "sku": "8857126925077",
+                            "brand": "Bewell",
+                            "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+                            "price": 1490,
+                            "sale_price": 1490,
+                            "tagline": "",
+                            "description": "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา <br> ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100% <br> ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น",                            
+                            "image_product": "../images/productcard1.png",
+                            "images_videos": [                                
+                                "../videos/rap_god.mp4",
+                                "../images/productcard1.png", 
+                                "../images/productcard2.png", 
+                                "../images/productcard3.png"
+                            ],
+                            "qrcode":[
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "สินค้าจัดส่งที่บ้าน",
+                            "bestseller_tag": "สินค้าขายดี"
+                        }, 
+                        {
+                            "id": "8857126925055",
+                            "sku": "8857126925055",
+                            "brand": "Bewell",
+                            "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+                            "price": 1490,
+                            "sale_price": 1490,
+                            "tagline": "",
+                            "description": "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา <br> ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100% <br> ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น",                            
+                            "image_product": "../images/productcard1.png",
+                            "images_videos": [                                
+                                "../videos/rap_god.mp4",
+                                "../images/productcard1.png", 
+                                "../images/productcard2.png", 
+                                "../images/productcard3.png"
+                            ],
+                            "qrcode":[
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "สินค้าจัดส่งที่บ้าน",
+                            "bestseller_tag": "สินค้าขายดี"
+                        }
+                    ]
+                },
+                "health_product": {
+                    "name_en": "health",
+                    "name_th": "บริการตกแต่ง<br>ภูมิทัศน์ภายนอก",
+                    "icon": {"active": "../images/product_list/outside-white.png", "unactive": "../images/product_list/outside-red.png"},
+                    "products": [
+                        {
+                            "id": "8857126925033",
+                            "sku": "8857126925033",
+                            "brand": "Bewell",
+                            "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+                            "price": 1490,
+                            "sale_price": 1490,
+                            "tagline": "",
+                            "description": "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา <br> ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100% <br> ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น",                            
+                            "image_product": "../images/productcard1.png",
+                            "images_videos": [                                
+                                "../videos/rap_god.mp4",
+                                "../images/productcard1.png", 
+                                "../images/productcard2.png", 
+                                "../images/productcard3.png"
+                            ],
+                            "qrcode":[
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "สินค้าจัดส่งที่บ้าน",
+                            "bestseller_tag": "สินค้าขายดี"
                         }
                     ]
                 }
