@@ -135,7 +135,7 @@
             let count = 0;
             jd.category_product.home_selected.products.forEach(product => {
                 $(`#products-content`).append(`
-                    <div class="items" id ='${product.sku}'>
+                    <div class="items" id ='${product.id}'>
                         <div class="product-card">
                             <figure>
                                 <img src="${product.image_product}" alt="productimage" class="img-fluid" />
@@ -146,12 +146,12 @@
                         </div>
                     </div>
 
-                `)
+                `)                
 
-                $(`#${product.sku}`).click(function(){
+                $(`#${product.id}`).click(function(){
                         // $(`#${nav_id} img`).attr('src', '')
-                        localStorage.setItem('sku', product.sku)
-                        window.location.href = `cw_product_details_test.html`
+                        localStorage.setItem('id', product.id)
+                        window.location.href = `home_select_product_details.html`
                     })
             
             })
