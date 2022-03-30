@@ -205,7 +205,7 @@
 
                 main_menu_obj.products.forEach(product => {
                     $(`#${content_id} div.productlist-wrapper`).append(`
-                        <div class="items" id ='${product.sku}'>
+                        <div class="items" id ='${product.id}'>
                             <div class="product-card">
                                 <figure>
                                     <img src="${product.image_product}" alt="productimage" class="img-fluid" />
@@ -217,9 +217,9 @@
                         </div>
 
                     `)
-                    $(`#${product.sku}`).click(function(){
+                    $(`#${product.id}`).click(function(){
                         // $(`#${nav_id} img`).attr('src', '')
-                        localStorage.setItem('sku', product.sku)
+                        localStorage.setItem('id', product.id)
                         window.location.href = `roof_product_details.html`
                     })
                 }); 
