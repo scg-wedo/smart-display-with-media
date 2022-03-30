@@ -47,13 +47,18 @@
                     <div class="row">
                         <div class="col-6 product-image-corosel ">
                             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <div type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
-                                        class="active" aria-current="true" aria-label="Slide 1"><img
-                                            src="../images/image 19.png" class="d-block img-fluid" alt="..."> </div>
+                                <div class="carousel-indicators" id="slide-button">
+                                    <div type="button" class="active" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                        aria-label="Slide 2"  aria-current="true"> 
+                                        <video width="100%" height="100%">
+                                            <source src="..." type="video/mp4">
+                                            <source src="movie.ogg" type="video/ogg">
+                                          Your browser does not support the video tag.
+                                          </video>
+                                    </div>
                                     <div type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                                        aria-label="Slide 2"> <img src="../images/thumb-video.png"
-                                            class="d-block img-fluid" alt="..."></div>
+                                        class="" aria-label="Slide 1"><img
+                                            src="../images/image 19.png" class="d-block img-fluid" alt="..."> </div>
                                     <div type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                                         aria-label="Slide 3"> <img src="../images/image 17.png" class="d-block img-fluid"
                                             alt="..."></div>
@@ -62,20 +67,22 @@
                                             alt="..."></div>
 
                                 </div>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="10000">
-                                        <img src="../images/productimg.jpg" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption d-none d-md-block">
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item " data-bs-interval="5000">
+                                <div class="carousel-inner" id="slide-content">
+                                    <div class="carousel-item  active" data-bs-interval="5000">
                                         <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe width="337" height="337"
-                                                src="https://www.youtube.com/embed/tgbNymZ7vqY?start=16&amp;autoplay=1&mute=1">
-                                            </iframe>
+                                            <video  width="337" height="337" autoplay muted>
+                                                <source src="../videos/rap_god.mp4" type="video/mp4">
+                                                <source src="movie.ogg" type="video/ogg">
+                                              Your browser does not support the video tag.
+                                              </video>
                                         </div>
                                         <div class="carousel-caption d-none d-md-block">
 
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="10000">
+                                        <img src="../images/productimg.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
@@ -212,6 +219,21 @@
                 selected_product[0].description ? $("#desc").html(selected_product[0].description) :  $("#desc").remove()
                 selected_product[0].qrcode[0].ซื้อออนไลน์ ?   $("#qrcode").attr('src',  selected_product[0].qrcode[0].ซื้อออนไลน์) : $("#qrcode").remove()
 
+                // debugger
+                // setbutton
+                $('#slide-button div:eq(0) video source').attr('src', `${selected_product[0].images_videos[0]}##t=0,60`)
+                $('#slide-button div:eq(0) video')[0].load()
+                $('#slide-button div:eq(1) img').attr('src',selected_product[0].images_videos[1])
+                $('#slide-button div:eq(2) img').attr('src',selected_product[0].images_videos[2])
+                $('#slide-button div:eq(3) img').attr('src',selected_product[0].images_videos[3])
+                
+
+                $('#slide-content>div:eq(0) video source').attr('src', selected_product[0].images_videos[0])
+                $('#slide-content>div:eq(0) video')[0].load()
+                $('#slide-content>div:eq(1) img').attr('src', selected_product[0].images_videos[1])
+                $('#slide-content>div:eq(2) img').attr('src', selected_product[0].images_videos[2])
+                $('#slide-content>div:eq(3) img').attr('src', selected_product[0].images_videos[3])
+                // debugger
             }
             
 
