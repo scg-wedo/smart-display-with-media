@@ -173,7 +173,7 @@
                 $(`#${nav_id}`).click(function () {
                     for (var btn_count = 0; btn_count < $("#nav-tabs").find('button').length; btn_count++) {
                         let icon_count = 0;
-                        for (const [main_menu2, main_menu_obj2] of Object.entries(jd.category_product.ceiling_and_wall.sub_category_product)) {  // วนลูปเพื่อดึง icon image ที่ตรงกับ button เช่นต้นไม้, บ้าน (ส่วนตวน active/unactive คือสีขาว กับ แดง)
+                        for (const [main_menu2, main_menu_obj2] of Object.entries(jd.category_product.roof.sub_category_product)) {  // วนลูปเพื่อดึง icon image ที่ตรงกับ button เช่นต้นไม้, บ้าน (ส่วนตวน active/unactive คือสีขาว กับ แดง)
                             console.log(main_menu2)
                             console.log(main_menu_obj2.icon)
                             if (icon_count == btn_count) {
