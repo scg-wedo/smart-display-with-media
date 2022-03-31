@@ -266,8 +266,8 @@
             "sub_category_product": {
                 "service": {
                     "name_en": "Smart Gadget",
-                    "name_th": "สินค้าตกแต่งบ้า",
-                    "icon": {"active": "../images/product_list/home-white.png", "unactive": "../images/product_list/home-red.png"},
+                    "name_th": "บริการ <br> เกี่ยวกับ <br> หลังคา",
+                    "icon": {"active": "../images/product_list/service-logo-white.png", "unactive": "../images/product_list/service-logo-red.png"},
                     "banner_video": "../videos/rap_god.mp4",
                     "products": [
                         {
@@ -441,8 +441,8 @@
                 },
                 "product": {
                     "name_en": "health",
-                    "name_th": "สินค้าเพื่อสุขภาพ2",
-                    "icon": {"active": "../images/product_list/outside-white.png", "unactive": "../images/product_list/outside-red.png"},
+                    "name_th": "สินค้า <br> เกี่ยวกับ <br> หลังคา",
+                    "icon": {"active": "../images/product_list/product-logo-white.png", "unactive": "../images/product_list/product-logo-red.png"},
                     "banner_video": "../videos/rap_god.mp4",
                     "products": [
                         {
