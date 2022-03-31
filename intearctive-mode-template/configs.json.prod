@@ -1,0 +1,754 @@
+{
+    "page": {
+        "home_selected": {
+            "front": {
+                "videos": [
+                    {"url": "../videos/พยายาม cover - SD 480p.mp4", "duration": 5},
+                    {"url": "../videos/เลือกได้ไหม cover.mp4", "duration": 15},
+                    {"url": "../videos/พยายาม cover - SD 480p.mp4", "duration": 2}
+                ]
+            },
+            "promotion": {
+                "videos": [
+                    {"url": "link1", "duration": 10},
+                    {"url": "link2", "duration": 10}
+                ],
+                "banner": [
+                    {"url": "img1", "duration": 5},
+                    {"url": "img2", "duration": 5}
+                ] 
+            }
+        },
+        "ceiling_and_wall": {
+            "front": {
+                "videos": [
+                    {"url": "../videos/screen_test.mp4", "duration": 10}
+                    
+                ]
+            },
+            "promotion": {
+                "videos": [
+                    {"url": "link1", "duration": 10},
+                    {"url": "link2", "duration": 10}
+                ],
+                "banner": [
+                    {"url": "img1", "duration": 5},
+                    {"url": "img2", "duration": 5}
+                ] 
+            }
+        },
+        "roof": {
+            "front": {
+                "videos": [
+                    {"url": "../videos/พยายาม cover - SD 480p.mp4", "duration": 10},
+                    {"url": "link2", "duration": 10}
+                ]
+            },
+            "promotion": {
+                "videos": [
+                    {"url": "../videos/พยายาม cover - SD 480p.mp4", "duration": 10},
+                    {"url": "../videos/เลือกได้ไหม cover.mp4", "duration": 5}
+                ],
+                "banner": [
+                    {"url": "img1", "duration": 5},
+                    {"url": "img2", "duration": 5}
+                ] 
+            }
+        }
+    },
+
+
+    "category_product": {
+        "home_selected": {
+            "name_en": "Home Selected",
+            "name_th": "สินค้าตกแต่งบ้าน",
+            "icon": "",
+            "map_location": "",
+            "products": [
+                {
+                    "id": "2044980000000",
+                    "sku": "2044980000000",
+                    "brand": "",
+                    "name": "INZEUS Smart Digital Door Lock",
+                    "price": 9900,
+                    "sale_price": 9900,
+                    "tagline": " ขนาด:26x10x20.5 ซม. น้ำหนัก:2 กก. ราคา 9,900.00 บาท / ชิ้น",
+                    "description": "ประตูดิจิตอล ปลดล็อกด้วยลายนิ้วมือ - ปลดล็อกด้วยลายนิ้วมือ/การ์ด/รหัสผ่านได้ - ปลดล็อกระยะไกลได้ - สุ่มรหัสผ่านชั่วคราว สำหรับแขกได้ - บอกสถานะการเปิด/ปิด - รองรับผู้ใช้งาน 100 คน - วัสดุ 304 Stainless Steel - แหล่งพลังงาน ใช้ ถ่าน AA X4 - (อายุการใช้งานของพลังงานขึ้นอยู่กับการเปิด/ปิดของประตู)",
+                    "image_product": "../media/L2_Home Selected/Page2 - Product List/1 INZEUS Smart Digital Door Lock/No.22-Inzeus door lock-01.png",
+                    "images_videos": [
+                        "../media/L2_Home Selected/Page3 - Product Detail/1 INZEUS Smart Digital Door Lock/No.22-Inzeus door lock-01.png",
+                        "../media/L2_Home Selected/Page3 - Product Detail/1 INZEUS Smart Digital Door Lock/No.22-Inzeus door lock-02.png",
+                        "../media/L2_Home Selected/Page3 - Product Detail/1 INZEUS Smart Digital Door Lock/No.22-Inzeus door lock-03.png"
+                    ],
+                    "qrcode": [
+                        {
+                            "ซื้อออนไลน์": "link-to-qrcode"
+                        }
+                    ],
+                    "delivery_tag": "รับของได้/จัดส่งได้",
+                    "bestseller_tag": ""
+                },
+                {
+                    "id": "1010210010",
+                    "sku": "1010210010",
+                    "brand": "",
+                    "name": "เครื่องพ่นไอน้ำอโรม่ารูปทรงแคคตัส Mestyle Cactus Humidifier สีเขียว MSCH2100G0",
+                    "price": 750,
+                    "sale_price": 750,
+                    "tagline": " ขนาด:10x10x15 ซม. น้ำหนัก:500 ก. สี: เขียว, ขาว ราคา 750.00 บาท / ชิ้น",
+                    "description": "เครื่องพ่นไอน้ำอโรม่ารูปทรงแคคตัส Mestyle Cactus Humidifier สีเขียว MSCH2100G0 สร้างบรรยากาศให้บ้านน่าอยู่ ด้วยเครื่องพ่นไอน้ำอโรม่ารูปทรงแคคตัส เพิ่มความชื้นและกลิ่นหอม พร้อมไฟ LED 7 สี เพียงเครื่องเดียวก็สามารถสร้างความหอมสดชื่น ผ่อนคลาย และช่วยให้นอนหลับสบายด้วยกลิ่นของธรรมชาติ เงื่อนไขการรับประกัน: หากสินค้าชำรุด/เสียหาย/ใช้งานไม่ได้ สามารถเปลี่ยนได้ภายใน 7วัน",
+                    "image_product": "L2_Home Selected/Page2 - Product List/5 Cactus Mestyle Humidifier Green MSCH2100G0/Cactus1_600x600.jpg",
+    
+                    "images_videos": [
+                        "../media/L2_Home Selected/Page3 - Product Detail/5 Cactus Mestyle Humidifier/1) Cover-VDO Cactus 1080x606_5.mp4",
+                        "../media/L2_Home Selected/Page3 - Product  Detail/5 Cactus Mestyle Humidifier/Cactus2_600x600.jpg",
+                        "../media/L2_Home Selected/Page3 - Product  Detail/5 Cactus Mestyle Humidifier/Cactus3_600x600.jpg",
+                        "../media/L2_Home Selected/Page3 - Product  Detail/5 Cactus Mestyle Humidifier/Cactus4_600x600.jpg"
+                    ],
+                    "qrcode": [
+                        {
+                            "ซื้อออนไลน์": "link-to-qrcode"
+                        }
+                    ],
+                    "delivery_tag": "รับของได้/จัดส่งได้",
+                    "bestseller_tag": ""
+                },
+                {
+                    "id": "206895",
+                    "sku": "206895",
+                    "brand": "",
+                    "name": "Inzeus INZY Sleep Aid",
+                    "price": 990,
+                    "sale_price": 990,
+                    "tagline": " ขนาด:187x60x200 ซม. ราคา 990.00 บาท / ชิ้น",
+                    "description": "อุปกรณ์ช่วยนอนหลับ Bluetooh speaker with music player การรับประกันสินค้า 1 ปี",
+                    "image_product": "../media/L2_Home Selected/Page2 - Product List/3 Inzeus INZY Sleep Aid/No.22-Inzeus Sleep Aid-01.png",
+                    "images_videos": [
+                        "../media/L2_Home Selected/Page3 - Product Detail/3 Inzeus INZY Sleep Aid/1. No.22-Inzeus Sleep Aid-01.png",
+                        "../media/L2_Home Selected/Page3 - Product Detail/3 Inzeus INZY Sleep Aid/2. No.22-Inzeus Sleep Aid-02.png",
+                        "../media/L2_Home Selected/Page3 - Product Detail/3 Inzeus INZY Sleep Aid/3. No.22-Inzeus Sleep Aid-03.png",
+                       "../media/L2_Home Selected/Page3 - Product Detail/3 Inzeus INZY Sleep%20Aid/4. No.22-Inzeus Sleep Aid-06 (1).jpg"
+                    ],
+                    "qrcode": [
+                        {
+                            "ซื้อออนไลน์": "link-to-qrcode"
+                        }
+                    ],
+                    "delivery_tag": "รับของได้/จัดส่งได้",
+                    "bestseller_tag": ""
+                },
+                {
+                    "id": "249281",
+                    "sku": "24928",
+                    "brand": "",
+                    "name": "INZY Neck Fan with ION",
+                    "price": 1390,
+                    "sale_price": 1390,
+                    "tagline": " ขนาด:187x60x200 ซม. น้ำหนัก:0.3 กก. ราคา 1,390.00 บาท / ชิ้น",
+                    "description": "พัดลมคอพร้อมเครื่องฟอกอากาศ 1.เสียงเบาเงียบ และมีความแรง 3 ระดับ 2.Battey 4000 mHA ใช้งาน 12 ชั่วโมง, u LED Display 3.Design 4 สี ขาว ชมพู น้ำเงิน 4.มีผลิต ION เพื่อฟอกอากาศให้สดชื้น ทั้ง 2 ด้าน 5.น้ำหนักเบา 300 กรัม การรับประกันสินค้า 1 ปี",
+                 "image_product": "../media/L2_Home Selected/Page2 - Product List/4 INZY Neck Fan with ION/1. Neck Fan with ION.jpg",
+                    "images_videos": [
+                        "../media/L2_Home Selected/Page3 - Product Detail/4 INZY Neck Fan with ION/1. Neck Fan with ION.jpg",
+                        "../media/L2_Home Selected/Page3 - Product Detail/4 INZY Neck Fan with ION/2. Neck Fan with ION.jpg",
+                        "../media/L2_Home Selected/Page3 - Product Detail/4 INZY Neck Fan with ION/3. Neck Fan with ION.jpg",
+                       "../media/L2_Home Selected/Page3 - Product Detail/4 INZY Neck Fan with ION/3. Neck Fan with ION.jp.jpg"
+                    ],
+                    "qrcode": [
+                        {
+                            "ซื้อออนไลน์": "link-to-qrcode"
+                        }
+                    ],
+                    "delivery_tag": "รับของได้/จัดส่งได้",
+                    "bestseller_tag": ""
+                },
+                {
+                    "id": "1010210010",
+                    "sku": "1010210010",
+                    "brand": "",
+                    "name": "เครื่องพ่นไอน้ำอโรม่ารูปทรงแคคตัส Mestyle Cactus Humidifier สีเขียว MSCH2100G0",
+                    "price": 750,
+                    "sale_price": 750,
+                    "tagline": " ขนาด:10x10x15 ซม. น้ำหนัก:500 ก. สี: เขียว, ขาว ราคา 750.00 บาท / ชิ้น",
+                    "description": "เครื่องพ่นไอน้ำอโรม่ารูปทรงแคคตัส Mestyle Cactus Humidifier สีเขียว MSCH2100G0 สร้างบรรยากาศให้บ้านน่าอยู่ ด้วยเครื่องพ่นไอน้ำอโรม่ารูปทรงแคคตัส เพิ่มความชื้นและกลิ่นหอม พร้อมไฟ LED 7 สี เพียงเครื่องเดียวก็สามารถสร้างความหอมสดชื่น ผ่อนคลาย และช่วยให้นอนหลับสบายด้วยกลิ่นของธรรมชาติ เงื่อนไขการรับประกัน: หากสินค้าชำรุด/เสียหาย/ใช้งานไม่ได้ สามารถเปลี่ยนได้ภายใน 7วัน",
+                    "image_product": "L2_Home Selected/Page2 - Product List/5 Cactus Mestyle Humidifier Green MSCH2100G0/Cactus1_600x600.jpg",
+    
+                    "images_videos": [
+                        "../media/L2_Home Selected/Page3 - Product Detail/5 Cactus Mestyle Humidifier/1) Cover-VDO Cactus 1080x606_5.mp4",
+                        "../media/L2_Home Selected/Page3 - Product  Detail/5 Cactus Mestyle Humidifier/Cactus2_600x600.jpg",
+                        "../media/L2_Home Selected/Page3 - Product  Detail/5 Cactus Mestyle Humidifier/Cactus3_600x600.jpg",
+                        "../media/L2_Home Selected/Page3 - Product  Detail/5 Cactus Mestyle Humidifier/Cactus4_600x600.jpg"
+                    ],
+                    "qrcode": [
+                        {
+                            "ซื้อออนไลน์": "link-to-qrcode"
+                        }
+                    ],
+                    "delivery_tag": "รับของได้/จัดส่งได้",
+                    "bestseller_tag": ""
+                },
+                {
+                    "id": "2056670000000",
+                    "sku": "2056670000000",
+                    "brand": "",
+                    "name": "สเปรย์กันพื้นลื่น ฮาบิแมท",
+                    "price": 890,
+                    "sale_price": 890,
+                    "tagline": " ขนาด:10.2x9x25 ซม. น้ำหนัก:0.3 กก. ราคา 890.00 บาท / ชุด",
+                    "description": "สเปรย์กันพื้นลื่น ฮาบิแมท 300 มล (พื้นที่ใช้งาน 5-8 ตร.ม.) เหมาะสำหรับใช้เคลือบพื้นผิวเพื่อกันลื่นบนพื้นผิวที่คุณต้องการ ด้วยเทคโนโลยี Hybrid Polymer&Microbeads ที่ช่วยสร้างพื้นผิวใหม่ ปกป้องพื้นผิวเดิม พร้อมสารยับยั้งเชื้อราและตะไคร่น้ำ มีเม็ดไมโครบีดที่ช่วยสร้างความฝืดกันลื่นให้พื้นผิวสัมผัสคล้ายผิวพ่นทราย (ค่าความกันลื่นสูงระดับ R-11) จึงช่วยป้องกันลื่นได้เป็นอย่างดี มีประสิทธิภาพสูงและไม่มีส่วนผสมของสารเคมีกัดกร่อน จึงปลอดภัยต่อทุกคนในครอบครัว",
+                    "image_product": "../media/L2_Home Selected/Page2 - Product List/6 Anti-Slip Coating Spray Habiimat/Anti-Slip Coating Spray-Habiimat1-600x600.jpg",
+    
+                    "images_videos": [
+                        "../media/L2_Home Selected/Page3 - Product Detail/6 Anti-Slip Coating Spray Habiimat/1) Cover-Anti-Slip Coating Spray Habiimat 1080x606_6.mp4",
+                        "../media/L2_Home Selected/Page3 - Product Detail/6 Anti-Slip Coating Spray Habiimat/Anti-Slip Coating Spray-Habiimat2-600x600.jpg",
+                        "../media/L2_Home Selected/Page3 - Product  Detail/6 Anti-Slip Coating Spray Habiimat/Anti-Slip Coating Spray-Habiimat3-600x600.jpg",
+                        "../media/L2_Home Selected/Page3 - Product  Detail/6 Anti-Slip Coating Spray Habiimat/Anti-Slip Coating Spray-Habiimat4-600x600.jpg"
+                    ],
+                    "qrcode": [
+                        {
+                            "ซื้อออนไลน์": "link-to-qrcode"
+                        }
+                    ],
+                    "delivery_tag": "รับของได้/จัดส่งได้",
+                    "bestseller_tag": "ขายดี"
+                },
+                {
+                    "id": "43318001802",
+                    "sku": "43318001802",
+                    "brand": "",
+                    "name": "SIMPLE GREEN Foaming Coil Aerosolสเปรย์โฟมทำความสะอาดเครื่องปรับอากาศ",
+                    "price": 590,
+                    "sale_price": 590,
+                    "tagline": " ราคา 590.00 บาท / ชิ้น",
+                    "description": "'สเปรย์โฟมทำความสะอาดเครื่องปรับอากาศ สเปร์ยโฟรม สำหรับเครื่องปรับอาหาร แผงคอยล์เย็น คอยล์ร้อน ของระบบทำความเย็นทั้งในและนอกอาคาร ขจัดสิ่งอัลชื้น ไม่ต้องล้างน้ำออก ไม่มีสารกัดกร่อน และไม่ติดไป ปลอดภัย ไร้สารพิษเป็นมตรกับสิ่งแวดล้อม",
+                    "image_product": "../media/L2_Home Selected/Page2 - Product List/7 SIMPLE GREEN Foaming Coil Aerosol/Simple-green-spray-coil-600x600.jpg",
+    
+                    "images_videos": [
+                        "../media/L2_Home Selected/Page3 - Product Detail/7 SIMPLE GREEN Foaming Coil Aerosol/1) Cover_Foam coil cleaner 1080x606_7.mp4",
+                        "../media/L2_Home Selected/Page3 - Product Detail/7 SIMPLE GREEN Foaming Coil Aerosol/2) Simple-green-spray-coil-600x600.jpg"
+                    ],
+                    "qrcode": [
+                        {
+                            "ซื้อออนไลน์": "link-to-qrcode"
+                        }
+                    ],
+                    "delivery_tag": "รับของได้/จัดส่งได้",
+                    "bestseller_tag": ""
+                },
+                {
+                    "id": "43318002496",
+                    "sku": "43318002496",
+                    "brand": "",
+                    "name": "SIMPLE GREEN RTU All Purpose Cleanerน้ำยาทำความสะอาดเอนกประสงค์",
+                    "price": 330,
+                    "sale_price": 330,
+                    "tagline": " ราคา 330.00 บาท / ชิ้น",
+                    "description": "น้ำยาทำความสะอาดอเนกประสงค์ เช่น สิ่งสกปรกในบ้าน คราบสปรก น้ำมัน - น้ำยาทำความสะอาดอเนกประสงค์พร้อมใช้งานสำหรับครอบครัว เหมาะสำหรับล้างคราบมัน และสิ่งสกปรกทุกชนิดภายในบ้าน - ปลอดสารพิษ เป็นมิตรกับสิ่งแวดล้อม ย่อยสลายได้เองตามธรรมชาติ และไม่ติดไฟ - บรรจุในประเทศสหรัฐอเมริกา",
+                    "image_product": "../media/L2_Home Selected/Page2 - Product List/8 SIMPLE GREEN RTU All Purpose Cleaner/Simple-green-rtu-all-purpose-600x600.jpg",
+    
+                    "images_videos": [
+                        "../media/L2_Home Selected/Page3 - Product Detail/8 SIMPLE GREEN RTU All Purpose Cleaner/1) Cover-SIMPLE GREEN RTU All Purpose Cleaner 1080x606_8.mp4",
+                         "../media/L2_Home Selected/Page3 - Product Detail/8 SIMPLE GREEN RTU All Purpose Cleaner/2) Simple-green-rtu-all-purpose-600x600.jpg"
+                    ],
+                    "qrcode": [
+                        {
+                            "ซื้อออนไลน์": "link-to-qrcode"
+                        }
+                    ],
+                    "delivery_tag": "รับของได้/จัดส่งได้",
+                    "bestseller_tag": ""
+                }
+            ]
+        },
+        "roof": {
+            "name_en": "ROOF",
+            "name_th": "รูฟ",
+            "icon": "",
+            "map_location": "",
+            "products": [],
+            "sub_category_product": {
+                "service": {
+                    "name_en": "Smart Gadget",
+                    "name_th": "สินค้าตกแต่งบ้า",
+                    "icon": {"active": "../images/product_list/home-white.png", "unactive": "../images/product_list/home-red.png"},
+                    "banner_video": "../videos/rap_god.mp4",
+                    "products": [
+                        {
+                            "id": "ROOF-1",
+                            "sku": "",
+                            "brand": "",
+                            "name": "SCG SOLAR Roof Solutions",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " EMPOWER YOUR ROOF โดยผู้เชียวชาญระบบโซลาร์บนหลังคาตัวจริง",
+                            "description": "- ตรวจสุขภาพหลังคาก่อนติดตั้ง เพิ่มความมั่นใจ ปลอดภัยอย่างไร้กังวล - ออกแบบการติดตั้งระบบโซลาร์ ให้มีประสิทธิภาพการผลิตไฟสูงสุด - ดำเนินการเรื่องเอกสารขออนุญาตติดตั้งกับภาครัฐตลอดทั้งกระบวนการ - ติดตั้งโดยทีมช่างมืออาชีพ หมดกังวลกับปัญหาหลังคารั่วซึม - ตรวจเช็คระบบ ตลอดอายุการใช้งาน พร้อมรับประกัน 25 ปีโดยเอสซีจี",
+                            "image_product": "../media/L2_Roof/Page2 - Product List/Service/1. SCG SOLAR Roof Solutions/SOLAR-1000x1000.png",
+                            "images_videos": [
+                                "../media/L2_Roof/Page3 - Product Detail/Service/1. SCG SOLAR Roof Solutions/Cover-Solar Roof 1080x600_6.mp4",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/1. SCG SOLAR Roof Solutions/no.13-Solar-01.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/1. SCG SOLAR Roof Solutions/no.13-Solar-02.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/1. SCG SOLAR Roof Solutions/no.13-Solar-03.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "ROOF-2",
+                            "sku": "",
+                            "brand": "",
+                            "name": "SCG Active Air Quality",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " ระบบจัดการคุณภาพอากาศในบ้าน เพื่อสร้างอากาศคุณภาพดี  สะอาด ปลอดภัย",
+                            "description": "- ช่วยเติมและกรองอากาศดีเข้าบ้านตั้งแต่แรก ด้วยระบบ Supply Air Ventilator - กรองฝุ่น PM 2.5 ได้ 99%* รวมถึงสารเคมี* ที่ปนเปื้อนในอากาศ - มี Filter กรองเชื้อโรค แบคทีเรีย ไวรัสรวมถึงไวรัสโคโรน่า สาเหตุของ Covid-19** - เพิ่มออกซิเจน ลดปริมาณ CO2 ลงได้ 70% ใน 1 ชม. - กรองกลิ่นไม่พึงประสงค์ภายนอก รวมถึงกลิ่นจากการเผาวัสดุธรรมชาติ เช่น ไม้ หญ้า ไม่ให้เข้าสู่บ้าน* *คุณสมบัติของระบบฯ เป็นไปตามเงื่อนไขที่บริษัทฯ กำหนด ***ผลทดสอบจากห้องปฏิบัติการ NSTDA, TBES, NCTC, Mahidol",
+                            "image_product": "../media/L2_Roof/Page2 - Product List/Service/2. SCG Active Air Quality/AAQ-01.png",
+            
+                            "images_videos": [
+                                "../media/L2_Roof/Page3 - Product Detail/Service/2. SCG Active Air Quality/1. Cover-AAQ 1080x606_1.mp4",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/2. SCG Active Air Quality/2. AAQ-03.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/2. SCG Active Air Quality/3. AAQ-04.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/2. SCG Active Air Quality/4. AAQ-02.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "ROOF-3",
+                            "sku": "",
+                            "brand": "",
+                            "name": "SCG Active AIRflow",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " ช่วยระบายและถ่ายเทอากาศภายนบ้านตลอดวัน บ้านเย็นลง 2-5 องศา ไม่อบอ้าว สร้างคุณภาพอากาศดี",
+                            "description": "- สร้างลมธรรมชาติภายในบ้าน จากการที่ระบบนำอากาศใหม่เข้ามา และถ่ายเทอากาศภายในบ้านออกสู่ภายนอก ทำให้รู้สึกสบายตัวมากขึ้น - ลดการใช้พลังงานจากเครื่องปรับอากาศลงได้เฉลี่ย 10% จากอุณหภูมิตั้งต้นที่ลดลง - เพิ่มการไหลเวียนและถ่ายเทอากาศร้อนสะสมในบ้าน ลดอุณหภูมิในตัวบ้านลงได้ 2-5 องศา และใต้โถงหลังคา 10-15 องศา - ช่วยกรองฝุ่น PM 2.5  ที่อาจมากับการนำอากาศภายนอกเข้าสู่ตัวบ้าน - สามารถควบคุมการทำงานของระบบได้ผ่าน Application ทั้ง Smart Phone และ Tablet** - ติดตั้งง่ายภายใน 1 วัน **เฉพาะ Package Premium และ Platinum",
+                            "image_product": "../media/L2_Roof/Page2 - Product List/Service/3. SCG Active AIRflow/AAF-1000x1000.png",
+            
+                            "images_videos": [
+                                "../media/L2_Roof/Page3 - Product Detail/Service/3. SCG Active AIRflow/1.Cover-AAF 1080x606_2.mp4",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/3. SCG Active AIRflow/2. AAF-600x600px-02.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/3. SCG Active AIRflow/3-AAF.gif",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/3. SCG Active AIRflow/4, AAF-600x600px-01.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "ROOF-4",
+                            "sku": "",
+                            "brand": "",
+                            "name": "SCG Top Hat ",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " บริการมุงหลังคาครบวงจร แพ็คเกจ TOP HAT",
+                            "description": "​​​​​​​ให้คำปรึกษาโดยผู้เชี่ยวชาญ บริการดุจคนสำคัญ ใช้วัสดุคุณภาพพรีเมียมทุกจุด ผ่านการรับรองมาตรฐานอุตสาหกรรม มอบการรับประกันงานติดตั้งสูงสุด 10 ปี บริการตรวจสุขภาพหลังคาหลังการติดตั้ง ในระยะเวลารับประกัน พิเศษเฉพาะ TOP HAT เท่านั้น",
+                            "image_product": "../media/L2_Roof/Page2 - Product List/Service/4. SCG Top Hat/TOPHAT-1000x1000.png",
+            
+                            "images_videos": [
+                                "../media/L2_Roof/Page3 - Product Detail/Service/4. SCG Top Hat/Cover-Tophat 1080x606_5.mp4",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/4. SCG Top Hat/no.13-TopHat-01.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/4. SCG Top Hat/no.13-TopHat-02.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/4. SCG Top Hat/no.13-TopHat-03.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "ROOF-5",
+                            "sku": "",
+                            "brand": "",
+                            "name": "SCG Roof Renovation",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " บริการซ่อมแซม ปรับปรุงหลังคารั่ว-เก่า",
+                            "description": "- บริการรื้อ – เปลี่ยนหลังคาเก่าทั้งผืน (Re-Roof) เปลี่ยนหลังคาเก่าสภาพโทรมให้กลับมาสวยเหมือนใหม่ แก้บ้านที่หลังคามีปัญหารั่ว ร้าว หลายจุด - บริการซ่อมหลังคาบ้านเดี่ยวรั่วเฉพาะจุด (Roof Repair) แก้ไขปัญหาหลังคารั่วที่เกิดขึ้นจากต้นตอ ไม่ซ่อมแบบปฐมพยาบาล ซ่อมแซม-แก้ไข โดยการเปลี่ยนอุปกรณ์หลังคาในจุดที่มีปัญหา - ซ่อมหลังคาทาวน์เฮาส์ ทาวน์โฮมรั่ว ด้วยวิธีใหม่แบบ (Top Up Roof) ซ่อมหลังคาทาวน์เฮาส์ ทาวน์โฮมรั่ว เสริมวัสดุมุงหลังคาปิดจุดรั่ว แบบ Double Protection ไม่เสี่ยงต่อการรั่วซ้ำ",
+                            "image_product": "../media/L2_Roof/Page2 - Product List/Service/5. SCG Roof Renovation/ROOF--RENO-1000x1000.png",
+            
+                            "images_videos": [
+                                "../media/L2_Roof/Page3 - Product Detail/Service/5. SCG Roof Renovation/Cover-Roof Renovation 1080x606_4.mp4",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/5. SCG Roof Renovation/no.13-Roof reno-01.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/5. SCG Roof Renovation/no.13-Roof reno-02.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/5. SCG Roof Renovation/no.13-Roof reno-03.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "ROOF-6",
+                            "sku": "",
+                            "brand": "",
+                            "name": "SCG Roof Repaint",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " บริการทาสีหลังคาเก่า (SCG Roof Repaint)",
+                            "description": "เนรมิตให้หลังคาเก่าสภาพโทรม สีซีดจาง มีคราบดำ กลับมาสวยสดใสเหมือนใหม่ในราคาที่เอื้อมถึง • มั่นใจ ตรวจหลังคาและวิเคราะห์สภาพปัญหาก่อนเริ่มงาน • สบายใจ ควบคุมงบประมาณและเวลาการทำงานได้ชัดเจน • รวดเร็ว จบงานภายใน 3-5 วัน ขึ้นอยู่กับสภาพหน้างานและพื้นที่หลังคาแต่ละหลัง • บริการคุณภาพ ได้หลังคาสวยงามเหมือนใหม่ ใช้สีคุณภาพเดียวกับกระเบื้องหลังคาเอสซีจี • รับประกัน 1 ปี โดยเอสซีจี",
+                            "image_product": "../media/L2_Roof/Page2 - Product List/Service/6. SCG Roof Repaint/Roof-Repaint-1000x1000.png",
+            
+                            "images_videos": [
+                                "../media/L2_Roof/Page3 - Product Detail/Service/6. SCG Roof Repaint/Cover-Roof Repaint 1080x606_3.mp4",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/6. SCG Roof Repaint/no.13-Roof repaint-01.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/6. SCG Roof Repaint/no.13-Roof repaint-02.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Service/6. SCG Roof Repaint/no.13-Roof repaint-03.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        }
+                    ]
+                },
+                "product": {
+                    "name_en": "health",
+                    "name_th": "สินค้าเพื่อสุขภาพ2",
+                    "icon": {"active": "../images/product_list/outside-white.png", "unactive": "../images/product_list/outside-red.png"},
+                    "banner_video": "../videos/rap_god.mp4",
+                    "products": [
+                        {
+                            "id": "8857126925099",
+                            "sku": "8857126925099",
+                            "brand": "Bewell",
+                            "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
+                            "price": 1490,
+                            "sale_price": 1490,
+                            "tagline": "",
+                            "description": "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา <br> ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100% <br> ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น",                            
+                            "image_product": "../images/productcard1.png",
+                            "images_videos": [                                
+                                "../videos/rap_god.mp4",
+                                "../images/productcard1.png", 
+                                "../images/productcard2.png", 
+                                "../images/productcard3.png"
+                            ],
+                            "qrcode":[
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "สินค้าจัดส่งที่บ้าน",
+                            "bestseller_tag": "สินค้าขายดี"
+                        }
+                    ]
+                }
+            }
+        },
+        "ceiling_and_wall": {
+            "name_en": "CW",
+            "name_th": "เซลลิ่งแอนด์วอล",
+            "icon": "",
+            "map_location": "",
+            "products": [],
+            "sub_category_product": {
+                "facade": {
+                    "name_en": "Smart Gadget",
+                    "name_th": "ฟาซาด<br>โซลูชัน",
+                    "icon": {"active": "../images/product_list/home-white.png", "unactive": "../images/product_list/home-red.png"},
+                    "banner_video": "../videos/rap_god.mp4",
+                    "products": [
+                        {
+                            "id": "CW-1",
+                            "sku": "",
+                            "brand": "",
+                            "name": "ผนังตกแต่ง - เคมิว (KMEW)",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " ขนาด : 45.5x303 ซม. หนา 16 มม. และ 21 มม. น้ำหนัก : 20,24 กก. ต่อแผ่น ราคา : 4,000-5,000 บาทต่อตารางเมตร (system พร้อมติดตั้ง) * *หมายเหตุ ราคาขึ้นอยู่กับดีไซน์และรูปทรงของบ้าน",
+                            "description": "ดีไซน์สวยงาม พรีเมียม เสมือนวัสดุธรรมชาติ ผสานฟังก์ชันที่ลงตัว ผนังตกแต่งไฟเบอร์ซีเมนต์พรีเมียม จากประเทศญี่ปุ่น พื้นผิวได้รับแรงบันดาลใจมาจากวัสดุธรรมชาติ STONE, WOOD, BRICK และแร่ธาตุธรรมชาติใน series  FIERTE การันดีด้วยรางวัล good design award 2017 พร้อมคุณสมบัติ - ผนังทำความสะอาดตัวเองได้ (Self Cleaning) ด้วย Photo catalytic Coating Technology ที่จะทำปฏิกิริยากับแสงทำลายคราบสกปรก และเมื่อโดนฝนหรือน้ำชะล้าง ผนังจะกลับมาเหมือนใหม่เสมอ - สีสวยทนทานไม่ซีด ด้วย 4 Layers Coating Technology สีสดเหมือนใหม่ยาวนานกว่า 10 ปี - ระบบการติดตั้ง (Frame Cladding System) มาตรฐานญี่ปุ่น เก็บงานสมบูรณ์แบบ มีกระบวการสร้าง Ventilation System ช่วยทำให้บ้านเย็น",
+                            "image_product": "../media/L2_C&W/Page2 - Product List/Facade/1.KMEW/01 KMEW.png",
+            
+                            "images_videos": [
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/01. K MEW/1) Kmew 1080x606.mp4",
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/01. K MEW/2) No.17-K MEW-02.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/01. K MEW/3) No.17-K MEW-03.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/01. K MEW/4) No.17-K MEW-04.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "CW-2",
+                            "sku": "",
+                            "brand": "",
+                            "name": "เอสซีจี วูด-ดี (SCG WOOD-D)",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " ขนาด : 20 x 300 ซม. หนา 12 มม. น้ำหนัก : 9.4 กก. ต่อแผ่น ราคา : 1,200 บาทต่อตารางเมตร (รวม system) 2,100 บาทต่อตารางเมตร (system พร้อมติดตั้ง) ",
+                            "description": "สร้างเส้นสายลายไม้เสมือนไม้ธรรมชาติ ทนทาน รักษาง่าย - สวย ลวดลายเสมือนลายไม้ธรรมชาติ ด้วยเทคโนโลยี Coating - Digital Printing พิขั้นสุดของความสวยงามสมจริงของลวดลายเสมือนไม้จริง - ทนทาน รองรับการใช้งานทั้งภายนอก ภายใน  ด้วยการเพิ่มกระบวนการเคลือบผิวหน้าด้วย Polyurethane Coating เกรดอุตสาหกรรม ทนต่อรังสี UV ได้ดี คุณภาพการยึดเกาะของสีและลวดลายไม่ซีด จืดจางไว ใช้ตกแต่งพื้นที่ผนังภายนอกอาคารได้อย่างดีเยี่ยม - รองรับการติดตั้งในหลากหลายรูปแบบ  ด้วยการออกแบบโปรไฟล์แผ่นที่ดีไซน์มาเฉพาะเอกสิทธิ์เอสซีจี รองรับการติดตั้งทั้งงานฝ้า งานผนัง รวมทั้งสามารถสร้างpattern ได้หลากหลาย - ทำงานง่าย ด้วยระบบการติดตั้ง Clip Lock ง่าย ดาย ไม่ต้องเก็บหัวสกรู ได้ลายไม้สวยเนียม ตลอดทั้งผืน",
+                            "image_product": "../media/L2_C&W/Page2 - Product List/Facade/2.SCG WOOD-D/02 WOOD-D.png",                           
+                            "images_videos": [
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/02 SCG WOOD-D/Cover_WOOD-D 1080x606_1.mp4",
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/02 SCG WOOD-D/No.17-WOOD D-01.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/02 SCG WOOD-D/No.17-WOOD D-02.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/02 SCG WOOD-D/No.17-WOOD D-03.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "CW-3",
+                            "sku": "",
+                            "brand": "",
+                            "name": "เอสซีจี เฟรทเวิร์ค (SCG FRETWORK)",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " ขนาด : 100 x 100 ซม. หนา 8 มม.   (สามารถสั่งทำขนาดพิเศษได้ได้) น้ำหนัก : 8 กก. ต่อแผ่น ราคา : 2,800 บาทต่อตารางเมตร (รวม system) 3,800 บาทต่อตารางเมตร (system พร้อมติดตั้ง) ",
+                            "description": "สร้างเอกลักษณ์ให้ที่อยู่อาศัยในสไตล์คุณ - ทนทานแข็งแรง  มากกว่าสมาร์ทบอร์ดปกติ 2 เท่า มีความหนาแน่นสูงพิเศษ  high density  ความหนาแน่น > 1,600 M3 ด้วยกรรมวิธีการผลิตผ่านเครื่องอัดแรงดันสูง ใช้งานได้ทั้งภายนอกและภายใน - สร้างสรรค์ลวดลายได้หลากหลาย   ด้วยเทคนิค Water Jet Machine ซึ่งมีดีไซน์ให้เลือกสรรมากกว่า 60  ลวดลาย สามารถสั่งทำลวดลายเฉพาะตัวแบบไม่เหมือนใครได้อีกด้วย - ใช้ตกแต่งได้ทั้งงานฟาซาด และเป็น Shading ระแนงบังตา",
+                            "image_product": "../media/L2_C&W/Page2 - Product List/Facade/3. SCG FRETWORK/03 FRETWORK.png",                           
+                            "images_videos": [
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/03 FRETWORK/1.No.17-FRETWORK-05.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/03 FRETWORK/2.No.17-FRETWORK-01.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/03 FRETWORK/3.No.17-FRETWORK-02.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/03 FRETWORK/4.No.17-FRETWORK-03.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "CW-4",
+                            "sku": "",
+                            "brand": "",
+                            "name": "เอสซีจี โมดิน่า (SCG MODEENA)",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " ราคา : 2,000 บาทต่อตารางเมตร (รวม system) 3,000 บาทต่อตารางเมตร (system พร้อมติดตั้ง) ",
+                            "description": "สร้างมิติให้ผนังและฝ้า อย่างสร้างสรรค์ - รูปลักษณ์สามมิติ : ด้วยนวัตกรรมการผลิตเทคโนโลยี EXTRUSION เอกสิทธิ์จากเอสซีจี สร้างสรรค์มิติที่มีความตื้นลึกรวมอยู่ในแผ่นเดียว - สร้างแพทเทิร์นที่แตกต่างอย่างสร้างสรรค์  : สามารถสร้างสรรค์งานออกแบบที่โดดเด่น ด้วยโปรไฟล์ที่มีให้เลือกถึง 5 แบบ - ใช้ตกแต่งได้เอนกประสงค์ ทั้งงานภายในและภายนอกอาคาร ด้วยวัสดุไฟเบอร์ซีเมนต์ที่มี่ความทนทานต่อสภาวะภายนอก ยืดหดตัวต่ำ - สีสันติดทนมากกว่า  : ด้วยกรรมวิธีการผลิตพิเศษ ลดปัญหาสีหลุดร่อนเมื่อใช้ไปเป็นระยะเวลาหนึ่ง - ตอบโจทย์การสร้างมิติบนฝ้าเพดาน ด้วยรุ่น โมดิน่า ไลท์ ที่มีความหนาเพียง 1.8 ซ.ม. เบากว่ารุ่นปกติ 30% ",
+                            "image_product": "../media/L2_C&W/Page2 - Product List/Facade/4. SCG MODEENA/04 MODEENA.png",
+                           
+                            "images_videos": [
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/04 MODEENA/Cover_Modeena 1080x606_2.mp4",
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/04 MODEENA/No.17-MODEENA-01.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/04 MODEENA/No.17-MODEENA-02.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Facade/04 MODEENA/No.17-MODEENA-03.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        }
+                    ]
+                },
+                "outdoor": {
+                    "name_en": "health",
+                    "name_th": "บริการตกแต่ง<br>ภูมิทัศน์ภายนอก",
+                    "icon": {"active": "../images/product_list/outside-white.png", "unactive": "../images/product_list/outside-red.png"},
+                    "banner_video": "../videos/screen_test.mp4",
+                    "products": [
+                        {
+                            "id": "CW-5",
+                            "sku": "",
+                            "brand": "",
+                            "name": "พื้นเอสซีจี ที-คลิป ชิลด์ (SCG T-CLIP SHIELD)",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " ขนาด : กว้าง 15, 20 ซม.   ยาว 300 ซ.ม. น้ำหนัก : 14-21 กก. ต่อแผ่น ราคา : 1,500 บาทต่อตารางเมตร (รวม system) 2,300 บาทต่อตารางเมตร (system พร้อมติดตั้ง)",
+                            "description": "เพิ่มความอบอุ่นให้งานดีไซน์ด้วยพื้นไม้ ด้วยนวัตกรรมการเคลือบปกป้องขั้นสุด พื้นไม้เทียมไฟเบอร์ซีเมนต์ ติดตั้งด้วยระบบคลิปล็อค ไม่ต้องเก็บหัวสกรู มาพร้อมกับนวัตกรรมใหม่ Color Loc Shield เทคโนโลยีล็อกทุกโมเลกุลสี ให้สวยทนทานทุกสภาพอากาศ สีสำเร็จสุดสตรอง  พร้อมกับเฉดสีใหม่ สไตล์มินิมอล ที่ตอบโจทย์งานดีไซน์สมัยใหม่ Safe Shield กันลื่น  ลดโอกาสเกิดการลื่นไถลได้อย่างน้อย 90% Nano Shield สีทนทาน สวยสม่ำเสมอ เคลือบปกป้องรอบด้าน และเคลือบปกป้องผิวหน้าสูงสุด 5 Layers Coating ลดปัญหาสีหลุดลอก Stay Shield ทนรอยถึง 2 เท่า ทนทานต่อรอยขีดข่วน รองรับการใช้งานภายนอกได้ดีขึ้น Primer Shield เพิ่มคุณสมบัติการยึดเกาะของสี คงสภาพพร้อมใช้งานยู่เสมอ ทนทานทุกสภาพอากาศ",
+                            "image_product": "../media/L2_C&W/Page2 - Product List/Outdoor/1. SCG T-CLIP SHIELD/01 T CLIP.png",                           
+                            "images_videos": [
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/01 SCG T-CILP SHIELD/Cover_T-Clip Shield 1080x606_3.mp4",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/01 SCG T-CILP SHIELD/No.17-OUT_T CLIP-01.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/01 SCG T-CILP SHIELD/No.17-OUT_T CLIP-02.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/01 SCG T-CILP SHIELD/No.17-OUT_T CLIP-03.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "CW-6",
+                            "sku": "",
+                            "brand": "",
+                            "name": "เอสซีจี ซี-ชาแนล (SCG C-CHANNEL)",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " ขนาด : กว้าง 15,22.3,30 ซม.   ยาว 300 ซ.ม. น้ำหนัก : 14-21 กก. ต่อแผ่น (สามเมตร) ราคา : เริ่มต้น 405 ถึง 810 บาทต่อท่อน (ราคาแตกต่างกันในแต่ละโปรไฟล์)",
+                            "description": "เรียบเท่ห์สไตล์งานเหล็ก ให้ลุคเสมือนการใช้เหล็ก I-Beam ในการตกแต่ง ในน้ำหนักและราคาที่ value to price กว่าเหล็กจริงถึง 6 เท่า - รูปลักษณ์สามมิติ : พร้อมคุณสมบัติความแข็งแกร่ง ทนทาน ด้วยเทคโนโลยี EXTRUSION เอกสิทธิ์จากเอสซีจี - น้ำหนักเบา ติดตั้งง่าย ไม่เป็นสนิม - มีให้เลือกหลายขนาด : หน้ากว้าง 15, 22.3 และ 30 ซม. สามารถเลือกแมทให้สอดคล้องกับรูปแบบอาคารขนาดต่างๆได้ดี - ใช้งานได้หลากหลายฟังก์ชัน : ทั้งงานตกแต่งเชิงชายสไตล์โมเดิร์น และงานตกแต่งอเนกประสงค์ สไตล์ลอฟท์ - ราคาถูกกว่าเหล็กจริง 5 -6 เท่า",
+                            "image_product": "../media/L2_C&W/Page2 - Product List/Outdoor/2. SCG C-CHANNEL/02 C-CHANNEL.png",                           
+                            "images_videos": [
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/02 SCG C-CHANNEL/Cover_C-Channel 1080x606_4.mp4",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/02 SCG C-CHANNEL/No.17-OUT_C CHANNEL-01.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/02 SCG C-CHANNEL/No.17-OUT_C CHANNEL-02.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/02 SCG C-CHANNEL/No.17-OUT_C CHANNEL-03.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "CW-7",
+                            "sku": "",
+                            "brand": "",
+                            "name": "เอสซีจี บัวผนัง (SCG TRIM)",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " ขนาด : กว้าง 10, 15, 20 ซม.   ยาว 300 ซ.ม. น้ำหนัก : 13-23 กก. ต่อแผ่น (สามเมตร) ราคา : เริ่มต้น 325 ถึง 670 บาทต่อท่อน (ราคาแตกต่างกันในแต่ละโปรไฟล์)",
+                            "description": "รังสรรค์เส้นสายงานดีไซน์ วัสดุตกแต่ง ผลิตด้วยเทคโนโลยี EXTRUSION เอกสิทธิ์จากเอสซีจี บัวเก็บรอยต่อ ดักและกันน้ำไหลย้อนที่หน้าต่างและประตู  คุณภาพสูง ทดแทนงานบัวปูนปั้น และต่อยอดใช้สร้างเส้นสายงานดีไซน์ ตกแต่งผนัง façade หรือกรอบอาคารให้มีเอกลักษณ์ เพิ่มความโดดเด่น - แข็งแรงทนทาน - ผลิตสำเร็จรูปจากโรงงาน ได้มาตรฐานทุกแผ่น - เนื้อแน่น ผิวเรียบเนียนไม่มีรอยร้าว - น้ำหนักเบา ติดตั้งง่ายด้วยระบบแห้ง ไม่ต้องกรอกปูน เพียงใช้พุก – สกรู",
+                            "image_product": "../media/L2_C&W/Page2 - Product List/Outdoor/3. SCG TRIM/03 TRIM.png",
+                           
+                            "images_videos": [
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/03 SCG TRIM/Cover_Trim 1080x606_5.mp4",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/03 SCG TRIM/No.17-OUT_TRIM-01.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/03 SCG TRIM/No.17-OUT_TRIM-02.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/03 SCG TRIM/No.17-OUT_TRIM-03.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "CW-8",
+                            "sku": "",
+                            "brand": "",
+                            "name": "ไลท์วูด (Litewood by Fameline)",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " ขนาด :   12x50 มม., 25x100 มม., 50x150 มม.   ยาว 400 และ 600 ซ.ม. ราคา : 1,700 – 3,800 บาทต่อตารางเมตร (รวม system) 2,700 – 4,800 บาทต่อตารางเมตร (รวมติดตั้ง)",
+                            "description": "วัสดุอลูมิเนียมปริ้นท์ลาย ตอบโจทย์ดีไซน์เหนือจินตนาการ สามารถใช้งานได้ทั้งผนังและกรอบอาคาร (Wall & Façade) หรืองานฝ้าระแนง - น้ำหนักเบา ลดภาระโครงสร้าง ติดตั้งได้ง่ายเบาแรง หมดปัญหางานโครงสร้างที่ใช้รับน้ำหนัก - แข็งแรงทนทานต่อทุกสภาพอากาศ :  ผลิตจากอลูมิเนียมคุณภาพสูง ทำให้เนื้อวัสดุและสีเคลือบผิว มีความทนทานทั้งแดดและฝน มีอายุการใช้งานกว่า 20 ปี รับประกันคุณภาพสีนาน 10 ปี ใช้งานได้ทั้งภายนอกและภายใน - โปรไฟล์ทหลากหลาย :  สามารถปรับสัดส่วนเส้นสายให้เหมาะสมกับขนาดพื้นที่ออกแบบใช้งาน  อีกทั้งยังมีความยาวสูงสุดถึง 6 เมตร รอยต่อน้อย ได้เส้นสายที่ยาวต่อเนื่องตลอดแนว - ติดตั้งง่ายด้วยระบบ Snap Lock :  ด้วยเซ็ทอุปกรณ์ที่ออกแบบมาโดยเฉพาะ โดยไม่ต้องใช้สกรู รวดเร็ว แม่นยำ แข็งแรง ",
+                            "image_product": "../media/L2_C&W/Page2 - Product List/Outdoor/4. Litewood by Fameline/04 LITEWOOD.png",                           
+                            "images_videos": [
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/04 Litewood by Frameline/1) Cover_Litewood 1080x606_6.mp4",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/04 Litewood by Frameline/2) No.17-Litewood-03.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/04 Litewood by Frameline/2) No.17-Litewood-01.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/04 Litewood by Frameline/2) No.17-Litewood-02.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "CW-9",
+                            "sku": "",
+                            "brand": "",
+                            "name": "เอสซีจี ไลน์ (SCG LINE)",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": " ขนาด : 5x300 ซม.   หนา 2.5 ซม. น้ำหนัก : 5.7 กก. ต่อแผ่น (สามเมตร) ราคา : 110 บาทต่อท่อน (รวม system)",
+                            "description": "ผสานเส้นสานงานไม้ สวยงามดุจไม้ธรรมชาติ ผลิตจากไฟเบอร์ซีเมนต์คุณภาพสูง มีจุดเด่นด้านผิวสัมผัสธรรมชาติเสมือนไม้จริง เพื่อเป็นทางเลือกในการสร้างผลงาน ตอบโจทย์เรื่องความหลากหลายของ Material ให้ลูกค้าและสถาปนิกสามารถมิกซ์แอนด์แมทช์ผลงานได้อย่างจุใจ - สำหรับงานตกแต่ง รองใต้ครอบหลังคาหรือใช้งานทั่วไป - ให้ความสวยงามเสมือนไม้จริง ดุจไม้ธรรมชาติ - แข็งแรง ทนทานต่อทุกสภาพอากาศ - ผลิตจากไฟเบอร์ซีเมนต์ ดูแลรักษาง่ายไร้ปัญหาเรื่องปลวก และแมลง - ติดตั้งง่ายและสะดวกรวดเร็ว",
+                            "image_product": "../media/L2_C&W/Page2 - Product List/Outdoor/5. SCG LINE/No.17-LINE-05.png",
+                           
+                            "images_videos": [
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/05 SCG LINE/No.17-LINE-01.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/05 SCG LINE/No.17-LINE-02.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/05 SCG LINE/No.17-LINE-03.png",
+                                "../media/L2_C&W/Page3 - Product Detail/Outdoor/05 SCG LINE/No.17-LINE-04.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
