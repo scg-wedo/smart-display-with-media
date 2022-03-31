@@ -446,31 +446,60 @@
                     "banner_video": "../videos/rap_god.mp4",
                     "products": [
                         {
-                            "id": "8857126925099",
-                            "sku": "8857126925099",
-                            "brand": "Bewell",
-                            "name": "Bewell เบาะรองหลัง Ergo-Cushion Serie Back EC-01 (Cooling Cotton)",
-                            "price": 1490,
-                            "sale_price": 1490,
+                            "id": "ROOF-7",
+                            "sku": "",
+                            "brand": "",
+                            "name": "แผ่นสะท้อนความร้อน เอสซีจี รุ่น ULTRAKOOL INNOGREEN",
+                            "price": 0,
+                            "sale_price": 0,
                             "tagline": "",
-                            "description": "สายรัดกับเก้าอี้ให้ปรับระดับได้ เพื่อปรับให้เข้ากับสรีระของแผ่นหลังเรา <br> ตัวเบาะเมมโมรี่โฟม นั่งแล้วตัวไม่ยุบหายลงไปพร้อมคืนตัว 100% <br> ตัวปลอกหุ้มเบาะรองหลังเป็นผ้า Cooling cotton ที่จะให้ความเย็นสบาย พร้อมระบายอากาศได้ดียิ่งขึ้น",                            
-                            "image_product": "../images/productcard1.png",
-                            "images_videos": [                                
-                                "../videos/rap_god.mp4",
-                                "../images/productcard1.png", 
-                                "../images/productcard2.png", 
-                                "../images/productcard3.png"
+                            "description": "- สะท้อนและป้องกันความร้อนได้ในหนึ่งเดียว โดยช่วยสะท้อนรังสีความร้อน 95% และลดอุณหภูมิได้มากกว่าแผ่นสะท้อนความร้อนทั่วไปถึง 3 เท่า - ปลอดภัยต่อสุขภาพ ไม่มีสารก่อมะเร็ง รวมถึงมีสารประกอบอินทรีย์ระเหยง่ายต่ำ (Low VOCs) และเป็นมิตรต่อสิ่งแวดล้อม - ออกแบบพิเศษให้ติดตั้งง่ายและรวดเร็วขึ้น",
+                            "image_product": "../media/L2_Roof/Page2 - Product List/Product/1. SCG INNOGREEN/Innogreen_600x600.jpg",
+                           
+                            "images_videos": [
+                                "../media/L2_Roof/Page3 - Product Detail/Product/1. SCG INNOGREEN/Cover-Innogreen 1080x606_7.mp4",
+                                "../media/L2_Roof/Page3 - Product Detail/Product/1. SCG INNOGREEN/no.13-Innogreen-01.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Product/1. SCG INNOGREEN/no.13-Innogreen-02.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Product/1. SCG INNOGREEN/no.13-Innogreen-03.png"
                             ],
-                            "qrcode":[
+                            "qrcode": [
                                 {
                                     "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
-                                    "ซื้อออนไลน์": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "",
                                     "ขอใบเสนอราคา": "",
-                                    "ปรึกษาผู้เชี่ยวชาญ": "link-to-qrcode"
+                                    "ปรึกษาผู้เชี่ยวชาญ": ""
                                 }
                             ],
-                            "delivery_tag": "สินค้าจัดส่งที่บ้าน",
-                            "bestseller_tag": "สินค้าขายดี"
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
+                        },
+                        {
+                            "id": "ROOF-8",
+                            "sku": "",
+                            "brand": "",
+                            "name": "SCG Prestige X-Shield Slim",
+                            "price": 0,
+                            "sale_price": 0,
+                            "tagline": "หลังคาคอนกรีตแผ่นเรียบที่บางที่สุดจาก SCG",
+                            "description": "บาง เนียน เท่กว่า” ที่สุดของความบาง เนียน เท่ และสีสวยทนกว่า - บางกว่า เพียง 19 มม. แต่ยังคงความแข็งแรงเท่าเดิม ผิวสัมผัสที่เนียนเรียบกว่ารุ่นเดิม เพิ่มลุคโมเดิร์นทุกมุมมอง สีสวยทนขึ้น 3 เท่า ด้วยเทคโนโลยี X-Shield เพิ่มพลังยึดเกาะของชั้นสี",
+                            "image_product": "../media/L2_Roof/Page2 - Product List/Product/2. SCG Prestige X-Shield Slim/Prestige-600x600.jpg",
+                           
+                            "images_videos": [
+                                "../media/L2_Roof/Page3 - Product Detail/Product/2. SCG Prestige X-Shield Slim/Cover-Prestige slim 1080x606_8.mp4",
+                                "../media/L2_Roof/Page3 - Product Detail/Product/2. SCG Prestige X-Shield Slim/no.13-Prestige-01.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Product/2. SCG Prestige X-Shield Slim/no.13-Prestige-02.png",
+                                "../media/L2_Roof/Page3 - Product Detail/Product/2. SCG Prestige X-Shield Slim/no.13-Prestige-03.png"
+                            ],
+                            "qrcode": [
+                                {
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "link-to-qrcode",
+                                    "ซื้อออนไลน์": "",
+                                    "ขอใบเสนอราคา": "",
+                                    "ปรึกษาผู้เชี่ยวชาญ": ""
+                                }
+                            ],
+                            "delivery_tag": "",
+                            "bestseller_tag": ""
                         }
                     ]
                 }
