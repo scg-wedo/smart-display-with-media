@@ -60,9 +60,9 @@
                     </figure>
                 </div>
 
-                <div class="banner-section">
+                <!-- <div class="banner-section">
                     Banner By categories #1
-                </div>
+                </div> -->
 
                 <div class="tab-content" style="height:690px;" id="productlist-container">
                     <!--  ใส่ content จาก js/jquery -->
@@ -200,7 +200,15 @@
                   $(`#${nav_id} img`).attr('src', main_menu_obj.icon.active)
                 }
 
-                
+                $(`#${content_id}`).prepend(`
+                    <div class="banner-section">
+                        <video width="100%" height="100%" autoplay muted>
+                            <source src="${main_menu_obj.banner_video}" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                `)
 
                 main_menu_obj.products.forEach(product => {
                     $(`#${content_id} div.productlist-wrapper`).append(`
