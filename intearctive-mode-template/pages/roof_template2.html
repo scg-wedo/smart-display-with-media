@@ -155,12 +155,15 @@
                 );
 
             const playAllVideo = async () => {
-                for (var i = 0; i < jd.page.roof.front.videos.length; i++) {
-                    $('#video-banner source').attr('src', jd.page.roof.front.videos[i].url)
+                for (var i = 0; i < jd.page.roof.promotion.videos.length; i++) {
+                    $('#video-banner source').attr('src', jd.page.roof.promotion.videos[i].url)
+                    $('#video-banner').click(function () {
+                        window.location.href = jd.page.roof.promotion.videos[i].pagelinked
+                    })
                     $("#video-banner")[0].load();
                     $("#video-banner")[0].play();
                     console.log('play video')
-                    const video_url = await play(jd.page.roof.front.videos[i].url, jd.page.roof.front.videos[i].duration);
+                    const video_url = await play(jd.page.roof.promotion.videos[i].url, jd.page.roof.promotion.videos[i].duration);
                     console.log(`video  ${video_url} were played`);
 
                 }

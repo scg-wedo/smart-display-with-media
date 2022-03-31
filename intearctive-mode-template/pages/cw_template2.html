@@ -155,6 +155,9 @@
             const playAllVideo = async () => {
                 for (var i = 0; i < jd.page.ceiling_and_wall.promotion.videos.length; i++) {
                     $('#video-banner source').attr('src', jd.page.ceiling_and_wall.promotion.videos[i].url)
+                    $('#video-banner').click(function () {
+                        window.location.href = jd.page.roof.promotion.videos[i].pagelinked
+                    })
                     $("#video-banner")[0].load();
                     $("#video-banner")[0].play();
                     console.log('play video')
