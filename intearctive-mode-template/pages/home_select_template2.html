@@ -107,12 +107,12 @@
                 );
 
             const playAllVideo = async () => {
-                for (var i = 0; i < jd.page.home_selected.front.videos.length; i++) {
-                    $('#video-banner source').attr('src', jd.page.home_selected.front.videos[i].url)
+                for (var i = 0; i < jd.page.home_selected.promotion.videos.length; i++) {
+                    $('#video-banner source').attr('src', jd.page.home_selected.promotion.videos[i].url)
                     $("#video-banner")[0].load();
                     $("#video-banner")[0].play();
                     console.log('play video')
-                    const video_url = await play(jd.page.home_selected.front.videos[i].url, jd.page.home_selected.front.videos[i].duration);
+                    const video_url = await play(jd.page.home_selected.promotion.videos[i].url, jd.page.home_selected.promotion.videos[i].duration);
                     console.log(`video  ${video_url} were played`);
 
                 }
