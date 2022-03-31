@@ -41,9 +41,10 @@
         <!-- Content -->
         <div class="template2-group-content-panel position-relative ">
 
-            <div class="data-ceilingnwall" style="height:950px; background: #F3F3F3; box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12); border-radius: 6px; over-flowy:scroll; over-flowx:hidden;">
-                <div class="tab-content" style="height:690px;" id="productlist-container">
-                    <div class="productlist-wrapper" id="products-content" >
+            <div class="data-ceilingnwall"
+                style="height:950px; background: #F3F3F3; box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12); border-radius: 6px; over-flowy:scroll; over-flowx:hidden;">
+                <div class="tab-content" style="height:690px; overflow: visible;" id="productlist-container">
+                    <div class="productlist-wrapper" id="products-content">
                     </div>
                     <!--  ใส่ content จาก js/jquery -->
                     <!-- <div id="test1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-test1">
@@ -135,7 +136,7 @@
             let count = 0;
             jd.category_product.home_selected.products.forEach(product => {
                 $(`#products-content`).append(`
-                    <div class="items" id ='${product.id}'>
+                    <div class="items" id ='${product.id}' style="position:relative;">
                         <div class="product-card">
                             <figure>
                                 <img src="${product.image_product}" alt="productimage" class="img-fluid" />
@@ -146,17 +147,20 @@
                         </div>
                     </div>
 
-                `)                
+                `)
+                if (product.bestseller_tag) {
+                    $(`#${product.id}`).append(`<div style="width: 100px; height: 100px; position:absolute; left:8%; top:8%;">  <img style="position:absolute;" src="../images/best_seller_tag1.png"/> <p style="z-index:10; position:absolute;top:3px; left: 12px; color:white; font-size:12px;"> ${product.bestseller_tag} </p>  <img style="position:absolute; top:27%;" src="../images/best_seller_tag2.png"/>  </div>`)
+                }
 
-                $(`#${product.id}`).click(function(){
-                        // $(`#${nav_id} img`).attr('src', '')
-                        localStorage.setItem('id', product.id)
-                        window.location.href = `home_select_product_details.html`
-                    })
-            
+                $(`#${product.id}`).click(function () {
+                    // $(`#${nav_id} img`).attr('src', '')
+                    localStorage.setItem('id', product.id)
+                    window.location.href = `home_select_product_details.html`
+                })
+
             })
 
-   
+
         }).fail(function () {
             console.log('fail')
         });

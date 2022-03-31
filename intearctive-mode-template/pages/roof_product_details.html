@@ -251,6 +251,10 @@
                 $('#slide-content>div:eq(2) img').attr('src', selected_product[0].images_videos[2])
                 $('#slide-content>div:eq(3) img').attr('src', selected_product[0].images_videos[3])
 
+                if (selected_product[0].bestseller_tag){
+                    $(`#carouselExampleDark`).append(`<div style="width: 100px; height: 100px; position:absolute; left:-3%; top:5%;">  <img style="position:absolute;" src="../images/best_seller_tag1.png"/> <p style="z-index:10; position:absolute;top:3px; left: 12px; color:white; font-size:12px;"> ${selected_product[0].bestseller_tag} </p>  <img style="position:absolute; top:27%;" src="../images/best_seller_tag2.png"/>  </div>`)  
+                }
+
             }
         }).fail(function (jqxhr, textStatus, error) {
 
