@@ -189,7 +189,7 @@
                 // let content_id = `content_${main_menu}`
                 $('#productlist-container').append(`
                     <div id="${content_id}" class="tab-pane fade show" role="tabpanel" aria-labelledby="${nav_id}">
-                        <div class="productlist-wrapper">
+                        <div class="productlist-wrapper mt-0">
                         </div>
                     </div>   
                 `)
@@ -202,15 +202,15 @@
                     $(`#${nav_id} img`).attr('src', main_menu_obj.icon.active)
                 }
 
-                $(`#${content_id}`).prepend(`
-                    <div class="banner-section">
-                        <video width="100%" height="100%" autoplay muted>
-                            <source src="${main_menu_obj.banner_video}" type="video/mp4">
-                            <source src="movie.ogg" type="video/ogg">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                `)
+                // $(`#${content_id}`).prepend(`
+                //     <div class="banner-section">
+                //         <video width="100%" height="100%" autoplay muted>
+                //             <source src="${main_menu_obj.banner_video}" type="video/mp4">
+                //             <source src="movie.ogg" type="video/ogg">
+                //             Your browser does not support the video tag.
+                //         </video>
+                //     </div>
+                // `)
 
 
 
