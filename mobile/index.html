@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap 5</title>
   <link rel="stylesheet" href="css/main.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <script src="https://kit.fontawesome.com/2bbac3a66c.js" crossorigin="anonymous" ></script>  
 </head>
 <body>
   <header class="site-header w-100">
@@ -38,39 +40,49 @@
         </div>
       </div>
     </div>
-    <div class="form-section">
-      <form class="">
+    <div class="form-section customer-info">
+      <form class="" id="create-account-form" >
         <div class="row gy-3">
-          <div class="col">
+          <div class="col status">
             <label for="inputEmail4" class="form-label">ชื่อ <span class="star">*</span></label>
-            <input type="text" class="form-control" placeholder="กรอกชื่อ" aria-label="กรอกชื่อ">
+            <input type="text" class="form-control" placeholder="กรอกชื่อ" aria-label="กรอกชื่อ" id="contact-name" name="name" onkeyup="validateForm()" >
+            <i class="fas fa-check-circle"></i>
+            <span class="error-style" id="nameError"></span>
           </div>
-          <div class="col">
-            <label for="inputEmail4" class="form-label">นามสกุล <span class="star">*</span></label>
-            <input type="text" class="form-control" placeholder="กรอกนามสกุล" aria-label="กรอกนามสกุล">
-          </div>
-        </div>
-        <div class="row gy-3">
-          <div class="col">
-            <label for="inputEmail4" class="form-label">หมายเลขโทรศัพท์ <span class="star">*</span></label>
-            <input type="text" class="form-control" placeholder="กรอกเบอร์โทรศัพท์" aria-label="กรอกชื่อ">
+          <div class="col status">
+            <label for="inputEmail4" class="form-label">นามสกุล </label>
+            <input type="text" class="form-control" placeholder="กรอกนามสกุล" aria-label="กรอกนามสกุล" id="contact-surname" name="sur name"  onkeyup="validateForm()">
+            <i class="fas fa-check-circle"></i>
+            <span class="error-style" id="surname-error"></span>
           </div>
         </div>
         <div class="row gy-3">
-          <div class="col">
-            <label for="inputEmail4" class="form-label">อีเมล <span class="star">*</span></label>
-            <input type="text" class="form-control" placeholder="กรอกอีเมล" aria-label="กรอกชื่อ">
+          <div class="col status">
+            <label for="inputphone" class="form-label">หมายเลขโทรศัพท์ <span class="star">*</span></label>
+            <input type="number" class="form-control" placeholder="xxx-xxx-xxxx" aria-label="กรอกชื่อ" id="contact-phone" name="phone number" maxlength="10" onkeydown="phonenumberFormatter()" onkeyup="validateForm()">
+            <i class="fas fa-check-circle"></i>
+            <span class="error-style" id="phone-error"></span>
+          </div>
+        </div>
+        <div class="row gy-3">
+          <div class="col status">
+            <label for="inputEmail4" class="form-label">อีเมล </label>
+            <input type="email" class="form-control" placeholder="กรอกอีเมล" aria-label="กรอกชื่อ" id="contact-email" name="email" maxlength="70" onkeyup="validateForm()">
+            <i class="fas fa-check-circle"></i>
+            <span class="error-style" id="email-error"></span>
           </div>
         </div>
         <p class="caption">
           ยินยอมให้ส่งข้อมูลส่วนบุคคลให้บริษัทในกลุ่มเอสซีจีและพันธมิตร
           ตามตารางแนบท้ายนโยบายความเป็นส่วนตัว <a href="#">ดูรายละเอียด</a>
         </p>
-        <button class="btn btn-lg btn-primary ">ยืนยัน</button>
+        <button class="btn btn-lg btn-primary " type="button" onclick="validateForm(true)">ยืนยัน</button>
+     
       </form>
     </div>
   </main>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="js/script.js" > </script>
 </body>
 
 </html>

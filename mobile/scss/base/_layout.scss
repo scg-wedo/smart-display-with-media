@@ -58,6 +58,35 @@
                 color: #0d6efd;
             }
         }
+        &.customer-info{
+            .status{
+                &.success{
+                    .error-style{
+                        display: none;
+                    }
+                     i{
+                    position: absolute;
+                    right: 15px;
+                    top: 38px;
+                    color: green;
+                    font-size: 1.4rem;
+                    display: block;
+                }
+
+                }
+            
+                position: relative;
+                i{
+                    display: none;
+                }
+                &.error{
+                    input{
+                        border-color: $primary;
+                    }
+                }
+               
+            }
+        }
     }
     &.submit-screen{
         display: flex;
