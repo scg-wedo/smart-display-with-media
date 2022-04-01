@@ -47,12 +47,6 @@
 
                         <ul class="nav nav-pills mb-3 " id="nav-tabs" role="tablist">
                             <!-- ใส่ button nav จ่าก js/jquery -->
-                            <!-- <button class="nav-link active" id="nav-test1" data-bs-toggle="tab" data-bs-target="#test1"
-                                type="button" role="tab" aria-controls="test1"
-                                aria-selected="true">test1<br>พนังและกำแพง</button>
-                            <button class="nav-link" id="nav-test2" data-bs-toggle="tab" data-bs-target="#test2"
-                                type="button" role="tab" aria-controls="test2"
-                                aria-selected="false">test2<br>กลุ่มสินค้าและบริการหลังคา</button> -->
                         </ul>
                     <!-- </nav> -->
                     <figure>
@@ -60,56 +54,8 @@
                     </figure>
                 </div>
 
-                <!-- <div class="banner-section">
-                    Banner By categories #1
-                </div> -->
-
                 <div class="tab-content" style="height:690px; overflow: visible;" id="productlist-container">
                     <!--  ใส่ content จาก js/jquery -->
-                    <!-- <div id="test1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-test1">
-                        <div class="productlist-wrapper" >
-
-                            <div class="items">
-                                <div class="product-card">
-                                    <figure>
-                                        <img src="../images/productcard1.png" alt="productimage" class="img-fluid" />
-                                    </figure>
-                                    <label>
-                                        ไลท์วูด<br> (Litewood by Fameline)
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="items">
-                                <div class="product-card">
-                                    <figure>
-                                        <img src="../images/productcard2.png" alt="productimage" class="img-fluid" />
-                                    </figure>
-                                    <label>
-                                        เอสซีจี ซี-ชาแนล <br> (SCG C-CHANNEL)
-                                    </label>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div id="test2" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-test2">
-                        <div class="productlist-wrapper" >
-
-                            <div class="items">
-                                <div class="product-card">
-                                    <figure>
-                                        <img src="../images/productcard1.png" alt="productimage" class="img-fluid" />
-                                    </figure>
-                                    <label>
-                                        Test2<br> (Litewood by Fameline)
-                                    </label>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div> -->
-
                 </div>
 
             </div>
@@ -229,7 +175,6 @@
                         $(`#${product.id}`).append(`<div style="width: 100px; height: 100px; position:absolute; left:8%; top:8%;">  <img style="position:absolute;" src="../images/best_seller_tag1.png"/> <p style="z-index:10; position:absolute;top:3px; left: 12px; color:white; font-size:12px;"> ${product.bestseller_tag} </p>  <img style="position:absolute; top:27%;" src="../images/best_seller_tag2.png"/>  </div>`)  
                     }
                     $(`#${product.id}`).click(function(){
-                        // $(`#${nav_id} img`).attr('src', '')
                         localStorage.setItem('id', product.id)
                         window.location.href = `cw_product_details.html`
                     })

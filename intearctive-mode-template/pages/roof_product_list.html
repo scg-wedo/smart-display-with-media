@@ -44,72 +44,19 @@
             <div class="data-ceilingnwall"
                 style="height:950px; background: #F3F3F3; box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12); border-radius: 6px;">
                 <div class="top-section">
-                    <!-- <nav class="easy-navigation"> -->
 
                     <ul class="nav nav-pills mb-3 " id="nav-tabs" role="tablist">
                         <!-- ใส่ button nav จ่าก js/jquery -->
-                        <!-- <button class="nav-link active" id="nav-test1" data-bs-toggle="tab" data-bs-target="#test1"
-                                type="button" role="tab" aria-controls="test1"
-                                aria-selected="true">test1<br>พนังและกำแพง</button>
-                            <button class="nav-link" id="nav-test2" data-bs-toggle="tab" data-bs-target="#test2"
-                                type="button" role="tab" aria-controls="test2"
-                                aria-selected="false">test2<br>กลุ่มสินค้าและบริการหลังคา</button> -->
                     </ul>
-                    <!-- </nav> -->
+               
                     <figure>
                         <img src="../images/dummy-rm.jpg" />
                     </figure>
                 </div>
-                <!-- 
-                <div class="banner-section">
-                    Banner By categories #1
-                </div> -->
+           
 
                 <div class="tab-content" style="height:690px; overflow: visible;" id="productlist-container">
                     <!--  ใส่ content จาก js/jquery -->
-                    <!-- <div id="test1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-test1">
-                        <div class="productlist-wrapper" >
-
-                            <div class="items">
-                                <div class="product-card">
-                                    <figure>
-                                        <img src="../images/productcard1.png" alt="productimage" class="img-fluid" />
-                                    </figure>
-                                    <label>
-                                        ไลท์วูด<br> (Litewood by Fameline)
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="items">
-                                <div class="product-card">
-                                    <figure>
-                                        <img src="../images/productcard2.png" alt="productimage" class="img-fluid" />
-                                    </figure>
-                                    <label>
-                                        เอสซีจี ซี-ชาแนล <br> (SCG C-CHANNEL)
-                                    </label>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div id="test2" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-test2">
-                        <div class="productlist-wrapper" >
-
-                            <div class="items">
-                                <div class="product-card">
-                                    <figure>
-                                        <img src="../images/productcard1.png" alt="productimage" class="img-fluid" />
-                                    </figure>
-                                    <label>
-                                        Test2<br> (Litewood by Fameline)
-                                    </label>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div> -->
 
                 </div>
 
@@ -201,18 +148,6 @@
                     $(`#${nav_id}`).attr('aria-selected', true)
                     $(`#${nav_id} img`).attr('src', main_menu_obj.icon.active)
                 }
-
-                // $(`#${content_id}`).prepend(`
-                //     <div class="banner-section">
-                //         <video width="100%" height="100%" autoplay muted>
-                //             <source src="${main_menu_obj.banner_video}" type="video/mp4">
-                //             <source src="movie.ogg" type="video/ogg">
-                //             Your browser does not support the video tag.
-                //         </video>
-                //     </div>
-                // `)
-
-
 
                 main_menu_obj.products.forEach(product => {
                     $(`#${content_id} div.productlist-wrapper`).append(`

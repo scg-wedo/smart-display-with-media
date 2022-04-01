@@ -42,21 +42,22 @@
                 <i class="icon-back"></i>
             </button>
             <!-- Inner Content -->
-            <div class="inner-content" style="margin-top: -60px;">
+            <div class="inner-content inner-content-custom">
                 <div class="img-gallery">
                     <div class="row">
                         <div class="col-6 product-image-corosel ">
                             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators" id="slide-button">
+                                <div class="carousel-indicators justify-content-start" id="slide-button" style="width: 45rem; transform: scale(1.35); margin-left: 7.5rem;">
+                                    <!-- carousel button by js -->
+                                 </div>
+                                <div class="carousel-inner" id="slide-content" style="width:45rem; height:45rem;">
                                     <!--  slide button by js -->
                                 </div>
-                                <div class="carousel-inner" id="slide-content">
-                                    <!-- slide content by js -->
-                                </div>
+                           
                             </div>
 
                         </div>
-                        <div class="col-6 product-details">
+                        <div class="col-5 product-details product-details-custom">
                             <h6 id="skuid">รหัสสินค้า 8857126925012</h6>
                             <h2 id="productname">Bewell เบาะรองหลัง Ergo-Cushion
                                 Serie Back EC-01 (Cooling Cotton)</h2>
@@ -97,23 +98,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="video-gallery">
-          <h3>แกลเลอรี่</h3>
-          <div class="row">
-            <div class="col-6 wrapper">
-             <figure type="button"> <img src="../images/dummy-yt1.jpg"/></figure>
-             <figure type="button"><img src="../images/dummy-yt2.jpg"/></figure>
-             </div>
-            </div>
-            <div class="row">
-             <div class="col-6 wrapper">
-             <figure type="button"><img src="../images/dummy-yt3.jpg"/></figure>
-             <figure type="button"><img src="../images/dummy-yt4.jpg"/></figure>         
-            </div>
-            
-          </div>
-        </div> -->
             </div>
         </div>
 
@@ -197,13 +181,12 @@
                         `)
 
                         $(`#slide-content`).append(`
-                        <div class="carousel-item" data-bs-interval="10000">
+                        <div class="carousel-item" data-bs-interval="10000" style="height:100%;">
                                         <img src="${content_link}" class="d-block w-100" alt="...">
                                         <div class="carousel-caption d-none d-md-block">
                                         </div>
                                     </div>
                         `)
-                        // $(`#slide-button>div:eq(${content_link_index}) img`).attr('src', content_link)
                         
                         
                     }else if (content_link.endsWith('mp4') || content_link.endsWith('mov')){
@@ -220,9 +203,9 @@
                         `)
 
                         $('#slide-content').append(`
-                        <div class="carousel-item  active" data-bs-interval="5000">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <video width="337" height="337" autoplay muted>
+                        <div class="carousel-item  active" data-bs-interval="5000" style="height:100%;">
+                                        <div class="embed-responsive embed-responsive-16by9 h-100">
+                                            <video width="100%" height="100%" autoplay muted>
                                                 <source src="${content_link}" type="video/mp4">
                                                 <source src="${content_link}" type="video/ogg">
                                                 Your browser does not support the video tag.
