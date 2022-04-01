@@ -15,7 +15,7 @@
 
 <body style="width: 1080px; height: 1920px;">
     <!-- Header -->
-    <header class="site-header w-100 header-vb plain">
+    <header class="site-header w-100 header-vb plain" id="header">
         <div class="top-panel">
             <h4>คุณอยู่ที่</h4>
             <h3>ROOF</h3>
@@ -34,7 +34,7 @@
                 <em>”</em>
             </p>
             <figure>
-                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" />
+                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" id="girl-header"/>
             </figure>
         </div>
 
@@ -142,6 +142,27 @@
 
 <script>
     $(document).ready(function () {
+
+        // Flash Sale Banner
+        setInterval(function () {
+            var today = new Date();
+            var time = today.getHours().toString().padStart(2, '0') + ":" + today.getMinutes().toString().padStart(2, '0');
+            if ((time >= "11:15" && time < "12:00") || (time >= "14:15" && time < "15:00") || (time >= "18:00" && time < "18:45")) {
+                if ($('#header').find($('#flash-header')).length == 0) {
+                    $('#header').append(`
+                <div id="flash-header" style="position: absolute; width: 100%; height: 220px; background-color:black;">
+                    <video width="100%" height="100%" autoplay muted loop>
+                        <source src="../media/L2_C&W/Flash sale Banner/35_Flash Sale_200.mp4" type="video/mp4">
+                    </video>
+                </div>`
+                    )
+                    $('#girl-header').css('height', '200px')
+                }
+            } else {
+                $('#flash-header').remove()
+                $('#girl-header').css('height', 'auto')
+            }
+        }, 1000);
 
         $(`#btn-product-list`).click(() => {
             window.location.href = 'roof_product_list.html'
