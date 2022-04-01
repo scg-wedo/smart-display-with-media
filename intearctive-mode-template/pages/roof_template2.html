@@ -66,11 +66,12 @@
                                 </div>
                                 <div class="col-2 data-right">
                                     <div class="d-flex puchase-options ">
-                                        <!-- <div class="  puchase-option2 options qrcode" type="button">
+                                        <div class="  puchase-option2 options qrcode" style="padding-top: 0px;"
+                                            type="button">
                                             <h6>แสกนรับสิทธิ์
                                             </h6>
-                                            <img id="modal-qrcode" src="../images/qrcode.png" />
-                                        </div> -->
+                                            <img id="modal-qrcode" src="../images/qr-banner-modal.png" />
+                                        </div>
                                     </div>
                                     <button class="btn btn-rednew" data-bs-dismiss="modal"> <i class="icon-close"></i>
                                         <span>ปิดหน้าต่าง</span></button>
@@ -216,7 +217,7 @@
                 $('#modal-topic').html(jd.page.roof.promotion.banner[index].topic)
                 $('#modal-zone').html(jd.page.roof.promotion.banner[index].zone)
                 $('#modal-desc').html(jd.page.roof.promotion.banner[index].content)
-                $('#modal-qrcode').attr('src', jd.page.roof.promotion.banner[index].qrcode)
+                // $('#modal-qrcode').attr('src', jd.page.roof.promotion.banner[index].qrcode)
             })
 
             playAllVideo()
