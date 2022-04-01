@@ -30,9 +30,9 @@
         <!-- Quote -->
         <div class="quote-section  strip1">
             <p><em>“</em> <span class="txt-red">หากสนใจ</span>
-                คุณลูกค้าสามารถแจ้งพนักงานหรือสั่งซื้อออนไลน์ได้เลยค่ะ<em>”</em></p>
+                คุณลูกค้าสามารถ<br>แจ้งพนักงานหรือสั่งซื้อออนไลน์ได้เลยค่ะ<em>”</em></p>
             <figure>
-                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" id="girl-header" />
+                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" id="girl-header" style="width: 220px; height: 300px;"/>
             </figure>
         </div>
 
@@ -142,11 +142,13 @@
                     </video>
                 </div>`
                     )
-                    $('#girl-header').css('height', '200px')
+                    $('#girl-header').css('height', '220px')
+                    $('#girl-header').css('width', '160px')
                 }
             } else {
                 $('#flash-header').remove()
                 $('#girl-header').css('height', 'auto')
+                $('#girl-header').css('max-width', '100%')
             }
         }, 1000);
 
