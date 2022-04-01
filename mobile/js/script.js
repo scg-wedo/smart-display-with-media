@@ -89,25 +89,25 @@ function isEmailValid(email){
 }
 
 // js to format phone number
-function formatPhoneNumber(value) {
-    if (!value) return value;
-    const phoneNumber = value.replace(/[^\d]/g, '');
-    const phoneNumberLength = phoneNumber.length;
-    if (phoneNumberLength < 4) return phoneNumber;
-    if (phoneNumberLength < 7 ){
-        return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
-    }
-    return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(
-        3,
-        6,
-    )}-${phoneNumber.slice(6,9)}`;
+// function formatPhoneNumber(value) {
+//     if (!value) return value;
+//     const phoneNumber = value.replace(/[^\d]/g, '');
+//     const phoneNumberLength = phoneNumber.length;
+//     if (phoneNumberLength < 4) return phoneNumber;
+//     if (phoneNumberLength < 7 ){
+//         return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
+//     }
+//     return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(
+//         3,
+//         6,
+//     )}-${phoneNumber.slice(6,9)}`;
 
    
 
-}
+// }
 
-function phonenumberFormatter(){
-    const inputField = document.getElementById('contact-phone');
-    const formattedInputValue = formatPhoneNumber(inputField.value);
-    inputField.value = formattedInputValue;
-}
+// function phonenumberFormatter(){
+//     const inputField = document.getElementById('contact-phone');
+//     const formattedInputValue = formatPhoneNumber(inputField.value);
+//     inputField.value = formattedInputValue;
+// }
