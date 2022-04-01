@@ -63,7 +63,7 @@
                             <h2 id="productname">Bewell เบาะรองหลัง Ergo-Cushion
                                 Serie Back EC-01 (Cooling Cotton)</h2>
                             <label id="tagline">Bewel</label>
-                            <p id="price"><span>ราคา</span>1,490 บาท <a href="#"
+                            <p id="price" class="position-relative"><span>ราคา</span>1,490 บาท <a href="#"
                                     id="delivery_tag">สินค้าจัดส่งที่บ้าน</a></p>
                             <ul style="list-style:none; margin-left:0px; padding-left: 0px;">
                                 <li id="desc">สายรัดกับเก้าอี้ให้ปรับระดับได้ <br>เพื่อปรับให้เข้า</li>
@@ -165,9 +165,9 @@
                 selected_product[0].name ? $("#productname").html(selected_product[0].name) : $("#productname");
 
                 if (selected_product[0].delivery_tag) {
-                    selected_product[0].price ? $("#price").html("<span>ราคา</span> " + selected_product[0].price + ` บาท <a id="delivery_tag" style="margin-left:180px" href="#">${selected_product[0].delivery_tag}</a>`) : $("#price").remove()
+                    selected_product[0].price ? $("#price").html("<span>ราคา</span> " + numberWithCommas(selected_product[0].price) + ` บาท <a id="delivery_tag" style="position:absolute; right:0; margin-top:2px" href="#">${selected_product[0].delivery_tag}</a>`) : $("#price").remove()
                 } else {
-                    selected_product[0].price ? $("#price").html("<span>ราคา</span> " + selected_product[0].price + 'บาท') : $("#price").remove()
+                    selected_product[0].price ? $("#price").html("<span>ราคา</span> " + numberWithCommas(selected_product[0].price) + 'บาท') : $("#price").remove()
                 }
                 selected_product[0].description ? $("#desc").html(selected_product[0].description) : $("#desc").remove()
                 selected_product[0].qrcode[0].ซื้อออนไลน์ ? $("#qrcode").attr('src', selected_product[0].qrcode[0].ซื้อออนไลน์) : $("#qrcode").remove()
@@ -241,6 +241,9 @@
             console.log('fail load json')
         });
     });
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
 </script>
 
 </html>

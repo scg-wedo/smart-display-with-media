@@ -165,7 +165,7 @@
                             </figure>
                             <label>
                                 <p style="width: 150px; overflow: hidden;  text-overflow: ellipsis; line-height: 1.5em; height: 3em; word-wrap: break-word;">${product.name}</p>
-                                <p class="text-danger"> ${product.price}  บาท </p>
+                                <p class="text-danger"> ${numberWithCommas(product.price)}  บาท </p>
                             </label>
                         </div>
                     </div>
@@ -182,12 +182,15 @@
                 })
 
             })
-
+            numberWithCommas('hello world')
 
         }).fail(function () {
             console.log('fail')
         });
     });
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
 </script>
 
 </html>

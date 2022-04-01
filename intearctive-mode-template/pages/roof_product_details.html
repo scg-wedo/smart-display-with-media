@@ -158,9 +158,9 @@
                 selected_product[0].name ? $("#productname").html(selected_product[0].name) : $("#productname");
 
                 if (selected_product[0].delivery_tag) {
-                    selected_product[0].price ? $("#price").html("<span>ราคา</span> " + selected_product[0].price + ` บาท <a id="delivery_tag" style="margin-left:180px" href="#">${selected_product[0].delivery_tag}</a>`) : $("#price").remove()
+                    selected_product[0].price ? $("#price").html("<span>ราคา</span> " + numberWithCommas(selected_product[0].price) + ` บาท <a id="delivery_tag" style="position:absolute; right:0; margin-top:2px" href="#">${selected_product[0].delivery_tag}</a>`) : $("#price").remove()
                 } else {
-                    selected_product[0].price ? $("#price").html("<span>ราคา</span> " + selected_product[0].price + 'บาท') : $("#price").remove()
+                    selected_product[0].price ? $("#price").html("<span>ราคา</span> " + numberWithCommas(selected_product[0].price) + 'บาท') : $("#price").remove()
                 }
                 selected_product[0].description ? $("#desc").html(selected_product[0].description) : $("#desc").remove()
                 selected_product[0].qrcode[0].ดูข้อมูลเพิ่มเติมผ่านมือถือ ? $("#qrcode1").attr('src', selected_product[0].qrcode[0].ดูข้อมูลเพิ่มเติมผ่านมือถือ) : $("#qrcode").remove()
@@ -238,6 +238,10 @@
 
 
     });
+
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
 </script>
 
 </html>
