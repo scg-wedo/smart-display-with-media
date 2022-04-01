@@ -243,7 +243,7 @@
                     "name_en": "Smart Gadget",
                     "name_th": "บริการ <br> เกี่ยวกับ <br> หลังคา",
                     "icon": {"active": "../images/product_list/service-logo-white.png", "unactive": "../images/product_list/service-logo-red.png"},
-                    "banner_video": "../videos/rap_god.mp4",
+                    "banner_video": "../videos/CW_Facade Banner.mp4",
                     "products": [
                         {
                             "id": "ROOF-1",
@@ -491,7 +491,7 @@
                     "name_en": "Smart Gadget",
                     "name_th": "ฟาซาด<br>โซลูชัน",
                     "icon": {"active": "../images/product_list/home-white.png", "unactive": "../images/product_list/home-red.png"},
-                    "banner_video": "../videos/rap_god.mp4",
+                    "banner_video": "../videos/CW_Facade Banner.mp4",
                     "products": [
                         {
                             "id": "CW-1",
