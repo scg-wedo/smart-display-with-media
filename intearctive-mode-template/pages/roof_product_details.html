@@ -171,7 +171,7 @@
 
                 selected_product[0].sku ? $("#skuid").text("รหัสสินค้า " + selected_product[0].sku || "") : $("#skuid").remove();
                 selected_product[0].tagline ? $("#tagline").text(selected_product[0].tagline || "") : $("#tagline").remove();
-                selected_product[0].name ? $("#productname").text(selected_product[0].name) : $("#productname");
+                selected_product[0].name ? $("#productname").html(selected_product[0].name) : $("#productname");
 
                 if (selected_product[0].delivery_tag) {
                     selected_product[0].price ? $("#price").html("<span>ราคา</span> " + selected_product[0].price + ` บาท <a id="delivery_tag" style="margin-left:180px" href="#">${selected_product[0].delivery_tag}</a>`) : $("#price").remove()
