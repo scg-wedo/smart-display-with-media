@@ -227,7 +227,7 @@
                 selected_product[0].name ? $("#productname").text(selected_product[0].name) : $("#productname");
 
                 if (selected_product[0].delivery_tag) {
-                    selected_product[0].price ? $("#price").html("<span>ราคา</span> " + selected_product[0].price + ` บาท <a id="delivery_tag" href="#">${selected_product[0].delivery_tag}</a>`) : $("#price").remove()
+                    selected_product[0].price ? $("#price").html("<span>ราคา</span> " + selected_product[0].price + ` บาท <a id="delivery_tag"  style="margin-left:180px" href="#">${selected_product[0].delivery_tag}</a>`) : $("#price").remove()
                 } else {
                     selected_product[0].price ? $("#price").html("<span>ราคา</span> " + selected_product[0].price + 'บาท') : $("#price").remove()
                 }
