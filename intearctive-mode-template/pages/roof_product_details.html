@@ -29,10 +29,11 @@
         style="height: 1700px; background: url(/intearctive-mode-template/images/bg-main.png);">
         <!-- Quote -->
         <div class="quote-section  strip1">
-            <p><em>“</em> <span class="txt-red">แตะที่หน้าจอ</span> <br>
-                เพื่อเลือกดูสินค้าที่สนใจได้เลยค่ะ <em>”</em></p>
+            <p><em>“</em> <span
+                    class="txt-red">หากสนใจ</span>คุณลูกค้าสามารถ<br>แจ้งพนักงานหรือสั่งซื้อออนไลน์ได้เลยค่ะ<em>”</em>
+            </p>
             <figure>
-                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" />
+                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" style="width: 200px; height: 280px;"/>
             </figure>
         </div>
 
@@ -47,13 +48,14 @@
                     <div class="row">
                         <div class="col-6 product-image-corosel ">
                             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators justify-content-start" id="slide-button" style="width: 45rem; transform: scale(1.35); margin-left: 7.5rem;">
+                                <div class="carousel-indicators justify-content-start" id="slide-button"
+                                    style="width: 45rem; transform: scale(1.35); margin-left: 7.5rem;">
                                     <!-- carousel button by js -->
-                                 </div>
+                                </div>
                                 <div class="carousel-inner" id="slide-content" style="width:45rem; height:45rem;">
                                     <!--  slide button by js -->
                                 </div>
-                           
+
                             </div>
 
                         </div>
@@ -172,7 +174,7 @@
                     console.log('loop product content ')
                     console.log(content_link)
                     console.log(content_link_index)
-                    if (content_link.endsWith('jpg') || content_link.endsWith('png') || content_link.endsWith('svg')){
+                    if (content_link.endsWith('jpg') || content_link.endsWith('png') || content_link.endsWith('svg')) {
                         console.log('is image')
                         $('#slide-button').append(`
                             <div type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="${content_link_index}"
@@ -187,9 +189,9 @@
                                         </div>
                                     </div>
                         `)
-                        
-                        
-                    }else if (content_link.endsWith('mp4') || content_link.endsWith('mov')){
+
+
+                    } else if (content_link.endsWith('mp4') || content_link.endsWith('mov')) {
                         console.log('is video')
                         $('#slide-button').append(`
                         <div type="button" class="active" data-bs-target="#carouselExampleDark"
@@ -215,20 +217,20 @@
 
                                         </div>
                                     </div>`
-                                    )
-                    
+                        )
+
                     }
-                    
-                    if (content_link_index==0){
+
+                    if (content_link_index == 0) {
                         $('#slide-button div:eq(0)').addClass('active')
                         $('#slide-content>div:eq(0)').addClass('active')
                         $('#slide-button div:eq(0)').attr('aria-current', true)
-                      
+
                     }
                 });
-                
-                if (selected_product[0].bestseller_tag){
-                    $(`#carouselExampleDark`).append(`<div style="width: 100px; height: 100px; position:absolute; left:-3%; top:5%;">  <img style="position:absolute;" src="../images/best_seller_tag1.png"/> <p style="z-index:10; position:absolute;top:3px; left: 12px; color:white; font-size:12px;"> ${selected_product[0].bestseller_tag} </p>  <img style="position:absolute; top:27%;" src="../images/best_seller_tag2.png"/>  </div>`)  
+
+                if (selected_product[0].bestseller_tag) {
+                    $(`#carouselExampleDark`).append(`<div style="width: 100px; height: 100px; position:absolute; left:-3%; top:5%;">  <img style="position:absolute;" src="../images/best_seller_tag1.png"/> <p style="z-index:10; position:absolute;top:3px; left: 12px; color:white; font-size:12px;"> ${selected_product[0].bestseller_tag} </p>  <img style="position:absolute; top:27%;" src="../images/best_seller_tag2.png"/>  </div>`)
                 }
 
             }

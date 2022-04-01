@@ -17,19 +17,19 @@
 <body style="width: 1080px; height: 1920px;">
     <!-- Header -->
     <!-- <header class="site-header w-100 header-vb plain"> -->
-        <div class="top-panel-custom2 d-flex justify-content-left align-items-center position-relative" id="header">
-            <img id="cw-header-logo" src="../images/DECAAR_LOGO PLACEMENT_WHITE 2.png">
-            <div class="header-content">
-              <div class='d-flex justify-content-left'>
+    <div class="top-panel-custom2 d-flex justify-content-left align-items-center position-relative" id="header">
+        <img id="cw-header-logo" src="../images/DECAAR_LOGO PLACEMENT_WHITE 2.png">
+        <div class="header-content">
+            <div class='d-flex justify-content-left'>
                 <h3>กลุ่มสินค้าและโซลูชั่นการตกแต่งภายนอก</h3>
                 <!-- <h4>ดูแลครบจบทุกการออกแบบบ้านและอาคาร</h4> -->
-              </div>
-              <div class='d-flex justify-content-left pt-4'>
-                <p>ดูแลครบ จบทุกการออกแบบบ้านและอาคาร </p>
-              </div>
             </div>
-      
-          </div>
+            <div class='d-flex justify-content-left pt-4'>
+                <p>ดูแลครบ จบทุกการออกแบบบ้านและอาคาร </p>
+            </div>
+        </div>
+
+    </div>
     <!-- </header> -->
 
     <!-- Main Content -->
@@ -38,25 +38,27 @@
         <!-- Quote -->
         <div class="quote-section  strip1" style="background: transparent;">
             <p><em>“</em>
-                <span>สัมผัสหน้าจอ</span> เพื่อเลือก <br>
-                ดูสินค้าที่สนใจได้เลยค่ะ
+                <span>แตะที่หน้าจอ</span><br>
+                เพื่อดูรายละเอียดสินค้าได้เลยค่ะ
                 <em>”</em>
             </p>
             <figure>
-                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" />
+                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab"
+                    style="width: 200px; height: 280px;" />
             </figure>
         </div>
 
         <!-- Content -->
         <div class="template2-group-content-panel position-relative ">
 
-            <div class="data-ceilingnwall" style="height:950px; background: #F3F3F3; box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12); border-radius: 6px;">
+            <div class="data-ceilingnwall"
+                style="height:950px; background: #F3F3F3; box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12); border-radius: 6px;">
                 <div class="top-section">
                     <!-- <nav class="easy-navigation"> -->
 
-                        <ul class="nav nav-pills mb-3 " id="nav-tabs" role="tablist">
-                            <!-- ใส่ button nav จ่าก js/jquery -->
-                        </ul>
+                    <ul class="nav nav-pills mb-3 " id="nav-tabs" role="tablist">
+                        <!-- ใส่ button nav จ่าก js/jquery -->
+                    </ul>
                     <!-- </nav> -->
                     <figure>
                         <img src="../images/dummy-rm.jpg" />
@@ -114,7 +116,7 @@
             for (const [main_menu, main_menu_obj] of Object.entries(jd.category_product.ceiling_and_wall.sub_category_product)) {
 
                 console.log(`รอบที่ ${count} ${main_menu}`)
-                
+
                 let nav_id = `nav_${main_menu}`  // ex. nav_smart_gadget
                 let content_id = main_menu
                 // สร้าง nav tabs
@@ -126,19 +128,19 @@
                     </li>
                 `)
 
-                $(`#${nav_id}`).click(function(){           
-                    for (var btn_count=0; btn_count<$("#nav-tabs").find('button').length; btn_count++){
-                        let icon_count=0;
+                $(`#${nav_id}`).click(function () {
+                    for (var btn_count = 0; btn_count < $("#nav-tabs").find('button').length; btn_count++) {
+                        let icon_count = 0;
                         for (const [main_menu2, main_menu_obj2] of Object.entries(jd.category_product.ceiling_and_wall.sub_category_product)) {  // วนลูปเพื่อดึง icon image ที่ตรงกับ button เช่นต้นไม้, บ้าน (ส่วนตวน active/unactive คือสีขาว กับ แดง)
                             console.log(main_menu2)
                             console.log(main_menu_obj2.icon)
-                            if (icon_count==btn_count){
+                            if (icon_count == btn_count) {
                                 $(`#nav-tabs button:eq(${btn_count}) img`).attr('src', main_menu_obj2.icon.unactive)
                             }
                             icon_count++;
-                        }                        
+                        }
                     }
-                    $(this).find('img').attr('src', main_menu_obj.icon.active)                                    
+                    $(this).find('img').attr('src', main_menu_obj.icon.active)
                 })
 
                 // สร้างโครงสำหรับใส่ content แต่ละ id                
@@ -150,12 +152,12 @@
                     </div>   
                 `)
 
-                if (count==0){
+                if (count == 0) {
                     console.log('add active class')
-                  $(`#${nav_id}`).addClass('active')  
-                  $(`#${content_id}`).addClass('active')  
-                  $(`#${nav_id}`).attr('aria-selected', true)  
-                  $(`#${nav_id} img`).attr('src', main_menu_obj.icon.active)
+                    $(`#${nav_id}`).addClass('active')
+                    $(`#${content_id}`).addClass('active')
+                    $(`#${nav_id}`).attr('aria-selected', true)
+                    $(`#${nav_id} img`).attr('src', main_menu_obj.icon.active)
                 }
 
                 $(`#${content_id}`).prepend(`
@@ -183,15 +185,15 @@
                         </div>
 
                     `)
-                    if (product.bestseller_tag){
-                        $(`#${product.id}`).append(`<div style="width: 100px; height: 100px; position:absolute; left:8%; top:8%;">  <img style="position:absolute;" src="../images/best_seller_tag1.png"/> <p style="z-index:10; position:absolute;top:3px; left: 12px; color:white; font-size:12px;"> ${product.bestseller_tag} </p>  <img style="position:absolute; top:27%;" src="../images/best_seller_tag2.png"/>  </div>`)  
+                    if (product.bestseller_tag) {
+                        $(`#${product.id}`).append(`<div style="width: 100px; height: 100px; position:absolute; left:8%; top:8%;">  <img style="position:absolute;" src="../images/best_seller_tag1.png"/> <p style="z-index:10; position:absolute;top:3px; left: 12px; color:white; font-size:12px;"> ${product.bestseller_tag} </p>  <img style="position:absolute; top:27%;" src="../images/best_seller_tag2.png"/>  </div>`)
                     }
-                    $(`#${product.id}`).click(function(){
+                    $(`#${product.id}`).click(function () {
                         localStorage.setItem('id', product.id)
                         window.location.href = `cw_product_details.html`
                     })
-                }); 
-                    
+                });
+
                 count++;
             }
 
