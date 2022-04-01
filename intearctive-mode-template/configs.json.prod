@@ -609,7 +609,7 @@
                     "name_en": "health",
                     "name_th": "บริการตกแต่ง<br>ภูมิทัศน์ภายนอก",
                     "icon": {"active": "../images/product_list/outside-white.png", "unactive": "../images/product_list/outside-red.png"},
-                    "banner_video": "../videos/screen_test.mp4",
+                    "banner_video": "../videos/CW_Outdoor Banner_Product list.mp4",
                     "products": [
                         {
                             "id": "CW-5",
