@@ -13,6 +13,10 @@
                     {"url": "../media/L2_Home Selected/Page1 - Video_Promo/Run3 Clip Care Living zone/care living solution.mp4", "duration": 10, "pagelinked": "home_select_product_list.html"},
                     {"url": "../media/L2_Home Selected/Page1 - Video_Promo/Run4 AW-Care Living/AW-Zone-Care-Living.mp4", "duration": 5, "pagelinked": "home_select_product_list.html"}
                 ],
+                "flash_sale":[
+                    {"url": "../media/L2_Home Selected/Page1 - Video_Promo/Run0 Flash Sale/Flash-Sale-v2-01.mp4'", "duration": 10, "pagelinked": "home_select_product_list.html"},
+                    {"url": "../media/L2_Home Selected/Page1 - Video_Promo/Run0 Flash Sale/Flash-Sale-v2-02.mp4", "duration": 5, "pagelinked": "home_select_product_list.html"}
+                ],
                 "banner": [
                     {"url": "../media/L2_Home Selected/Page1 - Video_Promo/Care Living Pop-Up/aw_careliving_detail.png", "duration": 5, "topic": "Care Living Solution", "zone": "ชั้น 1", "content": "นวัตกรรมเพื่อบ้านสำหรับผู้ที่ให้ความสำคัญเรื่องสุขภาพ สุขอนามัย และคนที่ใช้ชีวิตแบบ<br> Healthy Concern ตอบโจทย์เรื่องการอยู่อาศัยที่ดีขึ้นและปลอดภัย พร้อมสินค้า<br>ทั้งจากในประเทศ และต่างประเทศจากหลากหลายแบรนด์ชั้นนำ ที่ทำให้การอยู่อาศัย<br>สะดวกสบายยิ่งขึ้น"}
                 ] 
