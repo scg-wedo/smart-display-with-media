@@ -10,18 +10,27 @@
     <link rel="stylesheet" href="../css/custom/roof_productlist.css" />
     <link rel="stylesheet" href="../css/custom/template2.css" />
     <link rel="stylesheet" href="../css/custom/content_template2.css" />
+    <link rel="stylesheet" href="../css/custom/cw_header.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body style="width: 1080px; height: 1920px;">
     <!-- Header -->
-    <header class="site-header w-100 header-vb plain">
-        <div class="top-panel">
-            <h4>คุณอยู่ที่</h4>
-            <h3>Ceiling & wall</h3>
-        </div>
-
-    </header>
+    <!-- <header class="site-header w-100 header-vb plain"> -->
+        <div class="top-panel-custom2 d-flex justify-content-left align-items-center position-relative" id="header">
+            <img id="cw-header-logo" src="../images/DECAAR_LOGO PLACEMENT_WHITE 2.png">
+            <div class="header-content">
+              <div class='d-flex justify-content-left'>
+                <h3>กลุ่มสินค้าและโซลูชั่นการตกแต่งภายนอก</h3>
+                <!-- <h4>ดูแลครบจบทุกการออกแบบบ้านและอาคาร</h4> -->
+              </div>
+              <div class='d-flex justify-content-left pt-4'>
+                <p>ดูแลครบ จบทุกการออกแบบบ้านและอาคาร </p>
+              </div>
+            </div>
+      
+          </div>
+    <!-- </header> -->
 
     <!-- Main Content -->
     <main class="main-content w-100 mt-0 interactive-mode2"
@@ -97,6 +106,9 @@
 
 <script>
     $(document).ready(function () {
+
+        $('.main-content .quote-section').append('<style>.unset_content:before{content:unset;}</style>');
+
         $.getJSON('../configs.json', function (jd) {
             let count = 0;
             for (const [main_menu, main_menu_obj] of Object.entries(jd.category_product.ceiling_and_wall.sub_category_product)) {
