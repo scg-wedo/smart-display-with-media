@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/custom/template2.css" />
     <link rel="stylesheet" href="../css/custom/content_template2.css" />
     <link rel="stylesheet" href="../css/custom/cw_header.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body style="width: 1080px; height: 1920px;">
@@ -143,13 +143,13 @@
                     $(this).find('img').attr('src', main_menu_obj.icon.active)
                 })
 
-                // สร้างโครงสำหรับใส่ content แต่ละ id                
+                // สร้างโครงสำหรับใส่ content แต่ละ id
                 // let content_id = `content_${main_menu}`
                 $('#productlist-container').append(`
                     <div id="${content_id}" class="tab-pane fade show" role="tabpanel" aria-labelledby="${nav_id}">
                         <div class="productlist-wrapper">
                         </div>
-                    </div>   
+                    </div>
                 `)
 
                 if (count == 0) {
@@ -181,7 +181,7 @@
                                     ${product.name}
                                 </label>
                             </div>
-                            
+
                         </div>
 
                     `)

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/custom/global_custom.css" />
     <link rel="stylesheet" href="../css/custom/template2.css" />
     <link rel="stylesheet" href="../css/custom/content_template2.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body style="width: 1080px; height: 1920px;">
@@ -109,7 +109,7 @@
                     setTimeout(() => resolve(video_url), vid_duration * 1000)
                 );
 
-            
+
             const playFlashSaleAllVideo = async () => {
                 var vid_flash_sale_index = 0;
 
@@ -133,7 +133,7 @@
             };
             setInterval(function () {
                 var today = new Date();
-                
+
                 var time = today.getHours().toString().padStart(2, '0') + ":" + today.getMinutes().toString().padStart(2, '0');
                 if ((time >= "11:15" && time < "12:00") || (time >= "14:15" && time < "15:00") || (time >= "18:00" && time < "18:45")|| (time >= "09:00" && time < "10:54")) {
                     if ($('#header').find($('#flash-header')).length == 0) {
@@ -173,7 +173,7 @@
                     setTimeout(() => resolve(video_url), vid_duration * 1000)
                 );
 
-            
+
             const playAllVideo = async () => {
                 for (var vid_index = 0; vid_index < jd.page.home_selected.promotion.videos.length; vid_index++) {
 
