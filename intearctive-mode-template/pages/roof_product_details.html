@@ -156,7 +156,7 @@
                 console.log("selected_product[0]", selected_product[0])
 
                 selected_product[0].sku ? $("#skuid").text("รหัสสินค้า " + selected_product[0].sku || "") : $("#skuid").remove();
-                selected_product[0].tagline ? $("#tagline").text(selected_product[0].tagline || "") : $("#tagline").remove();
+                selected_product[0].tagline ? $("#tagline").html(selected_product[0].tagline || "") : $("#tagline").remove();
                 selected_product[0].name ? $("#productname").html(selected_product[0].name) : $("#productname");
 
                 if (selected_product[0].delivery_tag) {
