@@ -14,7 +14,7 @@
                     {"url": "../media/L2_Home Selected/Page1 - Video_Promo/Run4 AW-Care Living/AW-Zone-Care-Living.mp4", "duration": 5, "pagelinked": "home_select_product_list.html"}
                 ],
                 "flash_sale":[
-                    {"url": "../media/L2_Home Selected/Page1 - Video_Promo/Run0 Flash Sale/Flash-Sale-v2-01.mp4'", "duration": 10, "pagelinked": "home_select_product_list.html"},
+                    {"url": "../media/L2_Home Selected/Page1 - Video_Promo/Run0 Flash Sale/Flash-Sale-v2-01.mp4", "duration": 10, "pagelinked": "home_select_product_list.html"},
                     {"url": "../media/L2_Home Selected/Page1 - Video_Promo/Run0 Flash Sale/Flash-Sale-v2-02.mp4", "duration": 5, "pagelinked": "home_select_product_list.html"}
                 ],
                 "banner": [
@@ -88,6 +88,31 @@
                         }
                     ],
                     "delivery_tag": "รับของได้/จัดส่งได้",
+                    "bestseller_tag": ""
+                },
+                {
+                    "id": "205467",
+                    "sku": "205467",
+                    "brand": "",
+                    "name": "Inzeus Smart Baby Camera with 5\" Display",
+                    "price": 7890,
+                    "sale_price": 0,
+                    "tagline": "",
+                    "description": "กล้องและจอแม่และเด็ก 2Mp Camera with 5 inch lcd screen การรับประกันสินค้า 1 ปี",
+                    "image_product": "../media/L2_Home Selected/Page2 - Product List/2 Inzeus Smart Baby Camera with 5 Display/No.22-2. Baby Camera-01.png",
+    
+                    "images_videos": [
+                        "../media/L2_Home Selected/Page3 - Product Detail/2 Inzeus Smart Baby Camera with 5 Display/1. Baby Camera.png",
+                        "../media/L2_Home Selected/Page3 - Product Detail/2 Inzeus Smart Baby Camera with 5 Display/2. Baby Camera.png",
+                        "../media/L2_Home Selected/Page3 - Product Detail/2 Inzeus Smart Baby Camera with 5 Display/3. Baby Camera.jpg",
+                        "../media/L2_Home Selected/Page3 - Product Detail/2 Inzeus Smart Baby Camera with 5 Display/4. Baby Camera.jpg"
+                    ],
+                    "qrcode": [
+                        {
+                            "ซื้อออนไลน์": "link-to-qrcode"
+                        }
+                    ],
+                    "delivery_tag": "",
                     "bestseller_tag": ""
                 },
                 {
