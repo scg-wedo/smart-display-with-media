@@ -31,7 +31,6 @@
 
     </div>
     <!-- </header> -->
-
     <!-- Main Content -->
     <main class="main-content w-100 mt-0 interactive-mode2"
         style="background: url(/intearctive-mode-template/images/bg-main.png);">
@@ -61,7 +60,7 @@
                     </ul>
                     <!-- </nav> -->
                     <figure>
-                        <img src="../images/dummy-rm.jpg" />
+                        <img id="cw-top-link-vr" src="../images/dummy-rm.jpg" />
                     </figure>
                 </div>
 
@@ -141,6 +140,11 @@
                         }
                     }
                     $(this).find('img').attr('src', main_menu_obj.icon.active)
+                })
+
+                $('#cw-top-link-vr').click(function(){
+                    console.log('go to yvrdl://scgdigital-link')
+                    window.location.href = 'yvrdl://scgdigital-link'
                 })
 
                 // สร้างโครงสำหรับใส่ content แต่ละ id
