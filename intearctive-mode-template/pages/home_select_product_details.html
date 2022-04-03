@@ -145,7 +145,7 @@
         setInterval(function () {
             var today = new Date();
             var time = today.getHours().toString().padStart(2, '0') + ":" + today.getMinutes().toString().padStart(2, '0');
-            if ((time >= "10:15" && time < "12:00") || (time >= "13:15" && time < "15:00") || (time >= "17:00" && time < "18:45")) {
+            if ((time >= "11:15" && time < "12:00") || (time >= "14:15" && time < "15:00") || (time >= "18:00" && time < "18:45")) {
                 if ($('#header').find($('#flash-header')).length == 0) {
                     $('#header').css("height", "200px")
                     $('#header').append(`
