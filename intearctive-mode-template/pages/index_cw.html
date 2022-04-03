@@ -6,7 +6,18 @@
             function goFullscreen() {
                 // Must be called as a result of user interaction to work
                 mf = document.getElementById("main_frame");
-                mf.webkitRequestFullscreen();
+                if (mf.requestFullscreen) {
+                    mf.requestFullscreen();
+                }
+                else if (mf.mozRequestFullScreen) {
+                    mf.mozRequestFullScreen();
+                }
+                else if (mf.webkitRequestFullScreen) {
+                    mf.webkitRequestFullScreen();
+                }
+                else if (mf.msRequestFullscreen) {
+                    mf.msRequestFullscreen();
+                }
                 mf.style.display="";
             }
             function fullscreenChanged() {
