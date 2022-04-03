@@ -11,40 +11,41 @@
     <link rel="stylesheet" href="../css/custom/template2.css" />
     <link rel="stylesheet" href="../css/custom/content_template2.css" />
     <link rel="stylesheet" href="../css/custom/cw_header.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body style="width: 1080px; height: 1920px;">
     <!-- Header -->
     <!-- <header class="site-header w-100 header-vb plain" id="header"> -->
-        <div class="top-panel-custom2 d-flex justify-content-left align-items-center position-relative" id="header">
-            <img id="cw-header-logo" src="../images/DECAAR_LOGO PLACEMENT_WHITE 2.png">
-            <div class="header-content">
-              <div class='d-flex justify-content-left'>
+    <div class="top-panel-custom2 d-flex justify-content-left align-items-center position-relative" id="header">
+        <img id="cw-header-logo" src="../images/DECAAR_LOGO PLACEMENT_WHITE 2.png">
+        <div class="header-content">
+            <div class='d-flex justify-content-left'>
                 <h3>กลุ่มสินค้าและโซลูชั่นการตกแต่งภายนอก</h3>
                 <!-- <h4>ดูแลครบจบทุกการออกแบบบ้านและอาคาร</h4> -->
-              </div>
-              <div class='d-flex justify-content-left pt-4'>
-                <p>ดูแลครบ จบทุกการออกแบบบ้านและอาคาร </p>
-              </div>
             </div>
-      
-          </div>
+            <div class='d-flex justify-content-left pt-4'>
+                <p>ดูแลครบ จบทุกการออกแบบบ้านและอาคาร </p>
+            </div>
+        </div>
+
+    </div>
 
     <!-- </header> -->
 
     <!-- Main Content -->
     <main class="main-content w-100 mt-0 interactive-mode2"
-        style="background: url(/intearctive-mode-template/images/bg-main.png)">
+        style="background: url(../images/bg-main.png)">
         <!-- Quote -->
         <div class="quote-section  strip1" style="background: transparent;">
             <p><em>“</em>
-                <span>สัมผัสหน้าจอ</span> เพื่อเลือก <br>
-                ดูสินค้าที่สนใจได้เลยค่ะ
+                <span>สัมผัสหน้าจอ</span><br>
+                เพื่อเลือกดูสินค้าที่สนใจได้เลยค่ะ
                 <em>”</em>
             </p>
             <figure>
-                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" id="girl-header" />
+                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" id="girl-header"
+                    style="width: 200px; height: 280px;" />
             </figure>
         </div>
 
@@ -74,11 +75,12 @@
                                 </div>
                                 <div class="col-2 data-right">
                                     <div class="d-flex puchase-options ">
-                                        <!-- <div class="  puchase-option2 options qrcode" type="button">
+                                        <div class="  puchase-option2 options qrcode" style="padding-top: 0px;"
+                                            type="button">
                                             <h6>แสกนรับสิทธิ์
                                             </h6>
-                                            <img id="modal-qrcode" src="../images/qrcode.png" />
-                                        </div> -->
+                                            <img id="modal-qrcode" src="../images/qr-banner-modal.png" />
+                                        </div>
                                     </div>
                                     <button class="btn btn-rednew" data-bs-dismiss="modal"> <i class="icon-close"></i>
                                         <span>ปิดหน้าต่าง</span></button>
@@ -125,7 +127,7 @@
                                 alt="">
                         </div>
                         <div class="qr-box-footer shadow">
-                            <p> <img src="../images/ig-logo.png" alt=""> Instragram </p> <img src="../images/qr-ig.png"
+                            <p> <img src="../images/ig-logo.png" alt=""> instagram </p> <img src="../images/qr-ig.png"
                                 alt="">
                         </div>
                         <div class="qr-box-footer shadow">
@@ -160,6 +162,7 @@
             var time = today.getHours().toString().padStart(2, '0') + ":" + today.getMinutes().toString().padStart(2, '0');
             if ((time >= "11:15" && time < "12:00") || (time >= "14:15" && time < "15:00") || (time >= "18:00" && time < "18:45")) {
                 if ($('#header').find($('#flash-header')).length == 0) {
+                    $('#header').css("height", "200px")
                     $('#header').append(`
                 <div id="flash-header" style="position: absolute; width: 100%; height: 220px; background-color:black;">
                     <video width="100%" height="100%" autoplay muted loop>
@@ -168,10 +171,13 @@
                 </div>`
                     )
                     $('#girl-header').css('height', '200px')
+                    $('#girl-header').css('width', '150px')
                 }
             } else {
                 $('#flash-header').remove()
+                $('#header').css("height", "220px")
                 $('#girl-header').css('height', 'auto')
+                $('#girl-header').css('width', '200px')
             }
         }, 1000);
 
@@ -224,7 +230,7 @@
                 $('#modal-topic').html(jd.page.ceiling_and_wall.promotion.banner[index].topic)
                 $('#modal-zone').html(jd.page.ceiling_and_wall.promotion.banner[index].zone)
                 $('#modal-desc').html(jd.page.ceiling_and_wall.promotion.banner[index].content)
-                $('#modal-qrcode').attr('src', jd.page.ceiling_and_wall.promotion.banner[index].qrcode)
+                // $('#modal-qrcode').attr('src', jd.page.ceiling_and_wall.promotion.banner[index].qrcode)
             })
 
             playAllVideo()

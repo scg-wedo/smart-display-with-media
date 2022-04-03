@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/custom/roof_productlist.css" />
     <link rel="stylesheet" href="../css/custom/template2.css" />
     <link rel="stylesheet" href="../css/custom/content_template2.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body style="width: 1080px; height: 1920px;">
@@ -25,16 +25,16 @@
 
     <!-- Main Content -->
     <main class="main-content w-100 mt-0 interactive-mode2"
-        style="background: url(/intearctive-mode-template/images/bg-main.png)">
+        style="background: url(../images/bg-main.png)">
         <!-- Quote -->
         <div class="quote-section  strip1" style="background: transparent;">
             <p><em>“</em>
-                <span>สัมผัสหน้าจอ</span> เพื่อเลือก <br>
-                ดูสินค้าที่สนใจได้เลยค่ะ
+                <span>สัมผัสหน้าจอ</span><br>
+                เพื่อดูรายละเอียดสินค้าได้เลยค่ะ
                 <em>”</em>
             </p>
             <figure>
-                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" id="girl-header"/>
+                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" id="girl-header" style="margin-bottom: -25px;"/>
             </figure>
         </div>
 
@@ -87,7 +87,7 @@
                                     </label>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div> -->
 
@@ -106,7 +106,7 @@
                                 alt="">
                         </div>
                         <div class="qr-box-footer shadow">
-                            <p> <img src="../images/ig-logo.png" alt=""> Instragram </p> <img src="../images/qr-ig.png"
+                            <p> <img src="../images/ig-logo.png" alt=""> instagram </p> <img src="../images/qr-ig.png"
                                 alt="">
                         </div>
                         <div class="qr-box-footer shadow">
@@ -133,24 +133,44 @@
 <script>
     $(document).ready(function () {
 
+        // check user interactive
+        var startTime = performance.now()
+        var endTime = performance.now()
+        var interact_time_stmp = (startTime-endTime)/1000 // seconds
+        interval_id = setInterval(function(){
+            interact_time_stmp = (performance.now() - startTime)/1000
+            console.log("interact time stamp " + interact_time_stmp)
+            if (interact_time_stmp > 180){
+                window.location.href = 'home_select_template1.html'
+            }
+        }, 1000)
+
+        $("html").click(function( event ) {     
+            startTime = performance.now()
+        });
+
         // Flash Sale Banner
         setInterval(function () {
             var today = new Date();
             var time = today.getHours().toString().padStart(2, '0') + ":" + today.getMinutes().toString().padStart(2, '0');
-            if ((time >= "11:15" && time < "12:00") || (time >= "14:15" && time < "15:00") || (time >= "18:00" && time < "18:45")) {
+            if ((time >= "10:15" && time < "12:00") || (time >= "13:15" && time < "15:00") || (time >= "17:00" && time < "18:45")) {
                 if ($('#header').find($('#flash-header')).length == 0) {
+                    $('#header').css("height", "200px")
                     $('#header').append(`
-                <div id="flash-header" style="position: absolute; width: 100%; height: 220px; background-color:black;">
+                <div id="flash-header" style="position: absolute; width: 100%; height: 200px; background-color:black;">
                     <video width="100%" height="100%" autoplay muted loop>
                         <source src="../media/L2_C&W/Flash sale Banner/35_Flash Sale_200.mp4" type="video/mp4">
                     </video>
                 </div>`
                     )
-                    $('#girl-header').css('height', '200px')
+                    $('#girl-header').css('height', '220px')
+                    $('#girl-header').css('width', '160px')
                 }
             } else {
                 $('#flash-header').remove()
+                $('#header').css("height", "220px")
                 $('#girl-header').css('height', 'auto')
+                $('#girl-header').css('max-width', '100%')
             }
         }, 1000);
 
@@ -169,7 +189,6 @@
                             </label>
                         </div>
                     </div>
-
                 `)
                 if (product.bestseller_tag) {
                     $(`#${product.id}`).append(`<div style="width: 100px; height: 100px; position:absolute; left:8%; top:8%;">  <img style="position:absolute;" src="../images/best_seller_tag1.png"/> <p style="z-index:10; position:absolute;top:3px; left: 12px; color:white; font-size:12px;"> ${product.bestseller_tag} </p>  <img style="position:absolute; top:27%;" src="../images/best_seller_tag2.png"/>  </div>`)

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/custom/global_custom.css" />
     <link rel="stylesheet" href="../css/custom/template2.css" />
     <link rel="stylesheet" href="../css/custom/content_template2.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body style="width: 1080px; height: 1920px;">
@@ -25,12 +25,12 @@
 
     <!-- Main Content -->
     <main class="main-content w-100 mt-0 interactive-mode2"
-        style="background: url(/intearctive-mode-template/images/bg-main.png)">
+        style="background: url(../images/bg-main.png)">
         <!-- Quote -->
         <div class="quote-section  strip1" style="background: transparent;">
             <p><em>“</em>
-                <span>สัมผัสหน้าจอ</span> เพื่อเลือก <br>
-                ดูสินค้าที่สนใจได้เลยค่ะ
+                <span>สัมผัสหน้าจอ</span><br>
+                เพื่อเลือกดูสินค้าที่สนใจได้เลยค่ะ
                 <em>”</em>
             </p>
             <figure>
@@ -39,14 +39,59 @@
         </div>
 
         <!-- Content -->
+
+        <!-- Modal -->
+        <div class="modal fade promotion-banner" id="modal-promotionbanner" tabindex="-1"
+            aria-labelledby="promotionbannerLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <div class="top-banner"><img id="modal-image" src="../images/bg-header-red.jpg"
+                                style="width: 100%; height: 100%;"></div>
+                        <div class="data row">
+                            <div class="col-10">
+                                <h2 id="modal-topic">เตรียมพบกับ Flash Sale 13:00 - 15:00</h2>
+                                <h6 id="modal-zone"><i class="icon-location me-2"></i>ชั้น 1 โซน Care Living
+                                    Solution</h6>
+                                <p id="modal-desc">สุดคุ้ม! สุด Cool! หน้าร้อนแต่บ้านต้องเย็น
+                                    เตรียมรับมืออากาศร้อนบ้านร้อน อบอ้าว
+                                    แก้ได้ด้วย
+                                    การเลือกวัสดุแต่งบ้านให้บ้านเย็น ช่วยลดอุณหภูมิ คลายความร้อน
+                                    ระบายความร้อนภายใน บ้าน และที่สำคัญยังช่วยประหยัดไฟอีกด้วย ร้อนนี้ SCG Home
+                                    Onlineยกสินค้าพร้อม</p>
+                            </div>
+                            <div class="col-2 data-right">
+                                <div class="d-flex puchase-options ">
+                                    <div class="  puchase-option2 options qrcode" style="padding-top: 0px;"
+                                        type="button">
+                                        <h6>แสกนรับสิทธิ์
+                                        </h6>
+                                        <img id="modal-qrcode" src="../images/qr-banner-modal.png" />
+                                    </div>
+                                </div>
+                                <button class="btn btn-rednew" data-bs-dismiss="modal"> <i class="icon-close"></i>
+                                    <span>ปิดหน้าต่าง</span></button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
         <div class="template2-group-content-panel position-relative ">
             <div id="video-panel" class="template2-content-panel" style="height: 600px;">
                 <div class="content-sectiion-temp-2" style="height: 100%;">
-                    <div class="fist-content" style="height: 100%;">
+                    <div class="fist-content" style="height: 100%; position:relative;" data-bs-toggle="modal"
+                        data-bs-target="#modal-promotionbanner" id="first-content">
                         <video autoplay muted loop playsinline preload="metadata" id="video-banner">
                             <source src="" type="video/mp4">
                         </video>
                     </div>
+                    <div style="position: absolute;"></div>
                 </div>
             </div>
             <div class="d-flex align-items-center justify-content-center pt-5">
@@ -68,7 +113,7 @@
                                 alt="">
                         </div>
                         <div class="qr-box-footer shadow">
-                            <p> <img src="../images/ig-logo.png" alt=""> Instragram </p> <img src="../images/qr-ig.png"
+                            <p> <img src="../images/ig-logo.png" alt=""> instagram </p> <img src="../images/qr-ig.png"
                                 alt="">
                         </div>
                         <div class="qr-box-footer shadow">
@@ -89,7 +134,7 @@
         </div>
     </main>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 
 <script>
@@ -100,25 +145,73 @@
         })
 
         $.getJSON('../configs.json', function (jd) {
-
+            var is_flash_sale_time = false
+            var is_video_playing = true
             // Flash Sale Banner
+
+            const playFlashSale = (video_url, vid_duration) =>
+                new Promise(resolve =>
+                    setTimeout(() => resolve(video_url), vid_duration * 1000)
+                );
+
+
+            const playFlashSaleAllVideo = async () => {
+                var vid_flash_sale_index = 0;
+
+                while (is_flash_sale_time) {
+                    if ($('#video-panel .fist-content').find($('#flash-sale')).length == 0) {
+                        $('#video-panel .fist-content').append(
+                            `<video autoplay muted loop playsinline preload="metadata" id="flash-sale" style="position:absolute; left:0;">
+                                <source src="${jd.page.home_selected.promotion.flash_sale[vid_flash_sale_index % 2].url}" type="video/mp4">
+                            </video>`
+                        )
+                    } else {
+                        $("#flash-sale source").attr('src', jd.page.home_selected.promotion.flash_sale[vid_flash_sale_index % 2].url)
+                    }
+                    $('#flash-sale')[0].load()
+                    console.log('play video')
+                    const video_url = await playFlashSale(jd.page.home_selected.promotion.flash_sale[vid_flash_sale_index % 2].url, jd.page.home_selected.promotion.flash_sale[vid_flash_sale_index % 2].duration);
+                    console.log(`video  ${video_url} were played`);
+                    vid_flash_sale_index++;
+                }
+                $("#flash-sale").remove()
+            };
             setInterval(function () {
                 var today = new Date();
+
                 var time = today.getHours().toString().padStart(2, '0') + ":" + today.getMinutes().toString().padStart(2, '0');
                 if ((time >= "11:15" && time < "12:00") || (time >= "14:15" && time < "15:00") || (time >= "18:00" && time < "18:45")) {
                     if ($('#header').find($('#flash-header')).length == 0) {
+                        $('#header').css("height", "200px")
                         $('#header').append(`
-                <div id="flash-header" style="position: absolute; width: 100%; height: 220px; background-color:black;">
-                    <video width="100%" height="100%" autoplay muted loop>
-                        <source src="../media/L2_C&W/Flash sale Banner/35_Flash Sale_200.mp4" type="video/mp4">
-                    </video>
-                </div>`
+                            <div id="flash-header" style="position: absolute; width: 100%; height: 200px; background-color:black;">
+                                <video width="100%" height="100%" autoplay muted loop>
+                                    <source src="../media/L2_C&W/Flash sale Banner/35_Flash Sale_200.mp4" type="video/mp4">
+                                </video>
+                            </div>`
                         )
                         $('#girl-header').css('height', '200px')
+                        console.log('puase')
+                        is_flash_sale_time = true
+                        $(".fist-content video")[0].pause()
+                        $(".fist-content video").css('opacity', '0')
+                        is_video_playing = false
+
+                        // ใส่ div vid flash sale ทับ
+                        playFlashSaleAllVideo()
                     }
                 } else {
+                    $('#header').css("height", "220px")
                     $('#flash-header').remove()
                     $('#girl-header').css('height', 'auto')
+                    console.log('continue ' + is_video_playing)
+                    $(".fist-content video").css('opacity', '1')
+                    if (!is_video_playing) {
+                        console.log('video not playing')
+                        playAllVideo()
+                        is_video_playing = true;
+                    }
+                    is_flash_sale_time = false
                 }
             }, 1000);
 
@@ -128,19 +221,37 @@
                 );
 
             const playAllVideo = async () => {
-                for (var i = 0; i < jd.page.home_selected.promotion.videos.length; i++) {
-                    $('#video-banner source').attr('src', jd.page.home_selected.promotion.videos[i].url)
+                for (var vid_index = 0; vid_index < jd.page.home_selected.promotion.videos.length; vid_index++) {
+                    if (vid_index == 0 || vid_index == 1) {
+                        $('#first-content').attr('data-bs-target', '')
+                        $('#first-content').click(function () {
+                            window.location.href = jd.page.home_selected.promotion.videos[vid_index].pagelinked
+                        })
+                    } else {
+                        $('#first-content').attr('data-bs-target', '#modal-promotionbanner')
+                    }
+
+                    $('#video-banner source').attr('src', jd.page.home_selected.promotion.videos[vid_index].url)
                     $("#video-banner")[0].load();
                     $("#video-banner")[0].play();
                     console.log('play video')
-                    const video_url = await play(jd.page.home_selected.promotion.videos[i].url, jd.page.home_selected.promotion.videos[i].duration);
+                    const video_url = await play(jd.page.home_selected.promotion.videos[vid_index].url, jd.page.home_selected.promotion.videos[vid_index].duration);
                     console.log(`video  ${video_url} were played`);
 
                 }
-                console.log('All videos were played');
-                $("#video-banner")[0].pause();
-                window.location.href = 'home_select_template1.html'
+                if (!is_flash_sale_time) {  // ถ้าใส่ condition นี้ จะเปลี่ยนไป template1 เมื่อหมดเวลา flash sale แต่ถ้าเอาออก จะเปลี่ยนไปหน้า 1 เมื่อหมด duration ของวีดีโอทั่วไป
+                    console.log('All videos were played');
+                    $("#video-banner")[0].pause();
+                    window.location.href = 'home_select_template1.html'
+                }
             };
+
+            // Modal Content
+            $('#modal-image').attr('src', jd.page.home_selected.promotion.banner[0].url)
+            $('#modal-topic').html(jd.page.home_selected.promotion.banner[0].topic)
+            $('#modal-zone').html(jd.page.home_selected.promotion.banner[0].zone)
+            $('#modal-desc').html(jd.page.home_selected.promotion.banner[0].content)
+
             playAllVideo()
 
         }).fail(function () {

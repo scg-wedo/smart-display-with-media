@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/main.min.css" />
     <link rel="stylesheet" href="../css/custom/global_custom.css" />
     <link rel="stylesheet" href="../css/custom/template1.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body style="width: 1080px; height: 1920px;">
@@ -18,7 +18,7 @@
             <div class="position-absolute">
                 <div class='d-flex justify-content-center'>
                     <h4>โซน</h4>
-                    <h3>Home Selected</h3>
+                    <h3>HOME SELECTED</h3>
                 </div>
                 <div class='d-flex justify-content-center pt-4'>
                     <p>คัดสรรสินค้าทั้งไทยและต่างประเทศมาไว้ที่นี้</p>
@@ -27,7 +27,8 @@
         </div>
         <div class="template1-content-panel position-relative ">
             <div id="home-select-video-panel" class="template1-video-panel">
-                <video width="100%" height="100%" autoplay muted>
+                <iframe src="../media/silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+                <video width="100%" height="100%" autoplay>
                     <source src="" type="video/mp4">
                     <!-- <source src="movie.ogg" type="video/ogg"> -->
                     Your browser does not support the video tag.
@@ -52,7 +53,7 @@
                                 alt="">
                         </div>
                         <div class="qr-box-footer shadow">
-                            <p> <img src="../images/ig-logo.png" alt=""> Instragram </p> <img src="../images/qr-ig.png"
+                            <p> <img src="../images/ig-logo.png" alt=""> instagram </p> <img src="../images/qr-ig.png"
                                 alt="">
                         </div>
                         <div class="qr-box-footer shadow">
@@ -86,6 +87,7 @@
             var time = today.getHours().toString().padStart(2, '0') + ":" + today.getMinutes().toString().padStart(2, '0');
             if ((time >= "11:15" && time < "12:00") || (time >= "14:15" && time < "15:00") || (time >= "18:00" && time < "18:45")) {
                 if ($('#header').find($('#flash-header')).length == 0) {
+                    $('#header').css("height", "200px")
                     $('#header').append(`
                 <div id="flash-header" style="position: absolute; width: 100%; height: 220px; background-color:black;">
                     <video width="100%" height="100%" autoplay muted loop>
@@ -94,6 +96,7 @@
                 </div>`)
                 }
             } else {
+                $('#header').css("height", "220px")
                 $('#flash-header').remove()
             }
         }, 1000);

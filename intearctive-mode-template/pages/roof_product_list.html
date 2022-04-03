@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/custom/roof_productlist.css" />
     <link rel="stylesheet" href="../css/custom/template2.css" />
     <link rel="stylesheet" href="../css/custom/content_template2.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body style="width: 1080px; height: 1920px;">
@@ -25,12 +25,12 @@
 
     <!-- Main Content -->
     <main class="main-content w-100 mt-0 interactive-mode2"
-        style="background: url(/intearctive-mode-template/images/bg-main.png)">
+        style="background: url(../images/bg-main.png)">
         <!-- Quote -->
         <div class="quote-section  strip1" style="background: transparent;">
             <p><em>“</em>
-                <span>สัมผัสหน้าจอ</span> เพื่อเลือก <br>
-                ดูสินค้าที่สนใจได้เลยค่ะ
+                <span>แตะที่หน้าจอ</span><br>
+                เพื่อดูรายละเอียดสินค้าได้เลยค่ะ
                 <em>”</em>
             </p>
             <figure>
@@ -48,12 +48,8 @@
                     <ul class="nav nav-pills mb-3 " id="nav-tabs" role="tablist">
                         <!-- ใส่ button nav จ่าก js/jquery -->
                     </ul>
-               
-                    <figure>
-                        <img src="../images/dummy-rm.jpg" />
-                    </figure>
                 </div>
-           
+
 
                 <div class="tab-content" style="height:690px;" id="productlist-container">
                     <!--  ใส่ content จาก js/jquery -->
@@ -73,7 +69,7 @@
                                 alt="">
                         </div>
                         <div class="qr-box-footer shadow">
-                            <p> <img src="../images/ig-logo.png" alt=""> Instragram </p> <img src="../images/qr-ig.png"
+                            <p> <img src="../images/ig-logo.png" alt=""> instagram </p> <img src="../images/qr-ig.png"
                                 alt="">
                         </div>
                         <div class="qr-box-footer shadow">
@@ -99,6 +95,18 @@
 
 <script>
     $(document).ready(function () {
+        // check user interactive
+        var startTime = performance.now()
+        var endTime = performance.now()
+        var interact_time_stmp = (startTime-endTime)/1000 // seconds
+        interval_id = setInterval(function(){
+            interact_time_stmp = (performance.now() - startTime)/1000
+            console.log("interact time stamp " + interact_time_stmp)
+            if (interact_time_stmp > 180){
+                window.location.href = 'roof_template1.html'
+            }
+        }, 1000)
+
         $.getJSON('../configs.json', function (jd) {
             let count = 0;
             for (const [main_menu, main_menu_obj] of Object.entries(jd.category_product.roof.sub_category_product)) {
@@ -132,13 +140,13 @@
                     $(this).find('img').attr('src', main_menu_obj.icon.active)
                 })
 
-                // สร้างโครงสำหรับใส่ content แต่ละ id                
+                // สร้างโครงสำหรับใส่ content แต่ละ id
                 // let content_id = `content_${main_menu}`
                 $('#productlist-container').append(`
                     <div id="${content_id}" class="tab-pane fade show" role="tabpanel" aria-labelledby="${nav_id}">
                         <div class="productlist-wrapper mt-0" style="max-height:calc(100vh - 150px);">
                         </div>
-                    </div>   
+                    </div>
                 `)
 
                 if (count == 0) {

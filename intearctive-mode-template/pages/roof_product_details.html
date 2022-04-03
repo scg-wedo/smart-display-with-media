@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/custom/global_custom.css" />
     <link rel="stylesheet" href="../css/custom/template2.css" />
     <link rel="stylesheet" href="../css/custom/content_template2.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body style="width: 1080px; height: 1920px;">
@@ -26,13 +26,14 @@
 
     <!-- Main Content -->
     <main class="main-content w-100 mt-0 interactive-mode2"
-        style="height: 1700px; background: url(/intearctive-mode-template/images/bg-main.png);">
+        style="height: 1700px; background: url(../images/bg-main.png);">
         <!-- Quote -->
         <div class="quote-section  strip1">
-            <p><em>“</em> <span class="txt-red">แตะที่หน้าจอ</span> <br>
-                เพื่อเลือกดูสินค้าที่สนใจได้เลยค่ะ <em>”</em></p>
+            <p><em>“</em> <span
+                    class="txt-red">หากสนใจ</span>คุณลูกค้าสามารถ<br>แจ้งพนักงานหรือสั่งซื้อออนไลน์ได้เลยค่ะ<em>”</em>
+            </p>
             <figure>
-                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" />
+                <img src="../images/girl-big.png" class="img-fluid" alt="girl with tab" style="width: 220px; height: 320px;"/>
             </figure>
         </div>
 
@@ -47,13 +48,14 @@
                     <div class="row">
                         <div class="col-6 product-image-corosel ">
                             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators justify-content-start" id="slide-button" style="width: 45rem; transform: scale(1.35); margin-left: 7.5rem;">
+                                <div class="carousel-indicators justify-content-start" id="slide-button"
+                                    style="width: 45rem; transform: scale(1.35); margin-left: 7.5rem;">
                                     <!-- carousel button by js -->
-                                 </div>
+                                </div>
                                 <div class="carousel-inner" id="slide-content" style="width:45rem; height:45rem;">
                                     <!--  slide button by js -->
                                 </div>
-                           
+
                             </div>
 
                         </div>
@@ -61,11 +63,11 @@
                             <h6 id="skuid">รหัสสินค้า 8857126925012</h6>
                             <h2 id="productname">Bewell เบาะรองหลัง Ergo-Cushion
                                 Serie Back EC-01 (Cooling Cotton)</h2>
-                            <label id="tagline" style="line-height:22px; margin-top:1rem;">Bewel</label>
+                            <label id="tagline" style="line-height:22px; margin-top:1rem; font-weight: 400;">Bewel</label>
                             <p id="price"><span>ราคา</span>1,490 บาท <a href="#"
                                     id="delivery_tag">สินค้าจัดส่งที่บ้าน</a></p>
                             <ul style="list-style:none; margin-left:0px; padding-left: 0px; margin-top:0px">
-                                <li id="desc">สายรัดกับเก้าอี้ให้ปรับระดับได้ <br>เพื่อปรับให้เข้า</li>
+                                <li id="desc" style="font-weight:400;">สายรัดกับเก้าอี้ให้ปรับระดับได้ <br>เพื่อปรับให้เข้า</li>
                             </ul>
                             <div class="d-flex puchase-options two">
                                 <div class="  puchase-option2 options qrcode" type="button">
@@ -111,7 +113,7 @@
                                 alt="">
                         </div>
                         <div class="qr-box-footer shadow">
-                            <p> <img src="../images/ig-logo.png" alt=""> Instragram </p> <img src="../images/qr-ig.png"
+                            <p> <img src="../images/ig-logo.png" alt=""> instagram </p> <img src="../images/qr-ig.png"
                                 alt="">
                         </div>
                         <div class="qr-box-footer shadow">
@@ -136,6 +138,18 @@
 </body>
 <script>
     $(document).ready(function () {
+        // check user interactive
+        var startTime = performance.now()
+        var endTime = performance.now()
+        var interact_time_stmp = (startTime-endTime)/1000 // seconds
+        interval_id = setInterval(function(){
+            interact_time_stmp = (performance.now() - startTime)/1000
+            console.log("interact time stamp " + interact_time_stmp)
+            if (interact_time_stmp > 180){
+                window.location.href = 'roof_template1.html'
+            }
+        }, 1000)
+
         $.getJSON('../configs.json', function (jd) {
 
             var product_id = localStorage.getItem('id')
@@ -154,7 +168,7 @@
                 console.log("selected_product[0]", selected_product[0])
 
                 selected_product[0].sku ? $("#skuid").text("รหัสสินค้า " + selected_product[0].sku || "") : $("#skuid").remove();
-                selected_product[0].tagline ? $("#tagline").text(selected_product[0].tagline || "") : $("#tagline").remove();
+                selected_product[0].tagline ? $("#tagline").html(selected_product[0].tagline || "") : $("#tagline").remove();
                 selected_product[0].name ? $("#productname").html(selected_product[0].name) : $("#productname");
 
                 if (selected_product[0].delivery_tag) {
@@ -172,7 +186,7 @@
                     console.log('loop product content ')
                     console.log(content_link)
                     console.log(content_link_index)
-                    if (content_link.endsWith('jpg') || content_link.endsWith('png') || content_link.endsWith('svg')){
+                    if (content_link.endsWith('jpg') || content_link.endsWith('png') || content_link.endsWith('svg') || content_link.endsWith('gif')) {
                         console.log('is image')
                         $('#slide-button').append(`
                             <div type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="${content_link_index}"
@@ -187,9 +201,9 @@
                                         </div>
                                     </div>
                         `)
-                        
-                        
-                    }else if (content_link.endsWith('mp4') || content_link.endsWith('mov')){
+
+
+                    } else if (content_link.endsWith('mp4') || content_link.endsWith('mov')) {
                         console.log('is video')
                         $('#slide-button').append(`
                         <div type="button" class="active" data-bs-target="#carouselExampleDark"
@@ -215,20 +229,20 @@
 
                                         </div>
                                     </div>`
-                                    )
-                    
+                        )
+
                     }
-                    
-                    if (content_link_index==0){
+
+                    if (content_link_index == 0) {
                         $('#slide-button div:eq(0)').addClass('active')
                         $('#slide-content>div:eq(0)').addClass('active')
                         $('#slide-button div:eq(0)').attr('aria-current', true)
-                      
+
                     }
                 });
-                
-                if (selected_product[0].bestseller_tag){
-                    $(`#carouselExampleDark`).append(`<div style="width: 100px; height: 100px; position:absolute; left:-3%; top:5%;">  <img style="position:absolute;" src="../images/best_seller_tag1.png"/> <p style="z-index:10; position:absolute;top:3px; left: 12px; color:white; font-size:12px;"> ${selected_product[0].bestseller_tag} </p>  <img style="position:absolute; top:27%;" src="../images/best_seller_tag2.png"/>  </div>`)  
+
+                if (selected_product[0].bestseller_tag) {
+                    $(`#carouselExampleDark`).append(`<div style="width: 100px; height: 100px; position:absolute; left:-3%; top:5%;">  <img style="position:absolute;" src="../images/best_seller_tag1.png"/> <p style="z-index:10; position:absolute;top:3px; left: 12px; color:white; font-size:12px;"> ${selected_product[0].bestseller_tag} </p>  <img style="position:absolute; top:27%;" src="../images/best_seller_tag2.png"/>  </div>`)
                 }
 
             }

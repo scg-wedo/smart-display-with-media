@@ -1,3 +1,9 @@
+html{
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+}
+
 .product-card-custom{
     border-radius: 6px;
 }
@@ -176,4 +182,19 @@ header.interactive-mode .top-panel-custom h4{
 
 .product-details-custom{
     margin-left: 11rem;
+}
+
+
+.disable-selection{
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+}
+
+.puchase-options h6{
+    font-weight: 400 !important;
+}
+
+.top-panel h4{
+    text-shadow: 0px 3px 1px #000000 !important;
 }

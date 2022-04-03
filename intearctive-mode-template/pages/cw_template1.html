@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="../css/custom/global_custom.css" />
   <link rel="stylesheet" href="../css/custom/template1.css" />
   <link rel="stylesheet" href="../css/custom/cw_header.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
-<body style="width: 1080px; height: 1920px;">
+<body style="width: 1080px; height:1920px;">
   <main class="main-content w-100 interactive-mode template1-body-custom main-sizing">
     <div class="top-panel-custom2 d-flex justify-content-left align-items-center position-relative" id="header">
       <img id="cw-header-logo" src="../images/DECAAR_LOGO PLACEMENT_WHITE 2.png">
@@ -30,7 +30,8 @@
     </div>
     <div class="template1-content-panel position-relative ">
       <div id="home-select-video-panel" class="template1-video-panel">
-        <video width="100%" height="100%" autoplay muted>
+        <iframe src="../media/silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <video width="100%" height="100%" autoplay>
           <source src="" type="video/mp4">
           <!-- <source src="movie.ogg" type="video/ogg"> -->
           Your browser does not support the video tag.
@@ -53,7 +54,7 @@
               <p> <img src="../images/fb-logo.png" alt=""> Facebook </p> <img src="../images/qr-fb.png" alt="">
             </div>
             <div class="qr-box-footer shadow">
-              <p> <img src="../images/ig-logo.png" alt=""> Instragram </p> <img src="../images/qr-ig.png" alt="">
+              <p> <img src="../images/ig-logo.png" alt=""> Instagram </p> <img src="../images/qr-ig.png" alt="">
             </div>
             <div class="qr-box-footer shadow">
               <p> <img src="../images/yt-logo.png" alt=""> Youtube </p> <img src="../images/qr-yt.png" alt="">
@@ -78,12 +79,14 @@
 <script>
   $(document).ready(function () {
 
+
     // Flash Sale Banner
     setInterval(function () {
       var today = new Date();
       var time = today.getHours().toString().padStart(2, '0') + ":" + today.getMinutes().toString().padStart(2, '0');
       if ((time >= "11:15" && time < "12:00") || (time >= "14:15" && time < "15:00") || (time >= "18:00" && time < "18:45")) {
         if ($('#header').find($('#flash-header')).length == 0) {
+          $('#header').css("height", "200px")
           $('#header').append(`
         <div id="flash-header" style="position: absolute; width: 100%; height: 220px; background-color:black;">
         <video width="100%" height="100%" autoplay muted loop>
@@ -92,6 +95,7 @@
       </div>`)
         }
       } else {
+        $('#header').css("height", "220px")
         $('#flash-header').remove()
       }
     }, 1000);
@@ -126,7 +130,7 @@
     }).fail(function () {
       console.log('fail')
     });
-    // alert('hi')
+
   });
 </script>
 
