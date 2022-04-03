@@ -150,6 +150,10 @@
             }
         }, 1000)
 
+        $("html").click(function( event ) {     
+            startTime = performance.now()
+        });
+
         $.getJSON('../configs.json', function (jd) {
 
             var product_id = localStorage.getItem('id')

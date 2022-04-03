@@ -141,6 +141,10 @@
             }
         }, 1000)
 
+        $("html").click(function( event ) {     
+            startTime = performance.now()
+        });
+
         // Flash Sale Banner
         setInterval(function () {
             var today = new Date();

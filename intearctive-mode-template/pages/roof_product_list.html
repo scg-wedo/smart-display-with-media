@@ -108,6 +108,10 @@
             }
         }, 1000)
 
+        $("html").click(function( event ) {     
+            startTime = performance.now()
+        });
+
         $.getJSON('../configs.json', function (jd) {
             let count = 0;
             for (const [main_menu, main_menu_obj] of Object.entries(jd.category_product.roof.sub_category_product)) {
