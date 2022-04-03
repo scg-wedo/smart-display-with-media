@@ -194,3 +194,7 @@ header.interactive-mode .top-panel-custom h4{
 .puchase-options h6{
     font-weight: 400 !important;
 }
+
+.top-panel h4{
+    text-shadow: 0px 3px 1px #000000 !important;
+}
