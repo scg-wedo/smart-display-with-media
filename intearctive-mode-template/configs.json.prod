@@ -84,7 +84,7 @@
                     ],
                     "qrcode": [
                         {
-                            "ซื้อออนไลน์": "link-to-qrcode"
+                            "ซื้อออนไลน์": "../media/L2_Home Selected/QR-Codes/onlineINZEUS Smart Digital Door Lock.jpg"
                         }
                     ],
                     "delivery_tag": "รับของได้/จัดส่งได้",
@@ -109,7 +109,7 @@
                     ],
                     "qrcode": [
                         {
-                            "ซื้อออนไลน์": "link-to-qrcode"
+                            "ซื้อออนไลน์": "../media/L2_Home Selected/QR-Codes/onlineInzeus Smart Baby Camera.jpg"
                         }
                     ],
                     "delivery_tag": "",
@@ -134,7 +134,7 @@
                     ],
                     "qrcode": [
                         {
-                            "ซื้อออนไลน์": "link-to-qrcode"
+                            "ซื้อออนไลน์": "../media/L2_Home Selected/QR-Codes/onlineMestyle Cactus Humidifier.jpg"
                         }
                     ],
                     "delivery_tag": "รับของได้/จัดส่งได้",
@@ -158,7 +158,7 @@
                     ],
                     "qrcode": [
                         {
-                            "ซื้อออนไลน์": "link-to-qrcode"
+                            "ซื้อออนไลน์": "../media/L2_Home Selected/QR-Codes/onlineInzeus INZY Sleep Aid.jpg"
                         }
                     ],
                     "delivery_tag": "รับของได้/จัดส่งได้",
@@ -182,7 +182,7 @@
                     ],
                     "qrcode": [
                         {
-                            "ซื้อออนไลน์": "link-to-qrcode"
+                            "ซื้อออนไลน์": "../media/L2_Home Selected/QR-Codes/onlineINZY Neck Fan with ION.jpg"
                         }
                     ],
                     "delivery_tag": "รับของได้/จัดส่งได้",
@@ -207,7 +207,7 @@
                     ],
                     "qrcode": [
                         {
-                            "ซื้อออนไลน์": "link-to-qrcode"
+                            "ซื้อออนไลน์": "../media/L2_Home Selected/QR-Codes/onlineHabimat SPray.jpg"
                         }
                     ],
                     "delivery_tag": "รับของได้/จัดส่งได้",
@@ -230,7 +230,7 @@
                     ],
                     "qrcode": [
                         {
-                            "ซื้อออนไลน์": "link-to-qrcode"
+                            "ซื้อออนไลน์": "../media/L2_Home Selected/QR-Codes/onlineSIMPLE GREEN Foaming Coil Aerosol.jpg"
                         }
                     ],
                     "delivery_tag": "รับของได้/จัดส่งได้",
@@ -253,7 +253,7 @@
                     ],
                     "qrcode": [
                         {
-                            "ซื้อออนไลน์": "link-to-qrcode"
+                            "ซื้อออนไลน์": "../media/L2_Home Selected/QR-Codes/onlineSIMPLE GREEN RTU All Purpose Cleaner.jpg"
                         }
                     ],
                     "delivery_tag": "รับของได้/จัดส่งได้",
@@ -658,7 +658,7 @@
                             ],
                             "qrcode": [
                                 {
-                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "../media/L2_C&W/QR-Codes/detail.jpg",
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "../media/L2_C&W/QR-Codes/detailSCG T-CLIP SHIELD.jpg",
                                     "ซื้อออนไลน์": "../media/L2_C&W/QR-Codes/onlineSCG T-CLIP SHIELD.jpg",
                                     "ขอใบเสนอราคา": "../media/L2_C&W/QR-Codes/invoiceSCG T-CLIP SHIELD.jpg",
                                     "ปรึกษาผู้เชี่ยวชาญ": "../media/L2_C&W/QR-Codes/adviceSCG T-CLIP SHIELD.jpg"
@@ -685,7 +685,7 @@
                             ],
                             "qrcode": [
                                 {
-                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "../media/L2_C&W/QR-Codes/detail.jpg",
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "../media/L2_C&W/QR-Codes/detailSCG C-CHANNEL.jpg",
                                     "ซื้อออนไลน์": "../media/L2_C&W/QR-Codes/onlineSCG C-CHANNEL.jpg",
                                     "ขอใบเสนอราคา": "../media/L2_C&W/QR-Codes/invoiceSCG C-CHANNEL.jpg",
                                     "ปรึกษาผู้เชี่ยวชาญ": "../media/L2_C&W/QR-Codes/adviceSCG C-CHANNEL.jpg"
@@ -713,7 +713,7 @@
                             ],
                             "qrcode": [
                                 {
-                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "../media/L2_C&W/QR-Codes/detail.jpg",
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "../media/L2_C&W/QR-Codes/detailSCG TRIM.jpg",
                                     "ซื้อออนไลน์": "../media/L2_C&W/QR-Codes/onlineSCG TRIM.jpg",
                                     "ขอใบเสนอราคา": "../media/L2_C&W/QR-Codes/invoiceSCG TRIM.jpg",
                                     "ปรึกษาผู้เชี่ยวชาญ": "../media/L2_C&W/QR-Codes/adviceSCG TRIM.jpg"
@@ -740,7 +740,7 @@
                             ],
                             "qrcode": [
                                 {
-                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "../media/L2_C&W/QR-Codes/detail.jpg",
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "../media/L2_C&W/QR-Codes/detailLitewood by Fameline.jpg",
                                     "ซื้อออนไลน์": "../media/L2_C&W/QR-Codes/onlineLitewood by Fameline.jpg",
                                     "ขอใบเสนอราคา": "../media/L2_C&W/QR-Codes/invoiceLitewood by Fameline.jpg",
                                     "ปรึกษาผู้เชี่ยวชาญ": "../media/L2_C&W/QR-Codes/adviceLitewood by Fameline.jpg"
@@ -768,7 +768,7 @@
                             ],
                             "qrcode": [
                                 {
-                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "../media/L2_C&W/QR-Codes/detail.jpg",
+                                    "ดูข้อมูลเพิ่มเติมผ่านมือถือ": "../media/L2_C&W/QR-Codes/detailSCG LINE.jpg",
                                     "ซื้อออนไลน์": "../media/L2_C&W/QR-Codes/onlineSCG LINE.jpg",
                                     "ขอใบเสนอราคา": "../media/L2_C&W/QR-Codes/invoiceSCG LINE.jpg",
                                     "ปรึกษาผู้เชี่ยวชาญ": "../media/L2_C&W/QR-Codes/adviceSCG LINE.jpg"
