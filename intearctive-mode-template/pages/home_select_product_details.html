@@ -129,6 +129,18 @@
 <script>
     $(document).ready(function () {
 
+        // check user interactive
+        var startTime = performance.now()
+        var endTime = performance.now()
+        var interact_time_stmp = (startTime-endTime)/1000 // seconds
+        interval_id = setInterval(function(){
+            interact_time_stmp = (performance.now() - startTime)/1000
+            console.log("interact time stamp " + interact_time_stmp)
+            if (interact_time_stmp > 15){
+                window.location.href = 'home_select_template1.html'
+            }
+        }, 1000)
+
         // Flash Sale Banner
         setInterval(function () {
             var today = new Date();

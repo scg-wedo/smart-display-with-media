@@ -95,6 +95,18 @@
 
 <script>
     $(document).ready(function () {
+        // check user interactive
+        var startTime = performance.now()
+        var endTime = performance.now()
+        var interact_time_stmp = (startTime-endTime)/1000 // seconds
+        interval_id = setInterval(function(){
+            interact_time_stmp = (performance.now() - startTime)/1000
+            console.log("interact time stamp " + interact_time_stmp)
+            if (interact_time_stmp > 15){
+                window.location.href = 'roof_template1.html'
+            }
+        }, 1000)
+
         $.getJSON('../configs.json', function (jd) {
             let count = 0;
             for (const [main_menu, main_menu_obj] of Object.entries(jd.category_product.roof.sub_category_product)) {

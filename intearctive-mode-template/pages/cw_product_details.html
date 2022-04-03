@@ -150,6 +150,20 @@
 </body>
 <script>
     $(document).ready(function () {
+        var startTime = performance.now()
+        var endTime = performance.now()
+        var interact_time_stmp = (startTime-endTime)/1000 // seconds
+        interval_id = setInterval(function(){
+            interact_time_stmp = (performance.now() - startTime)/1000
+            console.log("interact time stamp " + interact_time_stmp)
+            if (interact_time_stmp > 15){
+                window.location.href = 'cw_template1.html'
+            }
+        }, 1000)
+
+        $("html").click(function( event ) {     
+            startTime = performance.now()
+        });
         $.getJSON('../configs.json', function (jd) {
 
             var product_id = localStorage.getItem('id')
