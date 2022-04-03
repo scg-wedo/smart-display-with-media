@@ -1,3 +1,9 @@
+html{
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+}
+
 .product-card-custom{
     border-radius: 6px;
 }
@@ -177,3 +183,11 @@ header.interactive-mode .top-panel-custom h4{
 .product-details-custom{
     margin-left: 11rem;
 }
+
+
+.disable-selection{
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+}
+
