@@ -8,6 +8,10 @@ html{
     top:0;
 }
 
+body{
+    position: absolute;
+}
+
 
 .product-card-custom{
     border-radius: 6px;
