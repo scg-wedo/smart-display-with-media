@@ -113,7 +113,7 @@
         interval_id = setInterval(function(){
             interact_time_stmp = (performance.now() - startTime)/1000
             console.log("interact time stamp " + interact_time_stmp)
-            if (interact_time_stmp > 15){
+            if (interact_time_stmp > 180){
                 window.location.href = 'cw_template1.html'
             }
         }, 1000)
@@ -121,7 +121,6 @@
         $("html").click(function( event ) {     
             startTime = performance.now()
         });
-
         $('.main-content .quote-section').append('<style>.unset_content:before{content:unset;}</style>');
         var startTime = performance.now()        
 
