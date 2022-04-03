@@ -221,7 +221,7 @@
                     "price": 590,
                     "sale_price": 590,
                     "tagline": " ราคา <span style='color:red;'>590.00</span> บาท / ชิ้น",
-                    "description": "สเปรย์โฟมทำความสะอาดเครื่องปรับอากาศ<br><br> สเปร์ยโฟรม สำหรับเครื่องปรับอากาศ แผงคอยล์เย็น คอยล์ร้อน ของระบบทำความเย็นทั้งในและนอกอาคาร ขจัดสิ่งอับชื้น ไม่ต้องล้างน้ำออก ไม่มีสารกัดกร่อน และไม่ติดไฟ ปลอดภัย ไร้สารพิษเป็นมิตรกับสิ่งแวดล้อม",
+                    "description": "สเปรย์โฟมทำความสะอาดเครื่องปรับอากาศ<br><br> สเปร์ยโฟม สำหรับเครื่องปรับอากาศ แผงคอยล์เย็น คอยล์ร้อน ของระบบทำความเย็นทั้งในและนอกอาคาร ขจัดสิ่งอับชื้น ไม่ต้องล้างน้ำออก ไม่มีสารกัดกร่อน และไม่ติดไฟ ปลอดภัย ไร้สารพิษเป็นมิตรกับสิ่งแวดล้อม",
                     "image_product": "../media/L2_Home Selected/Page2 - Product List/7 SIMPLE GREEN Foaming Coil Aerosol/Simple-green-spray-coil-600x600.jpg",
     
                     "images_videos": [
@@ -518,7 +518,7 @@
             "sub_category_product": {
                 "facade": {
                     "name_en": "Smart Gadget",
-                    "name_th": "ฟาซาด<br>โซลูชัน",
+                    "name_th": "ฟาซาดโซลูชัน",
                     "icon": {"active": "../images/product_list/home-white.png", "unactive": "../images/product_list/home-red.png"},
                     "banner_video": "../videos/CW_Facade Banner.mp4",
                     "products": [

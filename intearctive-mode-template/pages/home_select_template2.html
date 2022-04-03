@@ -82,6 +82,13 @@
             </div>
         </div>
 
+        <iframe src="../media/silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <audio autoplay id="audio-xp">            
+            <source src="../media/L2_Home Selected/Page1 - Video_Promo/Sound XP Selected1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          
+
         <div class="template2-group-content-panel position-relative ">
             <div id="video-panel" class="template2-content-panel" style="height: 600px;">
                 <div class="content-sectiion-temp-2" style="height: 100%;">
@@ -245,6 +252,29 @@
                     window.location.href = 'home_select_template1.html'
                 }
             };
+
+            const play3 = (video_url, vid_duration) =>
+                new Promise(resolve =>
+                    setTimeout(() => resolve(video_url), vid_duration * 1000)
+                );
+
+            const playAllAudio = async () => {
+                audio_xp = ['../media/L2_Home Selected/Page1 - Video_Promo/Sound XP Selected1.mp3', '../media/L2_Home Selected/Page1 - Video_Promo/Sound XP Selected2.mp3']
+                for (var audio_index = 0; audio_index < 2; audio_index++) {
+                    console.log('play '+ audio_xp[audio_index])
+
+                    $('#audio-xp source').attr('src', audio_xp[audio_index])
+                    $("#audio-xp")[0].load();
+                    $("#audio-xp")[0].play();
+                    // console.log('play video')
+                    const audio_url = await play3(audio_xp[audio_index], 7);
+                    console.log(`audio  ${audio_url} were played`);
+
+                }
+
+            };
+
+            playAllAudio()
 
             // Modal Content
             $('#modal-image').attr('src', jd.page.home_selected.promotion.banner[0].url)

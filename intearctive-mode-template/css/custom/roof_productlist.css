@@ -16,73 +16,9 @@
 }
 
 .nav-back-button{
-    /* background-image: url('/intearctive-mode-template/images/product_list/back.png'); */
-    /* background-repeat: no-repeat; */
-    /* background-size: ; */
     height: 80px;
     width:80px;
-
-    /* background-color: ; */
 }
-/* 
-.nav-pills .nav-item .nav-link {
-    background-color: #EAEAEA;
-    color: black;
-    width: 220px;
-    padding-left:70px;
-    background-repeat: no-repeat;
-    background-position: 18px 20px;
-}
-
-
-.nav-pills li.nav-item:nth-child(2) .nav-link {
-    background-image: url('/intearctive-mode-template/images/product_list/home-red.png');
-
-}
-
-.nav-pills li.nav-item:nth-child(3) .nav-link {
-    background-image: url('/intearctive-mode-template/images/product_list/outside-red.png');
-
-}
-
-.nav-pills li.nav-item:nth-child(2) .nav-link#pills-service-house-tab{
-    background-image: url('/intearctive-mode-template/images/product_list/house-paper-red.png');
-
-}
-
-.nav-pills li.nav-item:nth-child(3) .nav-link#pills-recommend-tab {
-    background-image: url('/intearctive-mode-template/images/product_list/star-red.png');
-
-} */
-/* pills-service-house-tab */
-/* pills-recommend-tab */
-/* .nav-pills .nav-item .nav-link{
-    background-color: red;
-}
-.nav-pills .nav-item .nav-link.active {
-    background-color: red;
-    color: white;
-}
-
-.nav-pills li.nav-item:nth-child(2) .nav-link.active {
-    background-image: url('/intearctive-mode-template/images/product_list/home-white.png');
-
-}
-
-.nav-pills li.nav-item:nth-child(3) .nav-link.active {
-    background-image: url('/intearctive-mode-template/images/product_list/outside-white.png');
-
-}
-
-.nav-pills li.nav-item:nth-child(2) .nav-link.active#pills-service-house-tab {
-    background-image: url('/intearctive-mode-template/images/product_list/house-paper-white.png');
-
-}
-
-.nav-pills li.nav-item:nth-child(3) .nav-link.active#pills-recommend-tab {
-    background-image: url('/intearctive-mode-template/images/product_list/star-white.png');
-
-} */
 
 #product-list-nav h3{
     text-align: left;    
@@ -229,7 +165,7 @@ height: auto;
     /* background: #EC1C24; */
     
     color:black;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 700;
     align-items: flex-end;
     display: inline-flex;
