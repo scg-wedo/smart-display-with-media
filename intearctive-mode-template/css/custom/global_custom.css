@@ -191,3 +191,6 @@ header.interactive-mode .top-panel-custom h4{
     -webkit-user-select:none;
 }
 
+.puchase-options h6{
+    font-weight: 400 !important;
+}
