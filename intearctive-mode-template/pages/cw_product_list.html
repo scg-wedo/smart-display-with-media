@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap 5</title>
     <link rel="stylesheet" href="../css/main.min.css" />
-    <!-- <link rel="stylesheet" href="../css/custom/global_custom.css"/> -->
+    <link rel="stylesheet" href="../css/custom/cw_scale_down.css"/>
     <link rel="stylesheet" href="../css/custom/roof_productlist.css" />
     <link rel="stylesheet" href="../css/custom/template2.css" />
     <link rel="stylesheet" href="../css/custom/content_template2.css" />
@@ -72,6 +72,32 @@
             </div>
         </div>
 
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"  data-bs-backdrop="static" data-bs-keyboard="false" style="display:none;">
+            Launch demo modal
+        </button>
+
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">สัมผัสประสบการณ์ไหม่ ในโลกเสมือน</h5>
+                <!-- <button type="button" class="btn-close force-full-screen" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                น้อง XP ขอขอบคุณที่รับชม VR นะคะ
+                </div>
+                <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                <button type="button" id="full-screen-button" class="btn btn-primary force-full-screen">ปิด</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <iframe id="main_frame" src="cw_template2.html" style="width:100%;height:100%;border:none;display:none"></iframe>
+
         <!-- Footer -->
         <div class="template2-footer">
             <div class="footer-right">
@@ -98,15 +124,60 @@
 
                 </div>
             </div>
+            
 
             <div class="footer-left"> <img class="logo-scg-exp" src="../images/logo-scgexperience.png" alt=""> </div>
         </div>
     </main>
+    
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 
 <script>
+//     var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+//     keyboard: false
+//     })
+//     // myModal.toggle()
+//     // myModal.show()
+//     // myModal.hide()
+//     // $('#exampleModal').modal('show');
+//     // myModal.modal({backdrop: 'static', keyboard: false})
+//     // $('#exampleModal').modal({backdrop: 'static', keyboard: false})    
+//    function goFullscreen() {
+//                 // Must be called as a result of user interaction to work
+//         // alert('go to full screen')
+//         mf = document.getElementById("main_frame");
+//         if (mf.requestFullscreen) {
+//             mf.requestFullscreen();
+//         }
+//         else if (mf.mozRequestFullScreen) {
+//             mf.mozRequestFullScreen();
+//         }
+//         else if (mf.webkitRequestFullScreen) {
+//             mf.webkitRequestFullScreen();
+//         }
+//         else if (mf.msRequestFullscreen) {
+//             mf.msRequestFullscreen();
+//         }
+//         mf.style.display="";
+        
+//         myModal.hide()
+
+//     }
+//     function fullscreenChanged() {
+//         if (document.webkitFullscreenElement == null) {
+//             alert('full screen change')
+//             mf = document.getElementById("main_frame");
+//             mf.style.display="none";
+//         }
+//     }
+//     document.onwebkitfullscreenchange = fullscreenChanged;
+//     document.getElementById('full-screen-button').onclick = goFullscreen;
+//     // document.getElementsByClassName('force-full-screen').onclick = goFullscreen;
+//     // $('#full-screen-button').click = goFullscreen;
+//     document.onkeydown = goFullscreen;
+
     $(document).ready(function () {
         var startTime = performance.now()
         var endTime = performance.now()
@@ -157,6 +228,7 @@
                 })
 
                 $('#cw-top-link-vr').click(function(){
+                    myModal.show()
                     console.log('go to yvrdl://scgdigital-link')
                     window.location.href = 'yvrdl://scgdigital-link'
                 })
@@ -219,6 +291,8 @@
             console.log('fail')
         });
     });
+
+    
 </script>
 
 </html>
