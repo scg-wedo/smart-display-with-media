@@ -8,7 +8,7 @@
     <title>Bootstrap 5</title>
     <link rel="stylesheet" href="../css/main.min.css" />
     <link rel="stylesheet" href="../css/custom/global_custom.css" />
-    <link rel="stylesheet" href="../css/custom/hs_scale_down.css"/>
+    <link rel="stylesheet" href="../css/custom/hs_scale_down.css" />
     <link rel="stylesheet" href="../css/custom/template2.css" />
     <link rel="stylesheet" href="../css/custom/content_template2.css" />
     <script src="../js/jquery-3.6.0.min.js"></script>
@@ -25,8 +25,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main-content w-100 mt-0 interactive-mode2"
-        style="background: url(../images/bg-main.png)">
+    <main class="main-content w-100 mt-0 interactive-mode2" style="background: url(../images/bg-main.png)">
         <!-- Quote -->
         <div class="quote-section  strip1" style="background: transparent;">
             <p><em>“</em>
@@ -84,17 +83,17 @@
         </div>
 
         <iframe src="../media/silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-        <audio autoplay id="audio-xp">            
+        <audio autoplay id="audio-xp">
             <source src="../media/L2_Home Selected/Page1 - Video_Promo/Sound XP Selected1.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
-          </audio>
-          
+        </audio>
+
 
         <div class="template2-group-content-panel position-relative ">
             <div id="video-panel" class="template2-content-panel" style="height: 600px;">
                 <div class="content-sectiion-temp-2" style="height: 100%;">
                     <div class="fist-content" style="height: 100%; position:relative;" data-bs-toggle="modal"
-                        data-bs-target="#modal-promotionbanner" id="first-content">
+                        data-bs-target="" id="first-content">
                         <video autoplay muted loop playsinline preload="metadata" id="video-banner">
                             <source src="" type="video/mp4">
                         </video>
@@ -236,6 +235,7 @@
                             window.location.href = jd.page.home_selected.promotion.videos[vid_index].pagelinked
                         })
                     } else {
+                        $('#first-content').unbind('click');
                         $('#first-content').attr('data-bs-target', '#modal-promotionbanner')
                     }
 
@@ -262,7 +262,7 @@
             const playAllAudio = async () => {
                 audio_xp = ['../media/L2_Home Selected/Page1 - Video_Promo/Sound XP Selected1.mp3', '../media/L2_Home Selected/Page1 - Video_Promo/Sound XP Selected2.mp3']
                 for (var audio_index = 0; audio_index < 2; audio_index++) {
-                    console.log('play '+ audio_xp[audio_index])
+                    console.log('play ' + audio_xp[audio_index])
 
                     $('#audio-xp source').attr('src', audio_xp[audio_index])
                     $("#audio-xp")[0].load();
