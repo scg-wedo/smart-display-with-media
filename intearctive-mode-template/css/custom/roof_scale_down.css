@@ -1,0 +1,14 @@
+html{
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+    transform: scale(0.785);
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+body{
+    position: absolute;
+}
+
