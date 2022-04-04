@@ -73,13 +73,13 @@
         </div>
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"  data-bs-backdrop="static" data-bs-keyboard="false" style="display:none;">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fullScreenModal"  data-bs-backdrop="static" data-bs-keyboard="false" style="display:none;">
             Launch demo modal
         </button>
 
         
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="fullScreenModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -96,7 +96,7 @@
             </div>
             </div>
         </div>
-        <iframe id="main_frame" src="cw_template2.html" style="width:100%;height:100%;border:none;display:none"></iframe>
+        <iframe id="main_frame" src="cw_product_list.html" style="width:100%;height:100%;border:none;display:none"></iframe>
 
         <!-- Footer -->
         <div class="template2-footer">
@@ -135,48 +135,48 @@
 </body>
 
 <script>
-//     var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
-//     keyboard: false
-//     })
-//     // myModal.toggle()
-//     // myModal.show()
-//     // myModal.hide()
-//     // $('#exampleModal').modal('show');
-//     // myModal.modal({backdrop: 'static', keyboard: false})
-//     // $('#exampleModal').modal({backdrop: 'static', keyboard: false})    
-//    function goFullscreen() {
-//                 // Must be called as a result of user interaction to work
-//         // alert('go to full screen')
-//         mf = document.getElementById("main_frame");
-//         if (mf.requestFullscreen) {
-//             mf.requestFullscreen();
-//         }
-//         else if (mf.mozRequestFullScreen) {
-//             mf.mozRequestFullScreen();
-//         }
-//         else if (mf.webkitRequestFullScreen) {
-//             mf.webkitRequestFullScreen();
-//         }
-//         else if (mf.msRequestFullscreen) {
-//             mf.msRequestFullscreen();
-//         }
-//         mf.style.display="";
+    var myModal = new bootstrap.Modal(document.getElementById('fullScreenModal'), {
+    keyboard: false
+    })
+    // myModal.toggle()
+    // myModal.show()
+    // myModal.hide()
+    // $('#fullScreenModal').modal('show');
+    // myModal.modal({backdrop: 'static', keyboard: false})
+    // $('#fullScreenModal').modal({backdrop: 'static', keyboard: false})    
+   function goFullscreen() {
+                // Must be called as a result of user interaction to work
+        // alert('go to full screen')
+        mf = document.getElementById("main_frame");
+        if (mf.requestFullscreen) {
+            mf.requestFullscreen();
+        }
+        else if (mf.mozRequestFullScreen) {
+            mf.mozRequestFullScreen();
+        }
+        else if (mf.webkitRequestFullScreen) {
+            mf.webkitRequestFullScreen();
+        }
+        else if (mf.msRequestFullscreen) {
+            mf.msRequestFullscreen();
+        }
+        mf.style.display="";
         
-//         myModal.hide()
+        myModal.hide()
 
-//     }
-//     function fullscreenChanged() {
-//         if (document.webkitFullscreenElement == null) {
-//             alert('full screen change')
-//             mf = document.getElementById("main_frame");
-//             mf.style.display="none";
-//         }
-//     }
-//     document.onwebkitfullscreenchange = fullscreenChanged;
-//     document.getElementById('full-screen-button').onclick = goFullscreen;
-//     // document.getElementsByClassName('force-full-screen').onclick = goFullscreen;
-//     // $('#full-screen-button').click = goFullscreen;
-//     document.onkeydown = goFullscreen;
+    }
+    function fullscreenChanged() {
+        if (document.webkitFullscreenElement == null) {
+            alert('full screen change')
+            mf = document.getElementById("main_frame");
+            mf.style.display="none";
+        }
+    }
+    document.onwebkitfullscreenchange = fullscreenChanged;
+    document.getElementById('full-screen-button').onclick = goFullscreen;
+    // document.getElementsByClassName('force-full-screen').onclick = goFullscreen;
+    // $('#full-screen-button').click = goFullscreen;
+    document.onkeydown = goFullscreen;
 
     $(document).ready(function () {
         var startTime = performance.now()
