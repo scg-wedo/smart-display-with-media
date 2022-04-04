@@ -10,5 +10,16 @@ html{
 
 body{
     position: absolute;
+    /* position:fixed; */
+}
+
+#modal-promotionbanner{
+    position: absolute;
+}
+
+.modal-backdrop.show{
+    position: absolute;
+    width: 200vw;
+    height: 400vh;
 }
 
