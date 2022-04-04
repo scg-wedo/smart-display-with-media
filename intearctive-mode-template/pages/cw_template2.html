@@ -8,7 +8,7 @@
     <title>Bootstrap 5</title>
     <link rel="stylesheet" href="../css/main.min.css" />
     <link rel="stylesheet" href="../css/custom/global_custom.css" />
-    <link rel="stylesheet" href="../css/custom/cw_scale_down.css"/>
+    <link rel="stylesheet" href="../css/custom/cw_scale_down.css" />
     <link rel="stylesheet" href="../css/custom/template2.css" />
     <link rel="stylesheet" href="../css/custom/content_template2.css" />
     <link rel="stylesheet" href="../css/custom/cw_header.css" />
@@ -35,8 +35,7 @@
     <!-- </header> -->
 
     <!-- Main Content -->
-    <main class="main-content w-100 mt-0 interactive-mode2"
-        style="background: url(../images/bg-main.png)">
+    <main class="main-content w-100 mt-0 interactive-mode2" style="background: url(../images/bg-main.png)">
         <!-- Quote -->
         <div class="quote-section  strip1" style="background: transparent;">
             <p><em>“</em>
@@ -83,7 +82,8 @@
                                             <img id="modal-qrcode" src="../images/qr-banner-modal.png" />
                                         </div>
                                     </div>
-                                    <button class="btn btn-rednew" data-bs-dismiss="modal"> <img src="../images/close.png" style="margin-right: 15px;">
+                                    <button class="btn btn-rednew" data-bs-dismiss="modal"> <img
+                                            src="../images/close.png" style="margin-right: 15px;">
                                         <span>ปิดหน้าต่าง</span></button>
                                 </div>
 
@@ -94,6 +94,32 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal Fullscreen -->
+            <div class="modal fade" id="fullScreenModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"
+                style="background-color: rgba(0, 0, 0, 0.8);">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content" style="height: 300px;">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel" style="font-size: 22px;">
+                                สัมผัสประสบการณ์ไหม่
+                                ในโลกเสมือน</h5>
+                            <!-- <button type="button" class="btn-close force-full-screen" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        </div>
+                        <div class="modal-body" style="font-size: 22px;">
+                            น้อง XP ขอขอบคุณที่รับชม Virtual Reality นะคะ
+                        </div>
+                        <div class="modal-footer">
+                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                            <button type="button" id="full-screen-button"
+                                class="btn btn-rednew force-full-screen">ปิด</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <iframe id="main_frame" src="cw_template2.html"
+                style="width:100%;height:100%;border:none;display:none"></iframe>
 
             <div id="video-panel" class="template2-content-panel">
                 <div class="content-sectiion-temp-2">
@@ -153,6 +179,51 @@
 </body>
 
 <script>
+
+    var myModal = new bootstrap.Modal(document.getElementById('fullScreenModal'), {
+        keyboard: false
+    })
+    // myModal.toggle()
+    // myModal.show()
+    // myModal.hide()
+    // $('#fullScreenModal').modal('show');
+    // myModal.modal({backdrop: 'static', keyboard: false})
+    // $('#fullScreenModal').modal({backdrop: 'static', keyboard: false})    
+    function goFullscreen() {
+        // Must be called as a result of user interaction to work
+        // alert('go to full screen')
+        var mf = document.getElementById("main_frame");
+        if (mf.requestFullscreen) {
+            mf.requestFullscreen();
+        }
+        else if (mf.mozRequestFullScreen) {
+            mf.mozRequestFullScreen();
+        }
+        else if (mf.webkitRequestFullScreen) {
+            mf.webkitRequestFullScreen();
+        }
+        else if (mf.msRequestFullscreen) {
+            mf.msRequestFullscreen();
+        }
+        mf.style.display = "";
+
+        myModal.hide()
+
+    }
+    function fullscreenChanged() {
+        if (document.webkitFullscreenElement == null) {
+            alert('full screen change')
+            mf = document.getElementById("main_frame");
+            mf.style.display = "none";
+        }
+    }
+    document.onwebkitfullscreenchange = fullscreenChanged;
+    document.getElementById('full-screen-button').onclick = goFullscreen;
+    // document.getElementsByClassName('force-full-screen').onclick = goFullscreen;
+    // $('#full-screen-button').click = goFullscreen;
+    // document.onkeydown = goFullscreen;
+
+
     $(document).ready(function () {
 
         $('.main-content .quote-section').append('<style>.unset_content:before{content:unset;}</style>');
@@ -196,6 +267,9 @@
                 for (var i = 0; i < jd.page.ceiling_and_wall.promotion.videos.length; i++) {
                     $('#video-banner source').attr('src', jd.page.ceiling_and_wall.promotion.videos[i].url)
                     $('#video-banner').click(function () {
+                        if (jd.page.ceiling_and_wall.promotion.videos[i].pagelinked == "yvrdl://scgdigital-link") {
+                            myModal.show()
+                        }
                         window.location.href = jd.page.ceiling_and_wall.promotion.videos[i].pagelinked
                     })
                     $("#video-banner")[0].load();
