@@ -58,7 +58,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}1
 
 
 
@@ -73,5 +73,32 @@
          url('scg-reg-webfont.svg#scgregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
+/* @font-face {
+    font-family: 'Prompt';
+    src: url('scg-reg-webfont.eot');
+    src: url('scg-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('scg-reg-webfont.woff2') format('woff2'),
+         url('scg-reg-webfont.woff') format('woff'),
+         url('scg-reg-webfont.ttf') format('truetype'),
+         url('scg-reg-webfont.svg#scgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+
+@font-face {
+    font-family: 'Prompt';
+    src: url('../css/fonts/Prompt/Prompt-Regular.ttf') format('truetype');
+    font-style: normal ;
+    font-weight: 400;
+}  
+
+
+@font-face {
+    font-family: 'Prompt';
+    src: url('../css/fonts/Prompt/Prompt-Medium.ttf') format('truetype');
+    font-style: bold ;
+    font-weight: 500;
+}  
