@@ -52,54 +52,54 @@ body{
 
 
 .nav-pills li.nav-item:nth-child(2) .nav-link {
-    background-image: url('/intearctive-mode-template/images/product_list/home-red.png');
+    background-image: url('../images/product_list/home-red.png');
 
 }
 
 .nav-pills li.nav-item:nth-child(3) .nav-link {
-    background-image: url('/intearctive-mode-template/images/product_list/outside-red.png');
+    background-image: url('../images/product_list/outside-red.png');
 
 }
 
 .nav-pills li.nav-item:nth-child(2) .nav-link#pills-service-house-tab{
-    background-image: url('/intearctive-mode-template/images/product_list/house-paper-red.png');
+    background-image: url('../images/product_list/house-paper-red.png');
 
 }
 
 .nav-pills li.nav-item:nth-child(3) .nav-link#pills-recommend-tab {
-    background-image: url('/intearctive-mode-template/images/product_list/star-red.png');
+    background-image: url('../images/product_list/star-red.png');
 
 }
 /* pills-service-house-tab */
 /* pills-recommend-tab */
-  
+
 .nav-pills .nav-item .nav-link.active {
     background-color: red;
     color: white;
 }
 
 .nav-pills li.nav-item:nth-child(2) .nav-link.active {
-    background-image: url('/intearctive-mode-template/images/product_list/home-white.png');
+    background-image: url('../images/product_list/home-white.png');
 
 }
 
 .nav-pills li.nav-item:nth-child(3) .nav-link.active {
-    background-image: url('/intearctive-mode-template/images/product_list/outside-white.png');
+    background-image: url('../images/product_list/outside-white.png');
 
 }
 
 .nav-pills li.nav-item:nth-child(2) .nav-link.active#pills-service-house-tab {
-    background-image: url('/intearctive-mode-template/images/product_list/house-paper-white.png');
+    background-image: url('../images/product_list/house-paper-white.png');
 
 }
 
 .nav-pills li.nav-item:nth-child(3) .nav-link.active#pills-recommend-tab {
-    background-image: url('/intearctive-mode-template/images/product_list/star-white.png');
+    background-image: url('../images/product_list/star-white.png');
 
 }
 
 #product-list-nav h3{
-    text-align: left;    
+    text-align: left;
     margin: 0;
     /* margin-left: 20px; */
 }
