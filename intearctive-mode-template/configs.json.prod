@@ -48,7 +48,7 @@
             },
             "promotion": {
                 "videos": [
-                    {"url": "../media/L2_Roof/Page1 - Video_Promo/Master_SCG_MTR_45s_EditFeb10_SUB 1080x600.mp4", "duration": 45, "pagelinked": "roof_product_list.html"}
+                    {"url": "../media/L2_Roof/Page1 - Video_Promo/Master_SCG_MTR_45s_EditFeb10_SUB 1080x600.mov", "duration": 45, "pagelinked": "roof_product_list.html"}
                 ],
                 "banner": [
                     {"url": "../media/L2_Roof/Page1 - Video_Promo/รูป Promotion/1_Inno&SCG-Home-Festival_scg-active-AIRflow-sustem02.png", "duration": 5, "topic": "SCG Active AIRflow System โซลูชั่นเพื่อแก้บ้านร้อน อบอ้าว", "zone": "ชั้น1 ที่โซน Home & Living Solution", "content": "&#10003; สิทธิพิเศษ 2 ต่อ เมื่อใช้ SCG Active AIRflow System เพื่อให้บ้านไม่ร้อนอบอ้าว อากาศถ่ายเทได้ดี <br>&#10003; พิเศษต่อที่ 1 จ่ายค่าสำรวจเพียง 2,000 บาท รับส่วนลดคืน 3,000 บาท เมื่อใช้บริการติดตั้ง <br>&#10003; พิเศษต่อที่ 2  รับส่วนลด 10% ทุก Package  ราคาเริ่มต้น Package เพียง  29,900 บาท <br>&#10003; โปรโมชั่น หมดเขต 1 เม.ย.– 2 พ.ค. 65 และไม่สามารถใช้ร่วมกับโปรฯอื่นๆได้ <br>&#10003; ทางบริษัทฯขอสงวนสิทธิ์ในการเปลี่ยนแปลงโดยไม่ต้องแจ้งให้ทราบล่างหน้า ", "qrcode":"../images/qrcode.png"},
@@ -74,7 +74,7 @@
                     "name": "INZEUS Smart Digital Door Lock",
                     "price": 9900,
                     "sale_price": 9900,
-                    "tagline": " ขนาด:26x10x20.5 ซม. น้ำหนัก:2 กก. ราคา <span style='color:red;'>9,900.00</span> บาท / ชิ้น",
+                    "tagline": " ขนาด:26x10x20.5 ซม. น้ำหนัก:2 กก.",
                     "description": "ประตูดิจิตอล ปลดล็อกด้วยลายนิ้วมือ<br>&#10003; ปลดล็อกด้วยลายนิ้วมือ/การ์ด/รหัสผ่านได้<br>&#10003; ปลดล็อกระยะไกลได้<br>&#10003; สุ่มรหัสผ่านชั่วคราว สำหรับแขกได้<br>&#10003; บอกสถานะการเปิด/ปิด<br>&#10003; รองรับผู้ใช้งาน 100 คน<br>&#10003; วัสดุ 304 Stainless Steel<br>&#10003; แหล่งพลังงาน ใช้ ถ่าน AA X4<br>&#10003; (อายุการใช้งานของพลังงานขึ้นอยู่กับการเปิด/ปิดของประตู)",
                     "image_product": "../media/L2_Home Selected/Page2 - Product List/1 INZEUS Smart Digital Door Lock/No.22-Inzeus door lock-01.png",
                     "images_videos": [
@@ -96,8 +96,8 @@
                     "brand": "",
                     "name": "Inzeus Smart Baby Camera with 5\" Display",
                     "price": 7890,
-                    "sale_price": 0,
-                    "tagline": "ราคา <span style='color:red;'>7,890.00</span> บาท / ชิ้น",
+                    "sale_price": 7890,
+                    "tagline": "",
                     "description": "กล้องดูแลเด็กพร้อมจอแสดงผล<br><br> 2MP Camera with 5 inch LCD Screen<br><br> การรับประกันสินค้า 1 ปี",
                     "image_product": "../media/L2_Home Selected/Page2 - Product List/2 Inzeus Smart Baby Camera with 5 Display/No.22-2. Baby Camera-01.png",
     
@@ -122,7 +122,7 @@
                     "name": "เครื่องพ่นไอน้ำอโรม่ารูปทรงแคคตัส Mestyle Cactus Humidifier สีเขียว MSCH2100G0",
                     "price": 750,
                     "sale_price": 750,
-                    "tagline": " ขนาด:10x10x15 ซม. น้ำหนัก:500 ก. สี: เขียว, ขาว ราคา <span style='color:red;'>750.00</span> บาท / ชิ้น",
+                    "tagline": " ขนาด:10x10x15 ซม. น้ำหนัก:500 ก. สี: เขียว, ขาว",
                     "description": "เครื่องพ่นไอน้ำอโรม่ารูปทรงแคคตัส Mestyle Cactus Humidifier สีเขียว MSCH2100G0<br><br> สร้างบรรยากาศให้บ้านน่าอยู่ ด้วยเครื่องพ่นไอน้ำอโรม่ารูปทรงแคคตัส เพิ่มความชื้นและกลิ่นหอม พร้อมไฟ LED 7 สี เพียงเครื่องเดียวก็สามารถสร้างความหอมสดชื่น ผ่อนคลาย และช่วยให้นอนหลับสบายด้วยกลิ่นของธรรมชาติ<br><br> เงื่อนไขการรับประกัน: หากสินค้าชำรุด/เสียหาย/ใช้งานไม่ได้ สามารถเปลี่ยนได้ภายใน 7วัน",
                     "image_product": "../media/L2_Home Selected/Page2 - Product List/5 Cactus Mestyle Humidifier Green MSCH2100G0/Cactus1_600x600.jpg",
     
@@ -147,7 +147,7 @@
                     "name": "Inzeus INZY Sleep Aid",
                     "price": 990,
                     "sale_price": 990,
-                    "tagline": " ขนาด:187x60x200 ซม. ราคา <span style='color:red;'>990.00</span> บาท / ชิ้น",
+                    "tagline": " ขนาด:187x60x200 ซม.",
                     "description": "อุปกรณ์ช่วยนอนหลับ<br> Bluetooth speaker with music player<br> การรับประกันสินค้า 1 ปี",
                     "image_product": "../media/L2_Home Selected/Page2 - Product List/3 Inzeus INZY Sleep Aid/No.22-Inzeus Sleep Aid-01.png",
                     "images_videos": [
@@ -171,7 +171,7 @@
                     "name": "INZY Neck Fan with ION",
                     "price": 1390,
                     "sale_price": 1390,
-                    "tagline": " ขนาด:187x60x200 ซม. น้ำหนัก:0.3 กก. ราคา <span style='color:red;'>1,390.00</span> บาท / ชิ้น",
+                    "tagline": " ขนาด:187x60x200 ซม. น้ำหนัก:0.3 กก.",
                     "description": "พัดลมคอพร้อมเครื่องฟอกอากาศ <br>1.เสียงเบาเงียบ และมีความแรง 3 ระดับ <br>2.Battey 4000 mHA ใช้งาน 12 ชั่วโมง, ULED Display <br>3.Design 3 สี ขาว ชมพู น้ำเงิน<br>4.มีผลิต ION เพื่อฟอกอากาศให้สดชื้น ทั้ง 2 ด้าน <br>5.น้ำหนักเบา 300 กรัม <br>การรับประกันสินค้า 1 ปี",
                  "image_product": "../media/L2_Home Selected/Page2 - Product List/4 INZY Neck Fan with ION/1. Neck Fan with ION.jpg",
                     "images_videos": [
@@ -195,7 +195,7 @@
                     "name": "สเปรย์กันพื้นลื่น ฮาบิแมท",
                     "price": 890,
                     "sale_price": 890,
-                    "tagline": " ขนาด:10.2x9x25 ซม. น้ำหนัก:0.3 กก. ราคา <span style='color:red;'>890.00</span> บาท / ชุด",
+                    "tagline": " ขนาด:10.2x9x25 ซม. น้ำหนัก:0.3 กก.",
                     "description": "สเปรย์กันพื้นลื่น ฮาบิแมท 300 มล (พื้นที่ใช้งาน 5-8 ตร.ม.)<br><br> เหมาะสำหรับใช้เคลือบพื้นผิวเพื่อกันลื่นบนพื้นผิวที่คุณต้องการ ด้วยเทคโนโลยี Hybrid Polymer&Microbeads ที่ช่วยสร้างพื้นผิวใหม่ ปกป้องพื้นผิวเดิม พร้อมสารยับยั้งเชื้อราและตะไคร่น้ำ มีเม็ดไมโครบีดที่ช่วยสร้างความฝืดกันลื่นให้พื้นผิวสัมผัสคล้ายผิวพ่นทราย (ค่าความกันลื่นสูงระดับ R-11) จึงช่วยป้องกันลื่นได้เป็นอย่างดี มีประสิทธิภาพสูงและไม่มีส่วนผสมของสารเคมีกัดกร่อน จึงปลอดภัยต่อทุกคนในครอบครัว",
                     "image_product": "../media/L2_Home Selected/Page2 - Product List/6 Anti-Slip Coating Spray Habiimat/Anti-Slip Coating Spray-Habiimat1-600x600.jpg",
     
@@ -220,7 +220,7 @@
                     "name": "SIMPLE GREEN Foaming Coil Aerosol<br>สเปรย์โฟมทำความสะอาดเครื่องปรับอากาศ",
                     "price": 590,
                     "sale_price": 590,
-                    "tagline": " ราคา <span style='color:red;'>590.00</span> บาท / ชิ้น",
+                    "tagline": "",
                     "description": "สเปรย์โฟมทำความสะอาดเครื่องปรับอากาศ<br><br> สเปร์ยโฟม สำหรับเครื่องปรับอากาศ แผงคอยล์เย็น คอยล์ร้อน ของระบบทำความเย็นทั้งในและนอกอาคาร ขจัดสิ่งอับชื้น ไม่ต้องล้างน้ำออก ไม่มีสารกัดกร่อน และไม่ติดไฟ ปลอดภัย ไร้สารพิษเป็นมิตรกับสิ่งแวดล้อม",
                     "image_product": "../media/L2_Home Selected/Page2 - Product List/7 SIMPLE GREEN Foaming Coil Aerosol/Simple-green-spray-coil-600x600.jpg",
     
@@ -243,7 +243,7 @@
                     "name": "SIMPLE GREEN RTU All Purpose Cleanerน้ำยาทำความสะอาดเอนกประสงค์",
                     "price": 330,
                     "sale_price": 330,
-                    "tagline": " ราคา <span style='color:red;'>330.00</span> บาท / ชิ้น",
+                    "tagline": "",
                     "description": "น้ำยาทำความสะอาดอเนกประสงค์ เช่น สิ่งสกปรกในบ้าน คราบสกปรก น้ำมัน<br><br> &#10003; น้ำยาทำความสะอาดอเนกประสงค์พร้อมใช้งานสำหรับครอบครัว เหมาะสำหรับล้างคราบมัน และสิ่งสกปรกทุกชนิดภายในบ้าน<br> &#10003; ปลอดสารพิษ เป็นมิตรกับสิ่งแวดล้อม ย่อยสลายได้เองตามธรรมชาติ และไม่ติดไฟ<br> &#10003; บรรจุในประเทศสหรัฐอเมริกา",
                     "image_product": "../media/L2_Home Selected/Page2 - Product List/8 SIMPLE GREEN RTU All Purpose Cleaner/Simple-green-rtu-all-purpose-600x600.jpg",
     
