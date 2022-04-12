@@ -184,42 +184,42 @@
                 $("#flash-sale").remove()
             };
             setInterval(function () {
-                var today = new Date();
-
-                var time = today.getHours().toString().padStart(2, '0') + ":" + today.getMinutes().toString().padStart(2, '0');
-                if ((time >= "11:15" && time < "12:00") || (time >= "14:15" && time < "15:00") || (time >= "18:00" && time < "18:45")) {
-                    if ($('#header').find($('#flash-header')).length == 0) {
-                        $('#header').css("height", "200px")
-                        $('#header').append(`
-                            <div id="flash-header" style="position: absolute; width: 100%; height: 200px; background-color:black;">
-                                <video width="100%" height="100%" autoplay muted loop>
-                                    <source src="../media/L2_Home Selected/Flash sale banner/45Min Flash Sale_200.mp4" type="video/mp4">
-                                </video>
-                            </div>`
-                        )
-                        $('#girl-header').css('height', '200px')
-                        console.log('puase')
-                        is_flash_sale_time = true
-                        $(".fist-content video")[0].pause()
-                        $(".fist-content video").css('opacity', '0')
-                        is_video_playing = false
-
-                        // ใส่ div vid flash sale ทับ
-                        playFlashSaleAllVideo()
-                    }
-                } else {
-                    $('#header').css("height", "220px")
-                    $('#flash-header').remove()
-                    $('#girl-header').css('height', 'auto')
-                    console.log('continue ' + is_video_playing)
-                    $(".fist-content video").css('opacity', '1')
-                    if (!is_video_playing) {
-                        console.log('video not playing')
-                        playAllVideo()
-                        is_video_playing = true;
-                    }
-                    is_flash_sale_time = false
+                // var today = new Date();
+                //
+                // var time = today.getHours().toString().padStart(2, '0') + ":" + today.getMinutes().toString().padStart(2, '0');
+                // if ((time >= "11:15" && time < "12:00") || (time >= "14:15" && time < "15:00") || (time >= "18:00" && time < "18:45")) {
+                //     if ($('#header').find($('#flash-header')).length == 0) {
+                //         $('#header').css("height", "200px")
+                //         $('#header').append(`
+                //             <div id="flash-header" style="position: absolute; width: 100%; height: 200px; background-color:black;">
+                //                 <video width="100%" height="100%" autoplay muted loop>
+                //                     <source src="../media/L2_Home Selected/Flash sale banner/45Min Flash Sale_200.mp4" type="video/mp4">
+                //                 </video>
+                //             </div>`
+                //         )
+                //         $('#girl-header').css('height', '200px')
+                //         console.log('puase')
+                //         is_flash_sale_time = true
+                //         $(".fist-content video")[0].pause()
+                //         $(".fist-content video").css('opacity', '0')
+                //         is_video_playing = false
+                //
+                //         // ใส่ div vid flash sale ทับ
+                //         playFlashSaleAllVideo()
+                //     }
+                // } else {
+                $('#header').css("height", "220px")
+                $('#flash-header').remove()
+                $('#girl-header').css('height', 'auto')
+                console.log('continue ' + is_video_playing)
+                $(".fist-content video").css('opacity', '1')
+                if (!is_video_playing) {
+                    console.log('video not playing')
+                    playAllVideo()
+                    is_video_playing = true;
                 }
+                is_flash_sale_time = false
+                // }
             }, 1000);
 
             const play = (video_url, vid_duration) =>

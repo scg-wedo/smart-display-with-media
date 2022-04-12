@@ -142,33 +142,33 @@
             }
         }, 1000)
 
-        $("html").click(function( event ) {     
+        $("html").click(function( event ) {
             startTime = performance.now()
         });
 
         // Flash Sale Banner
         setInterval(function () {
-            var today = new Date();
-            var time = today.getHours().toString().padStart(2, '0') + ":" + today.getMinutes().toString().padStart(2, '0');
-            if ((time >= "11:15" && time < "12:00") || (time >= "14:15" && time < "15:00") || (time >= "18:00" && time < "18:45")) {
-                if ($('#header').find($('#flash-header')).length == 0) {
-                    $('#header').css("height", "200px")
-                    $('#header').append(`
-                <div id="flash-header" style="position: absolute; width: 100%; height: 200px; background-color:black;">
-                    <video width="100%" height="100%" autoplay muted loop>
-                        <source src="../media/L2_Home Selected/Flash sale banner/45Min Flash Sale_200.mp4" type="video/mp4">
-                    </video>
-                </div>`
-                    )
-                    $('#girl-header').css('height', '220px')
-                    $('#girl-header').css('width', '160px')
-                }
-            } else {
-                $('#flash-header').remove()
-                $('#header').css("height", "220px")
-                $('#girl-header').css('height', 'auto')
-                $('#girl-header').css('max-width', '100%')
-            }
+            // var today = new Date();
+            // var time = today.getHours().toString().padStart(2, '0') + ":" + today.getMinutes().toString().padStart(2, '0');
+            // if ((time >= "11:15" && time < "12:00") || (time >= "14:15" && time < "15:00") || (time >= "18:00" && time < "18:45")) {
+            //     if ($('#header').find($('#flash-header')).length == 0) {
+            //         $('#header').css("height", "200px")
+            //         $('#header').append(`
+            //     <div id="flash-header" style="position: absolute; width: 100%; height: 200px; background-color:black;">
+            //         <video width="100%" height="100%" autoplay muted loop>
+            //             <source src="../media/L2_Home Selected/Flash sale banner/45Min Flash Sale_200.mp4" type="video/mp4">
+            //         </video>
+            //     </div>`
+            //         )
+            //         $('#girl-header').css('height', '220px')
+            //         $('#girl-header').css('width', '160px')
+            //     }
+            // } else {
+            $('#flash-header').remove()
+            $('#header').css("height", "220px")
+            $('#girl-header').css('height', 'auto')
+            $('#girl-header').css('max-width', '100%')
+            // }
         }, 1000);
 
         $.getJSON('../configs.json', function (jd) {
